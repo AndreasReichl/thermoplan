@@ -1,0 +1,202 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        display: Assets
+        fields:
+          -
+            handle: logo
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: Logo
+              folder: sitebasics
+              width: 50
+          -
+            handle: logo_negative
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: 'Logo Negativ'
+              folder: sitebasics
+              width: 50
+          -
+            handle: logo_icon
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: 'Logo Icon'
+              folder: sitebasics
+              width: 50
+          -
+            handle: logo_footer
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: 'Logo Footer'
+              folder: sitebasics
+              width: 50
+          -
+            handle: favicon
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: favicon
+              folder: sitebasics
+              width: 50
+          -
+            handle: apple_touch_icon
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: 'Apple touch icon'
+              folder: sitebasics
+              width: 50
+      -
+        display: Firmenadresse
+        instructions: 'Unternehmensadresse für Kontakt, Impressum etc.'
+        fields:
+          -
+            import: firmenadresse
+  socialmedia:
+    display: 'Social Media'
+    sections:
+      -
+        display: 'Social Links'
+        instructions: 'Socialnetwork Links'
+        fields:
+          -
+            handle: instagram
+            field:
+              type: link
+              display: Instagram
+              width: 50
+          -
+            handle: instagram_name
+            field:
+              type: text
+              display: 'Instagram Name'
+              width: 50
+          -
+            handle: facebook
+            field:
+              type: link
+              display: Facebook
+              width: 50
+          -
+            handle: facebook_name
+            field:
+              type: text
+              display: 'Facebook Name'
+              width: 50
+          -
+            handle: youtube
+            field:
+              type: link
+              display: Youtube
+              width: 50
+          -
+            handle: youtube_name
+            field:
+              type: text
+              display: 'Youtube Name'
+              width: 50
+          -
+            handle: x
+            field:
+              type: link
+              display: X
+              width: 50
+          -
+            handle: x_name
+            field:
+              type: text
+              display: 'X Name'
+              width: 50
+          -
+            handle: tiktok
+            field:
+              type: link
+              display: TikTok
+              width: 50
+          -
+            handle: tiktok_name
+            field:
+              type: text
+              display: 'TikTok Name'
+              width: 50
+  references:
+    display: Referenzlogos
+    sections:
+      -
+        display: Logos
+        instructions: 'Logos die im Fussbereich angezeigt werden'
+        fields:
+          -
+            handle: footerlogos
+            field:
+              collapse: true
+              type: replicator
+              display: Footerlogos
+              sets:
+                neue_setgruppe:
+                  display: 'Neue Setgruppe'
+                  sets:
+                    logos:
+                      display: Logos
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          handle: logoname
+                          field:
+                            type: text
+                            display: Logoname
+                        -
+                          handle: footerlogo
+                          field:
+                            container: assets
+                            type: assets
+                            display: Footerlogo
+                            width: 50
+                            max_files: 1
+                        -
+                          handle: logolink
+                          field:
+                            type: link
+                            display: Logolink
+                            width: 50
+  locations:
+    display: Filialen
+    sections:
+      -
+        display: Filialen
+        fields:
+          -
+            handle: locations
+            field:
+              type: replicator
+              display: Filialen
+              collapse: true
+              sets:
+                locations:
+                  display: Filialen
+                  icon: hierarchy-vertical-nav-flow
+                  sets:
+                    location:
+                      display: Filiale
+                      fields:
+                        -
+                          import: firmenadresse

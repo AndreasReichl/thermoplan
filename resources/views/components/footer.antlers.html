@@ -1,0 +1,173 @@
+<footer class="component_footer">
+
+	<div class="footerGraficTop">
+		<svg xmlns="http://www.w3.org/2000/svg" width="1689.574" height="103.346" viewBox="0 0 1689.574 103.346">
+		<g transform="translate(1689.574 103.346) rotate(180)">
+			<path d="M1123,2975.365H-84.226v103.346H506.385l45.132-45.132h524.795Z" transform="translate(84.226 -2975.365)" fill="#f0f0f0"/>
+			<path d="M683.642,2975.365H200.384L155.252,3020.5H-15.207v11.512H160.679l45.132-45.132H683.642Z" transform="translate(1005.932 -2974.971)" fill="#01215c"/>
+			<path d="M-15.207,3028.981H160.679l45.132-45.132,282.953-.029,188.1-.019" transform="translate(494.354 -2938.146)" fill="none" stroke="#01215c" stroke-width="1"/>
+		</g>
+		</svg>
+
+	</div>
+
+	<div class="footerLogos">
+		{{ if sitebasics.footerlogos }}
+			{{ sitebasics.footerlogos }}
+			<div class="footerLogoEntry">
+				<a href="{{ logolink }}" target="_blank"><img src="{{ footerlogo.url }}" alt="{{ logoname }}" /></a>
+			</div>
+			{{ /sitebasics.footerlogos }}
+		{{ /if }}
+	</div>
+
+	<div class="footerNavWrapper">
+
+		{{ if sitebasics.logo_footer }}
+		<div class="footerLogo">
+			<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
+		</div>
+		{{ /if }}
+
+		<div class="footerInner">
+			<div class="footerLeft">
+				<div class="footerAddress">
+					<address>
+						{{ if sitebasics.firma }}
+						<div class="addressEntry firma">
+							<span class="label">{{ sitebasics.firma }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.strasse_hausnummer }}
+						<div class="addressEntry streetNumber">
+							{{ if sitebasics.icon_strasse }}<span class="icon">{{ sitebasics.icon_strasse }}</span>{{ /if }}
+							<span class="label">{{ sitebasics.strasse_hausnummer }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.ort }}
+						<div class="addressEntry place">
+							{{ if sitebasics.icon_place }}<span class="icon">{{ sitebasics.icon_place }}</span>{{ /if }}
+							<span class="label">{{ sitebasics.plz }} {{ sitebasics.ort }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.phone }}
+						<div class="addressEntry phone">
+							{{ if sitebasics.icon_phone }}<span class="icon">{{ sitebasics.icon_phone }}</span>{{ else }}<span>Tel.:</span>{{ /if }}
+							<span class="label">{{ sitebasics.phone }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.fax }}
+						<div class="addressEntry fax">
+							{{ if sitebasics.icon_fax }}<span class="icon">{{ sitebasics.icon_fax }}</span>{{ else }}<span>Fax:</span>{{ /if }}
+							<span class="label">{{ sitebasics.fax }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.mobile }}
+						<div class="addressEntry mobile">
+							{{ if sitebasics.icon_mobile }}<span class="icon">{{ sitebasics.icon_mobile }}</span>{{ else }}<span>Mobil:</span>{{ /if }}
+							<span class="label">{{ sitebasics.mobile }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.email }}
+						<div class="addressEntry email">
+							{{ if sitebasics.icon_email }}<span class="icon">{{ sitebasics.icon_email}}</span>{{ else }}<span>E-Mail:</span>{{ /if }}
+							<span class="label">{{ sitebasics.email }}</span>
+						</div>
+						{{ /if }}
+						{{ if sitebasics.opening_hours }}
+						<div class="addressEntry opening_hours">{{ sitebasics.opening_hours }}</div>
+						{{ /if }}
+					</address>
+				</div>
+				<div class="footerLocations">
+					{{ sitebasics.locations }}
+						{{ partial:elements/address }}
+					{{ /sitebasics.locations }}
+				</div>
+			</div>
+
+
+			<div class="footerNavCols">
+				<nav class="footerNavCol1">
+				{{ nav:footernav_col_1 }}
+					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+					{{ if children }}
+						<div class="footerNavSubmenu">
+							{{ children }}
+								<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
+							{{ /children }}
+						</div>
+					{{ /if }}
+				{{ /nav:footernav_col_1 }}
+				</nav>
+				<nav class="footerNavCol2">
+				{{ nav:footernav_col_2 }}
+					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+					{{ if children }}
+						<div class="footerNavSubmenu">
+							{{ children }}
+								<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
+							{{ /children }}
+						</div>
+					{{ /if }}
+				{{ /nav:footernav_col_2 }}
+				</nav>
+				<nav class="footerNavCol3">
+				{{ nav:footernav_col_3 }}
+					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+					{{ if children }}
+						<div class="footerNavSubmenu">
+							{{ children }}
+								<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
+							{{ /children }}
+						</div>
+					{{ /if }}
+				{{ /nav:footernav_col_3 }}
+				</nav>
+			</div>
+		</div>
+
+
+		<div class="footerBottomWrapper">
+			<nav class="footerNav">
+			{{ nav:footernav }}
+				<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+			{{ /nav:footernav }}
+			</nav>
+
+			<div class="footerGraficBottom">
+				<svg xmlns="http://www.w3.org/2000/svg" width="824.85" height="61.888" viewBox="0 0 824.85 61.888">
+				<g transform="translate(0 0.5)">
+					<path d="M0,38.6H329.318L360.074,7.845h116.16V0H356.375L325.62,30.755H0Z" transform="translate(0 22.788)" fill="#01215c"/>
+					<path d="M0,30.756H325.62L356.375,0H476.233" transform="translate(348.616 0)" fill="none" stroke="#01215c" stroke-width="1"/>
+				</g>
+				</svg>
+			</div>
+
+			<nav class="socialLinks">
+				{{ if sitebasics.instagram }}<a href="{{ sitebasics.instagram }}" class="socialLink instagram" target="_blank" data-tooltip="{{ if sitebasics.instagram_name }}{{ sitebasics.instagram_name }}{{ else }}Instagram{{ /if }}" data-flow="top"><i class="icofont-instagram"></i></a>{{ /if }}
+				{{ if sitebasics.facebook }}<a href="{{ sitebasics.facebook }}" class="socialLink facebook" target="_blank" data-tooltip="{{ if sitebasics.facebook_name }}{{ sitebasics.facebook_name }}{{ else }}Facebook{{ /if }}" data-flow="top"><i class="icofont-facebook"></i></a>{{ /if }}
+				{{ if sitebasics.youtube }}<a href="{{ sitebasics.youtube }}" class="socialLink youtube" target="_blank" data-tooltip="{{ if sitebasics.youtube_name }}{{ sitebasics.youtube_name }}{{ else }}Youtube{{ /if }}" data-flow="top"><i class="icofont-youtube"></i></a>{{ /if }}
+				{{ if sitebasics.x }}<a href="{{ sitebasics.x }}" class="socialLink x" target="_blank" data-tooltip="{{ if sitebasics.x_name }}{{ sitebasics.x_name }}{{ else }}X{{ /if }}" data-flow="top"><i class="icofont-x"></i></a>{{ /if }}
+				{{ if sitebasics.tiktok }}<a href="{{ sitebasics.tiktok }}" class="socialLink tiktok" target="_blank" data-tooltip="{{ if sitebasics.tiktok_name }}{{ sitebasics.tiktok_name }}{{ else }}TikTok{{ /if }}" data-flow="top"><i class="icofont-tiktok"></i></a>{{ /if }}
+			</nav>
+		</div>
+
+		<div class="footerCopyrightWrapper">
+			<div class="footerCopyright">© Thermoplan Anlagenbau Elektrotechnik Verfahrenstechnik GmbH. Alle Rechte vorbehalten.</div>
+			<a href="https://www.andreasreichl.com" target="_blank" class="designBy" data-tooltip="Website by Andreas Reichl Mediendesign" data-flow="top">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.958" height="24" viewBox="0 0 22.958 24">
+				<defs>
+					<clipPath id="ARclip-path">
+						<rect width="22.958" height="24"/>
+					</clipPath>
+				</defs>
+					<g transform="translate(0 0)" clip-path="url(#ARclip-path)">
+						<path d="M19.606,13.679c-.751-.018-2.233-.041-2.606-.032.181-.308,1.268-.853,1.589-1.464a1.272,1.272,0,0,0-.031-1.239c-2.99-5.049-6-10.062-6.205-10.483a1.177,1.177,0,0,0-1.872.006C10.03,1.325.234,18.139.234,18.139a2.157,2.157,0,0,0,.1,2.124l2.264,3.319a.737.737,0,0,0,1.322,0c.815-1.358,1.307-2.115,2.151-3.517a2.229,2.229,0,0,1,1.621-1.076H15.27A2.255,2.255,0,0,1,16.9,20.065l2.148,3.519a.713.713,0,0,0,1.13.222c.074-.064,2.456-3.541,2.456-3.541a2.177,2.177,0,0,0,.323-1.346c-.207-.527-.123-.717-2.482-4.733a1.031,1.031,0,0,0-.864-.507M8.967,13.7c.207-.967,2.024-3.635,2.515-4.517.5.9,2.295,3.536,2.515,4.517Z" transform="translate(0 -0.001)" fill="currentColor"/>
+					</g>
+				</svg>
+			</a>
+		</div>
+	</div>
+
+</footer>

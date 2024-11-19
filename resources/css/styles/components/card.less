@@ -1,0 +1,23 @@
+// out:false
+
+.card						{ .flex-display(flex); .flex-direction(column); .border-radius(8px); background-color:var(--white); .box-shadow;
+	&.isFeatured			{ .flex-direction(row); grid-column: 1 / -1; order:-1;
+		.cardImageContainer { width: 40%; .border-radius(8px 0 0 8px);}
+		.cardContent 		{ .flex-size(1); padding:30px 30px 30px 60px; }
+	}
+	.cardImageContainer 	{ overflow:hidden; .border-radius(8px 8px 0 0); .flex-display(flex); }
+	.cardTextboxInner		{ .flex-size(1); padding:30px; .flex-display(flex); .flex-direction(column); gap:10px; }
+
+	.cardHeadline,
+	.cardSubtitle 			{ .flex-display(flex); .align-items(center); gap:12px;
+		svg 				{ fill:currentColor; stroke:currentColor; }
+	}
+	.cardHeadlineIcon,
+	.cardSubtitleIcon 		{ line-height:0; max-width:24px; height: auto; }
+	.category 				{ font-weight:bold; text-transform: uppercase; letter-spacing: 0.2rem;}
+	.text 					{ line-height: 1.6; }
+	.links 					{ margin-top:auto; }
+
+	.cardLinks 				{ margin-left:36px;	}
+}
+

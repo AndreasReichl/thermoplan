@@ -1,0 +1,30 @@
+tree:
+  -
+    id: f4be3e85-eaf6-44c7-aa25-4bd1de2398fe
+    title: Produkte
+    url: produkte/
+    children:
+      -
+        id: bc4b3fb9-cac2-4f5b-b35f-36c251162910
+        title: Anlagenbau
+        url: produkte/anlagenbau/
+      -
+        id: 1354f4d4-f48c-4da6-b7fa-70848e510529
+        title: 'Industrie Lösungen'
+        url: produkte/industrie-loesungen/
+      -
+        id: 06e309f2-8766-4a70-8a6c-4fa9cb5695d0
+        title: Qualitätsprüfanlagen
+        url: produkte/qualitaetspruefanlagen/
+      -
+        id: 4fd31965-5052-435f-88f3-cd24922ca6ce
+        title: Lagertechnik
+        url: produkte/lagertechnik/
+      -
+        id: 4bd38d80-d726-4d0d-9263-48d23623029e
+        title: Elektrotechnik
+        url: produkte/elektrotechnik/
+      -
+        id: 917804b3-ada3-4584-b6f3-53992959345e
+        title: Werksleittechnik
+        url: produkte/werksleittechnik/

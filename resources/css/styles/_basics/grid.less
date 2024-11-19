@@ -1,0 +1,51 @@
+// out: false
+// Grid system
+//
+@screen-xs:                  320px;
+@screen-xs-unit:             320;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+@screen-sm:                  480px;
+@screen-sm-unit:             480;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+@screen-md:                  768px;
+@screen-md-unit:             768;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+@screen-lg:                  80vw;
+@screen-lg-unit:             1024;
+@screen-lg-min:              1024px;
+@screen-lg-desktop:          @screen-lg-min;
+
+// XLarge screen / ultrawide desktop
+@screen-xl:                  80vw;
+@screen-xl-unit:             1280;
+@screen-xl-min:              1280px;
+@screen-xl-desktop:          @screen-xl-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+@screen-lg-max:              (@screen-xl-min - 1);
+
+//== Grid system
+
+@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+.container        						{ padding-left: 0; padding-right: 0; width:100%; margin:0px auto;
+	@media (min-width: @screen-md-min)	{ max-width:@screen-md; }
+	@media (min-width: @screen-lg-min)	{ max-width:@screen-lg; }
+	@media (min-width: @screen-xl-min)	{ max-width:@screen-xl; }
+}
+.container-fluid  						{ padding-left: 0; padding-right: 0; width:100%; }
+
+section 			{ width:100%; }

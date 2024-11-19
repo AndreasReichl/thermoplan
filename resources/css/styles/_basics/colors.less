@@ -1,0 +1,101 @@
+// out: false
+// color system
+//
+
+:root {
+    --font-color: #01215C;
+    --bg-color: #FFFFFF;
+    --border-color: #b9b9b9;
+    --white: #ffffff;
+    --black: #010c21;
+    --grey: #919191;
+    --grey-dark: #4c4c4c;
+    --greylight: #F0F0F0;
+
+    --primary-color: #01215C;
+    --secondary-color: #C11711;
+    --third-color: #919191;
+    --fourth-color: #1e4073;
+    --fifth-color: #f41c61;
+
+    --success-color: #05e790;
+    --info-color: #5bc0de;
+    --warning-color: #FBBF24;
+    --danger-color: #FF004C;
+
+    --texthighlight-color: #AFF6FF;
+}
+
+// color classes
+
+.primary 		{ color:var(--primary-color); }
+.secondary 		{ color:var(--secondary-color); }
+.third 		    { color:var(--third-color); }
+.fourth 		{ color:var(--fourth-color); }
+.fifth 		    { color:var(--fifth-color); }
+
+.white 			{ color:var(--white); }
+.black 			{ color:var(--black); }
+.grey 			{ color:var(--grey); }
+.globalfont 	{ color:var(--font-color); }
+.success 		{ color:var(--success-color); }
+.info 		    { color:var(--info-color); }
+.warning        { color:var(--warning-color); }
+.danger         { color:var(--danger-color); }
+
+.bg-primary 	{ background-color:var(--primary-color); }
+.bg-secondary 	{ background-color:var(--secondary-color); }
+.bg-third 	    { background-color:var(--third-color); }
+.bg-fourth 	    { background-color:var(--fourth-color); }
+.bg-fifth 	    { background-color:var(--fifth-color); }
+
+.bg-white 		{ background-color:var(--white); }
+.bg-black 		{ background-color:var(--black); }
+.bg-grey 		{ background-color:var(--grey); }
+.bg-success 	{ background-color:var(--success-color); }
+
+// THEMES
+
+body            { color:var(--font-color); background-color:var(--bg-color); }
+.texthighlite   { background-color:var(--texthighlight-color); }
+.textshadow     { text-shadow: var(--black) 1px 0 10px; }
+
+.gradientBgBlack {
+    background: rgb(31,35,46);
+    background: -moz-linear-gradient(180deg, rgba(31,35,46,1) 0%, rgba(255,255,255,0) 70%);
+    background: -webkit-linear-gradient(180deg, rgba(31,35,46,1) 0%, rgba(255,255,255,0) 70%);
+    background: linear-gradient(180deg, rgba(31,35,46,1) 0%, rgba(255,255,255,0) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f232e",endColorstr="#ffffff",GradientType=1);
+}
+
+.gradientWhiteRight {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.gradientWhiteLeft {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.gradientBlackRight {
+    background: rgb(9,19,29);
+    background: -moz-linear-gradient(90deg, rgba(9,19,29,0) 0%, rgba(9,19,29,1) 50%);
+    background: -webkit-linear-gradient(90deg, rgba(9,19,29,0) 0%, rgba(9,19,29,1) 50%);
+    background: linear-gradient(90deg, rgba(9,19,29,0) 0%, rgba(9,19,29,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09131d",endColorstr="#09131d",GradientType=1);
+}
+
+.gradientBlackLeft {
+    background: rgb(9,19,29);
+    background: -moz-linear-gradient(270deg, rgba(9,19,29,0) 0%, rgba(9,19,29,1) 50%);
+    background: -webkit-linear-gradient(270deg, rgba(9,19,29,0) 0%, rgba(9,19,29,1) 50%);
+    background: linear-gradient(270deg, rgba(9,19,29,0) 0%, rgba(9,19,29,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09131d",endColorstr="#09131d",GradientType=1);
+}

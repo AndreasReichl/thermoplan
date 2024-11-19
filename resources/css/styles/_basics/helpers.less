@@ -1,0 +1,136 @@
+// out: false
+/* ==================================================
+   HELPER CLASSES
+================================================== */
+//
+// Utility classes
+// --------------------------------------------------
+
+.line-clamp(@shown-lines) { display: -webkit-box; -webkit-line-clamp: @shown-lines; -webkit-box-orient: vertical; overflow: hidden; }
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+:focus { outline: 0; }
+
+.no-scrollbars::-webkit-scrollbar { display: none; }
+.no-scrollbars                    { -ms-overflow-style: none; scrollbar-width: none; }
+
+.smooth-scroll                    { overflow-x:hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.smooth-scroll::-webkit-scrollbar { display: none; }
+
+.tab-focus()          { outline: none; outline-offset: -0px; }
+
+.clearfix()           {
+  &:before, &:after   { content: " "; display: table; }
+  &:after             { clear: both; }
+}
+.center-block()       { display: block; margin-left: auto; margin-right: auto; }
+.hide-text()          { font: ~"0/0" a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+.clearfix             { .clearfix(); }
+.center-block         { .center-block(); }
+.show                 { display: block !important; }
+.invisible            { visibility: hidden; }
+.hide,
+.hidden,
+.display-none         { display: none !important; }
+.inline-full 	        { display:inline-block; width:100%; }
+.inline-block	        { display:inline-block; }
+.block 			          { display:block; }
+.relative 		        { position:relative; }
+.clear-b 		          { clear:both; }
+.text-cut 		        { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.overflow-hidden      { overflow: hidden; }
+
+/* IMAGES AND CAPTIONS */
+
+figure 							{ position: relative; line-height:0; >a, >img { line-height:0; } }
+img 								{ display:inline-block; width:100%; height:auto; line-height: 0; }
+.img-circle         { .border-radius(999px); }
+figcaption 					{
+  &.state 			   	{ padding:0;
+	  span 					 	{ display:inline-block;  }
+  }
+}
+
+.bg-contain			    { background-position:center center; background-repeat:no-repeat; background-size:contain; }
+.bg-cover 			    { background-repeat:no-repeat; background-size:cover; background-position:center center; }
+
+.translateZ(@z) 				{ -webkit-transform: translateZ(@z); -moz-transform: translateZ(@z); -ms-transform: translateZ(@z); -o-transform: translateZ(@z); transform: translateZ(@z); }
+.translateX(@x) 				{ -webkit-transform: translateX(@x); -moz-transform: translateX(@x); -ms-transform: translateX(@x); -o-transform: translateX(@x); transform: translateX(@x); }
+.translateY(@y) 				{ -webkit-transform: translateY(@y); -moz-transform: translateY(@y); -ms-transform: translateY(@y); -o-transform: translateY(@y); transform: translateY(@y); }
+.translate(@x,@y) 				{ -webkit-transform: translate(@x,@y); -moz-transform: translate(@x,@y); -ms-transform: translate(@x,@y); -o-transform: translate(@x,@y); transform: translate(@x,@y); }
+.opacity(@opacity) 				{ opacity: @opacity; @opacity-ie: @opacity * 100; filter: ~"alpha(opacity=@{opacity-ie})"; /* IE8 */ }
+.border-radius(@radius)			{ -webkit-border-radius: @radius; -moz-border-radius: @radius; border-radius: @radius; }
+.transition-delay(@transition-delay) { -webkit-transition-delay: @transition-delay; -moz-transition-delay: @transition-delay; -o-transition-delay: @transition-delay; transition-delay: @transition-delay; }
+.transition-all					{ -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
+.transition-smooth				{ -webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; -ms-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; }
+.transition-smooth(@delay-time)	{ -webkit-transition: all @delay-time ease 0s; -moz-transition: all @delay-time ease 0s; -o-transition: all @delay-time ease 0s; -ms-transition: all @delay-time ease 0s; transition: all @delay-time ease 0s; }
+.rotate(@degrees) 				{ -webkit-transform: rotate(@degrees); -moz-transform: rotate(@degrees); -ms-transform: rotate(@degrees); -o-transform: rotate(@degrees); transform: rotate(@degrees); }
+.scale(@ratio) 					{ -webkit-transform: scale(@ratio); -moz-transform: scale(@ratio); -ms-transform: scale(@ratio); -o-transform: scale(@ratio); transform: scale(@ratio); }
+.skew(@skew) 				{ -webkit-transform: skew(@skew); -moz-transform: skew(@skew); -ms-transform: skew(@skew); -o-transform: skew(@skew); transform: skew(@skew); }
+
+.font-bold, .bold  { font-weight: bold; }
+.font-normal  { font-weight: normal; }
+.italic   { font-style: italic; }
+
+.w-auto   { width:auto; }
+.max-w-80 { max-width:80px; }
+
+.mt-auto { margin-top:auto; }
+.mr-auto { margin-right:auto; }
+.mb-auto { margin-bottom:auto; }
+.ml-auto { margin-left:auto; }
+
+.mt-5   { margin-top:5px; }
+.mt-10  { margin-top:10px; }
+.mt-15  { margin-top:15px; }
+.mt-20  { margin-top:20px; }
+.mt-25  { margin-top:25px; }
+.mt-30  { margin-top:30px; }
+.mt-60  { margin-top:60px; }
+
+.mr-5   { margin-right:5px; }
+.mr-10  { margin-right:10px; }
+.mr-15  { margin-right:15px; }
+.mr-20  { margin-right:20px; }
+.mr-25  { margin-right:25px; }
+.mr-30  { margin-right:30px; }
+
+.mb-5   { margin-bottom:5px; }
+.mb-10  { margin-bottom:10px; }
+.mb-15  { margin-bottom:15px; }
+.mb-20  { margin-bottom:20px; }
+.mb-25  { margin-bottom:25px; }
+.mb-30  { margin-bottom:30px; }
+.mb-60  { margin-bottom:60px; }
+
+.ml-5   { margin-left:5px; }
+.ml-10  { margin-left:10px; }
+.ml-15  { margin-left:15px; }
+.ml-20  { margin-left:20px; }
+.ml-25  { margin-left:25px; }
+.ml-30  { margin-left:30px; }
+
+.mb-45 { margin-bottom: 45px; }
+.mt-45 { margin-top: 45px; }
+
+
+.p-30 { padding:30px; }
+
+.box-shadow {box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
+
+.gap-5 { gap:5px; }
+.gap-10 { gap:10px; }
+.gap-15 { gap:15px; }
+.gap-20 { gap:20px; }
+.gap-25 { gap:25px; }
+.gap-30 { gap:30px; }
+.gap-35 { gap:35px; }
+.gap-40 { gap:40px; }

@@ -1,0 +1,11 @@
+// out:false
+html.popup-open,
+body.popup-open {
+  overflow: hidden;
+}
+.popup 	{ position: fixed; z-index:99; top:0; left:0; width:100vw; height:100vh; backdrop-filter: blur(8px); background-color:rgba(0,0,0,0.4); .flex-display(flex); .align-items(center); .justify-content(center);
+	.popup-content 	{ position:relative; background-color:white; width:fit-content; height: auto; padding:20px; .border-radius(4px); min-width: 50vw; }
+	.close-button 	{ position:absolute; right:20px; top:20px;
+		>* 			{ font-size:24px; }
+	}
+}

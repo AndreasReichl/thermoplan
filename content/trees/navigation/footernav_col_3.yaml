@@ -1,0 +1,22 @@
+tree:
+  -
+    id: 35d19698-1a72-4103-8978-97bf4f5c785c
+    title: Unternehmen
+    url: unternehmen/
+    children:
+      -
+        id: 9b6a3869-aac2-47ef-8a34-9264def384d4
+        title: Thermoplan
+        url: unternehmen/thermoplan/
+      -
+        id: c8e5546e-3a96-4806-8f74-e5ba8229c2e9
+        title: Ansprechpartner
+        url: unternehmen/ansprechpartner/
+      -
+        id: 16d30e29-ade1-445b-b6af-429978b35477
+        title: Karriere
+        url: unternehmen/karriere/
+      -
+        id: 32a07dcf-6b28-43f4-a84a-010f3478bec0
+        title: Kontakt
+        url: unternehmen/kontakt/

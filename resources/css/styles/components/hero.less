@@ -1,0 +1,25 @@
+// out:false
+
+.hero 						{ position: relative; padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom;
+	.textMediabox 			{ padding: 0; }
+	.textbox 				{
+		.inner 				{ padding:30px; word-break: break-word; hyphens:auto; }
+	}
+
+	@media (min-width: @screen-md-min) 	{
+		.textMediabox 		{ padding:0 0 60px 0; position: relative; }
+		.mediabox 			{ margin-left:20%; }
+		.textbox 			{ width:60%; position: absolute; top:50%; .translateY(-50%); left:0;
+			.inner 			{ padding:0; }
+		}
+	}
+}
+
+
+.heroslider 				{ position: relative; padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom;
+	@media (min-width: @screen-md-min) 	{
+		.textbox 			{ position: absolute; opacity: 0; top:60%; .transition-smooth;;
+			&.fade-in 		{ opacity: 1; top:50%; }
+		}
+	}
+}

@@ -1,0 +1,46 @@
+<address>
+	{{ if firma }}
+	<div class="addressEntry firma">
+		<span class="label">{{ firma }}</span>
+	</div>
+	{{ /if }}
+	{{ if strasse_hausnummer }}
+	<div class="addressEntry streetNumber">
+		{{ if icon_strasse }}<span class="icon">{{ icon_strasse }}</span>{{ /if }}
+		<span class="label">{{ strasse_hausnummer }}</span>
+	</div>
+	{{ /if }}
+	{{ if ort }}
+	<div class="addressEntry place">
+		{{ if icon_place }}<span class="icon">{{ icon_place }}</span>{{ /if }}
+		<span class="label">{{ plz }} {{ ort }}</span>
+	</div>
+	{{ /if }}
+	{{ if phone }}
+	<div class="addressEntry phone">
+		{{ if icon_phone }}<span class="icon">{{ icon_phone }}</span>{{ else }}<span>Tel.:</span>{{ /if }}
+		<span class="label">{{ phone }}</span>
+	</div>
+	{{ /if }}
+	{{ if fax }}
+	<div class="addressEntry fax">
+		{{ if icon_fax }}<span class="icon">{{ icon_fax }}</span>{{ else }}<span>Fax:</span>{{ /if }}
+		<span class="label">{{ fax }}</span>
+	</div>
+	{{ /if }}
+	{{ if mobile }}
+	<div class="addressEntry mobile">
+		{{ if icon_mobile }}<span class="icon">{{ icon_mobile }}</span>{{ else }}<span>Mobil:</span>{{ /if }}
+		<span class="label">{{ mobile }}</span>
+	</div>
+	{{ /if }}
+	{{ if email }}
+	<div class="addressEntry email">
+		{{ if icon_email }}<span class="icon">{{ icon_email}}</span>{{ else }}<span>E-Mail:</span>{{ /if }}
+		<span class="label">{{ email }}</span>
+	</div>
+	{{ /if }}
+	{{ if opening_hours }}
+	<div class="addressEntry opening_hours">{{ opening_hours }}</div>
+	{{ /if }}
+</address>

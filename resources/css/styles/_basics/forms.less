@@ -1,0 +1,154 @@
+// out: false
+// forms
+
+input,
+textarea   { background-color:transparent; color:var(--font-color); display:inline-block; width:-webkit-fill-available; border:1px solid var(--border-color); .border-radius(4px);
+	&.not-valid { border-color:var(--danger-color); }
+}
+textarea  { padding:12px; }
+
+input      { height:42px; padding:0 12px;
+	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		opacity: 0.5; /* Firefox */
+		font-style:normal !important;
+		color:inherit;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			font-style:normal !important;
+	}
+	&::-ms-input-placeholder { /* Microsoft Edge */
+			font-style:normal !important;
+	}
+}
+
+label >span { cursor: pointer; }
+input[type="radio"],
+input[type="checkbox"] { cursor: pointer;
+	background-color: transparent;
+	border: 1px solid var(--border-color);
+	box-shadow: inset 0 0 0 0 var(--white);
+	font: inherit;
+	height: 16px;
+	outline: none;
+	width: 16px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	&:checked {
+		background-color: var(--primary-color);
+		box-shadow: inset 0 0 0 .1875em var(--white);
+	}
+}
+
+input[type="radio"] { .border-radius(999px); }
+input[type="checkbox"] { .border-radius(4px); }
+
+
+// select
+
+select	{ height:42px; padding:0 24px 0 12px; background-color:transparent; color:var(--font-color); display:inline-block; width:-webkit-fill-available; border:1px solid var(--border-color); .border-radius(4px); margin: 0;  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none;  -moz-appearance: none;
+
+	background-image: linear-gradient(45deg, transparent 50%, var(--black) 50%), linear-gradient(135deg, var(--black)50%, transparent 50%), linear-gradient(to right, var(--black), var(--black));
+	background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+	background-size: 5px 5px,  5px 5px, 0px 1.5em;
+	background-repeat: no-repeat;
+
+	&:focus {
+		 background-image:
+		linear-gradient(45deg, var(--black) 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, var(--black) 50%),
+		linear-gradient(to right, var(--black), var(--black));
+		background-position:
+			calc(100% - 15px) 1em,
+			calc(100% - 20px) 1em,
+			calc(100% - 2.5em) 0.5em;
+		background-size:
+			5px 5px,
+			5px 5px,
+			0px 1.5em;
+		background-repeat: no-repeat;
+		border-color: var(--border-color);
+		outline: 0;
+	}
+
+	option 		{ background-color:var(--bg-color); color:var(--font-color); }
+}
+
+//search
+
+.contentSearch 	{ background-color:var(--white); display:inline-block; width:-webkit-fill-available; border:1px solid var(--border-color); .border-radius(4px); .flex-display(flex); .align-items(center);
+	input 		{ border:0px solid transparent; background-color:transparent; }
+	button 		{ margin:0 15px; }
+}
+
+.inputLabel		{ .flex-display(flex); margin-bottom:6px; }
+
+/* file upload button */
+input[type="file"] { padding:0; background-color:transparent; border:0px solid transparent; }
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 42px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+.form {
+	label { margin-bottom:10px; .flex-display(flex); gap:10px; }
+	.field { margin-bottom:15px; .flex-display(flex); gap:20px; }
+}
+
+.instruction { margin-bottom:15px; .flex-display(flex); }
+
+/* for booking formular */
+.field:has([name="location_type_other"]) { display: none; }
+.field.show { display: block !important; }
+
+
+// kontaktformular
+@media (min-width: @screen-md-min) 	{
+	.formFieldsWrapper 	{ .flex-display(flex); .flex-wrap(wrap); }
+	.formFieldSet 		{ width:100%;
+		&.name,
+		&.vorname,
+		&.telefon,
+		&.mobil 		{ width:50%; }
+
+		&.zip 			{ width:33.331%;
+			>* 			{ margin-right: 15px; }
+		}
+		&.place 		{ width:66.661%;
+			>* 			{ margin-left: 15px; }
+		}
+
+		&.vorname 		{
+			>* 			{ margin-right: 15px; }
+		}
+
+		&.name			{
+			>* 			{ margin-left: 15px; }
+		}
+		&.telefon 		{
+			>* 			{ margin-right: 15px; }
+		}
+		&.mobil 		{
+			>* 			{ margin-left: 15px; }
+		}
+
+		&.betreff,
+		&.text 			{ width:100%; }
+	}
+}

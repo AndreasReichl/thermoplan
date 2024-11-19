@@ -1,0 +1,193 @@
+title: Firmenadresse
+fields:
+  -
+    handle: firma
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - underline
+        - strikethrough
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: Firma
+  -
+    handle: hrb
+    field:
+      type: text
+      width: 50
+      display: HRB
+  -
+    handle: ustid
+    field:
+      type: text
+      width: 50
+      display: USt-IdNr
+  -
+    handle: anrede
+    field:
+      options:
+        herr: Herr
+        frau: Frau
+        divers: Divers
+      type: select
+      display: Anrede
+      width: 33
+  -
+    handle: vorname
+    field:
+      type: text
+      width: 33
+      display: Vorname
+  -
+    handle: nachname
+    field:
+      type: text
+      width: 33
+      display: Nachname
+  -
+    handle: position
+    field:
+      type: text
+      display: Position
+  -
+    handle: icon_strasse
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Strasse'
+      width: 33
+  -
+    handle: strasse_hausnummer
+    field:
+      type: text
+      display: 'Strasse / Hausnummer'
+      width: 66
+  -
+    handle: icon_place
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Ort'
+      width: 33
+  -
+    handle: plz
+    field:
+      type: text
+      width: 33
+      display: PLZ
+  -
+    handle: ort
+    field:
+      type: text
+      width: 33
+      display: Ort
+  -
+    handle: icon_phone
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Telefon'
+      width: 33
+  -
+    handle: phone
+    field:
+      type: text
+      display: Phone
+      width: 66
+  -
+    handle: icon_fax
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Fax'
+      width: 33
+  -
+    handle: fax
+    field:
+      type: text
+      display: Fax
+      width: 66
+  -
+    handle: icon_mobile
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Mobil'
+      width: 33
+  -
+    handle: mobile
+    field:
+      type: text
+      display: Mobil
+      width: 66
+  -
+    handle: icon_email
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Email'
+      width: 33
+  -
+    handle: email
+    field:
+      type: text
+      display: Email
+      width: 66
+  -
+    handle: icon_website
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: 'Icon Website'
+      width: 33
+  -
+    handle: website
+    field:
+      type: text
+      display: Website
+      width: 66
+  -
+    handle: opening_hours
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - underline
+        - strikethrough
+        - small
+        - superscript
+        - subscript
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: Öffnungszeiten
