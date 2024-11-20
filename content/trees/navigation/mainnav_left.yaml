@@ -1,0 +1,13 @@
+tree:
+  -
+    id: 108720f8-ae80-4fea-84e3-8d609700c401
+    title: Aktuelles
+    url: aktuelles/
+  -
+    id: 87f15039-038a-4100-b9ac-e77b3b5bcb67
+    title: Produkte
+    url: produkte/
+  -
+    id: 319a8299-763b-4d20-80ed-b5d4878f8122
+    title: Service
+    url: service/

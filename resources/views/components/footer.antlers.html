@@ -11,15 +11,9 @@
 
 	</div>
 
-	<div class="footerLogos">
-		{{ if sitebasics.footerlogos }}
-			{{ sitebasics.footerlogos }}
-			<div class="footerLogoEntry">
-				<a href="{{ logolink }}" target="_blank"><img src="{{ footerlogo.url }}" alt="{{ logoname }}" /></a>
-			</div>
-			{{ /sitebasics.footerlogos }}
-		{{ /if }}
-	</div>
+	{{ if show_references }}
+		{{ partial:components/referenzen }}
+	{{ /if }}
 
 	<div class="footerNavWrapper">
 

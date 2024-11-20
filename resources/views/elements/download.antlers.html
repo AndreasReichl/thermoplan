@@ -1,0 +1,22 @@
+<a id="downloadEntry_{{ id }}" href="{{ download_datei:url }}" class="btnDownload"{{ if direct_download }} download {{ else }} target="_blank"{{ /if }}>
+	<div class="downloadIconWrapper">
+		<div class="downloadIcon">
+			{{ if download_datei:extension == 'pdf' }}
+				<i class="icofont-file-pdf"></i>
+			{{ elseif download_datei:extension == 'jpg' }}
+				<i class="icofont-file-jpg"></i>
+			{{ elseif download_datei:extension == 'doc' }}
+				<i class="icofont-file-word"></i>
+			{{ elseif download_datei:extension == 'zip' }}
+				<i class="icofont-file-zip"></i>
+			{{ else }}
+				<i class="icofont-file-alt"></i>
+			{{ /if }}
+		</div>
+		<div class="downloadInfos">
+			<div class="downloadType">{{ download_datei:extension }}</div>
+			<div class="downloadSize">{{ download_datei:size }}</div>
+		</div>
+	</div>
+	<div class="downloadName">{{ download_name }}</div>
+</a>

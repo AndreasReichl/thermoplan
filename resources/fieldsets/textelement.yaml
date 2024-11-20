@@ -1,0 +1,35 @@
+title: Textelement
+fields:
+  -
+    handle: content
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - small
+        - superscript
+        - subscript
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+        - h1
+      remove_empty_nodes: false
+      type: bard
+      display: Inhalt

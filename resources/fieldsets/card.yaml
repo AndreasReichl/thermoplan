@@ -1,0 +1,220 @@
+title: Card
+fields:
+  -
+    handle: top_icon
+    field:
+      type: icon
+      display: 'Top Icon'
+      icon_set: default
+      directory: resources/assets/icons
+      width: 66
+  -
+    import: colors
+    prefix: topicon_
+  -
+    handle: headline_above
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - color
+        - underline
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: 'Headline above'
+      width: 66
+  -
+    handle: headline_above_type
+    field:
+      options:
+        -
+          key: h1
+          value: H1
+        -
+          key: h2
+          value: H2
+        -
+          key: h3
+          value: H3
+        -
+          key: h4
+          value: H4
+        -
+          key: h5
+          value: H5
+        -
+          key: h6
+          value: H6
+        -
+          key: div
+          value: Div
+        -
+          key: span
+          value: Span
+      default: h4
+      type: select
+      display: 'Headline above Typ'
+      width: 33
+  -
+    handle: headline
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - color
+        - underline
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+        - quote
+      remove_empty_nodes: false
+      type: bard
+      display: Headline
+      width: 66
+  -
+    handle: headline_type
+    field:
+      options:
+        -
+          key: h1
+          value: H1
+        -
+          key: h2
+          value: H2
+        -
+          key: h3
+          value: H3
+        -
+          key: h4
+          value: H4
+        -
+          key: h5
+          value: H5
+        -
+          key: h6
+          value: H6
+        -
+          key: div
+          value: Div
+        -
+          key: span
+          value: Span
+      default: h2
+      type: select
+      display: 'Headline Typ'
+      width: 33
+  -
+    handle: subtitle
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - color
+        - underline
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: Subtitle
+      width: 66
+  -
+    handle: subtitle_type
+    field:
+      options:
+        -
+          key: h1
+          value: H1
+        -
+          key: h2
+          value: H2
+        -
+          key: h3
+          value: H3
+        -
+          key: h4
+          value: H4
+        -
+          key: h5
+          value: H5
+        -
+          key: h6
+          value: H6
+        -
+          key: div
+          value: Div
+        -
+          key: span
+          value: Span
+      default: h3
+      type: select
+      display: 'Subtitle Typ'
+      width: 33
+  -
+    handle: content
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+        - h1
+      remove_empty_nodes: false
+      type: bard
+      display: Inhalt
+      instructions: 'Freies Feld für Texte, Links und Informationen.'
+  -
+    handle: links
+    field:
+      mode: stacked
+      type: grid
+      display: Links
+      fields:
+        -
+          import: buttonstyles
+          prefix: button_
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      width: 50
+  -
+    handle: photocredit
+    field:
+      type: text
+      display: Bildtitel
+      instructions: 'Bildbeschreibung sichtbar.'
+      width: 50

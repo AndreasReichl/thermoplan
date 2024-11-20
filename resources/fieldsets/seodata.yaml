@@ -1,0 +1,14 @@
+title: Seodata
+fields:
+  -
+    handle: seo_title
+    field:
+      type: text
+      display: 'SEO Title'
+      character_limit: 60
+  -
+    handle: seo_description
+    field:
+      character_limit: 160
+      type: textarea
+      display: 'SEO Description'

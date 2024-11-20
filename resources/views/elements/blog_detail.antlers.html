@@ -1,0 +1,108 @@
+<div class="blogDetail">
+	<div class="inner">
+
+		<div class="contentRight">
+			<h3 class="categoryHeadline">Kategorien</h3>
+			<div class="blogCategories">
+				{{ blogcategories }}
+					<a href="{{ url }}" class="btn-blogcategory">
+						{{ title }}
+						<span class="badge">{{ collection:blog where="category:{slug}" }}{{ count }}{{ /collection:blog }}</span>
+					</a>
+				{{ /blogcategories }}
+			</div>
+			{{ if downloads }}
+				<div class="downloadsWrapper">
+					<h3 class="categoryHeadline">Downloads</h3>
+					{{ downloads }}
+						{{ partial:elements/download }}
+					{{ /downloads }}
+				</div>
+			{{ /if }}
+		</div>
+
+		<div class="contentLeft">
+			<div class="inner">
+				<div class="textboxMediabox">
+					{{ image }}
+					<div class="mediabox">
+						{{ partial:elements/image }}
+					</div>
+					{{ /image }}
+
+					<div class="textbox">
+						<div class="textboxInner">
+							<div class="blogTitles">
+								<h5 class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</h5>
+								{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h4 class="headline_above">{{ headline_above }}</h4>{{ /if }}
+								{{ if headline | trim != "" && headline | strip_tags != "" }}<h1 class="headline">{{ headline }}</h1>{{ /if }}
+								{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h2 class="subtitle">{{ subtitle }}</h2>{{ /if }}
+							</div>
+							{{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}
+							{{ if links }}
+							<div class="links">
+								{{ links }}
+									{{ partial:elements/button
+										:url='button_link_feld'
+										:style='button_style'
+										:target='button_zielseite'
+										:icon='button_icon'
+										:text='button_text'
+									}}
+								{{ /links }}
+							</div>
+						{{ /if }}
+						</div>
+					</div>
+				</div>
+
+				{{ if additional_entries }}
+					{{ additional_entries }}
+						{{ if textblock }}<div class="textblockWrapper">{{ textblock }}</div>{{ /if }}
+						{{ if blog_video }}
+							<div class="blogExternalVideoWrapper">
+								{{ partial:elements/videoplayer
+									:video='blog_video'
+								}}
+							</div>
+						{{ /if }}
+						{{ if blog_video_intern }}
+						<div class="blogVideoWrapper">
+							<video id="blogVideo{{ id }}" class="blogVideo" controls playsinline preload="metadata">
+								<source src="{{ blog_video_intern }}" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						{{ /if }}
+					{{ /additional_entries }}
+				{{ /if }}
+
+
+
+				<div class="footerLinks">
+					<a onclick="history.back()" class="btn btn-default has-icon has-text">
+						<span class="btnText"><span>zurück</span></span>
+						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="previousBlogPosts">
+		<h3 class="categoryHeadline">Das könnte Sie auch interessieren</h3>
+		{{ collection:previous in="blog" as="posts" limit="2" sort="date:asc" }}
+
+		{{ if no_results }}
+			Keine weiteren Einträge vorhanden
+		{{ /if }}
+
+		{{ posts }}
+			{{ partial:elements/blog_card }}
+		{{ /posts }}
+
+	{{ /collection:previous }}
+	</div>
+
+</div>

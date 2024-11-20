@@ -1,0 +1,14 @@
+title: Farben
+fields:
+  -
+    handle: farbe
+    field:
+      swatches:
+        - '#01215C'
+        - '#919191'
+        - '#4c4c4c'
+        - '#F0F0F0'
+        - '#ffffff'
+      type: color
+      display: Farbe
+      width: 33

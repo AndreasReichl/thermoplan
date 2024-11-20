@@ -1,0 +1,44 @@
+title: Buttonstyles
+fields:
+  -
+    handle: icon
+    field:
+      directory: resources/assets/icons
+      type: icon
+      display: Icon
+      width: 25
+  -
+    handle: text
+    field:
+      type: text
+      display: Text
+      width: 50
+  -
+    handle: style
+    field:
+      options:
+        default: Standard
+        primary: 'Firmenfarbe 1'
+        secondary: 'Firmenfarbe 2'
+        base: Textlink
+      default: default
+      type: select
+      display: Style
+      width: 25
+  -
+    handle: link_feld
+    field:
+      type: link
+      display: 'Link Feld'
+      width: 66
+  -
+    handle: zielseite
+    field:
+      options:
+        _self: 'gleicher Tab oder Seite'
+        _blank: 'neuer Tab oder Fenster'
+        _parent: Elternfenster
+      default: _self
+      type: select
+      display: Zielseite
+      width: 33

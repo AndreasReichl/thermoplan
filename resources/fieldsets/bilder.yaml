@@ -1,0 +1,10 @@
+title: Bilder
+fields:
+  -
+    handle: bilder
+    field:
+      mode: grid
+      container: assets
+      type: assets
+      display: Bildergalerie
+      instructions: 'Hier können ein oder mehrere Bilder hochgeladen werden.'

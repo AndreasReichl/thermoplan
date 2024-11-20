@@ -1,0 +1,30 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ tooltipLang = 'Language' }}
+{{ else }}
+	{{ tooltipLang = 'Sprache' }}
+{{ /if }}
+
+<div class="languageSelect dropdown" id="dropdownLanguage_{{ id }}">
+	<div data-dropdown-id="dropdownLanguage_{{ id }}" class="a dropdownToggle" data-tooltip="{{ tooltipLang }}" data-flow="left"><i class="icofont-world"></i></div>
+	<div class="dropdown-content">
+		{{ if ( current_uri | substr(0,3) ) == '/en' }}
+			<div class="lang en">
+				{{ if related_page_de.url }}
+					<a href="{{related_page_de.url}}">Deutsch</a>
+				{{ else }}
+					<a href="/">Deutsch</a>
+				{{ /if }}
+				<div class="active">English</div>
+			</div>
+		{{ else }}
+			<div class="lang de">
+				<div class="a active" inactive>Deutsch</div>
+				{{ if related_page_en.url }}
+					<a href="{{related_page_en.url}}">Englisch</a>
+				{{ else }}
+					<a href="/en">Englisch</a>
+				{{ /if }}
+			</div>
+		{{ /if }}
+	</div>
+</div>

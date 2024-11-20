@@ -1,0 +1,101 @@
+{{ hashtag = hashtag_name ? hashtag_name : id  }}
+
+
+<article id="{{ hashtag }}" class="paragraph paragraph4 kontaktformular {{ paragraph_class }}{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
+	<div class="container{{ full_width ? '-fluid' : '' }}">
+		{{ if headline | trim != "" && headline | strip_tags != "" }}<div class="teamHeadline">{{ headline }}</div>{{ /if }}
+		<div class="form formWrapper">
+			{{ form:kontakt }}
+
+				{{ if success }}
+					<div class="success">
+						{{ success }}
+					</div>
+					<div class="">
+						{{ if ( current_uri | substr(0,3) ) == '/en' }}
+						<h3>Thank you for your inquiry.</h3>
+						<p>We will process this immediately and contact you.</p>
+						{{ else }}
+						<h3>Vielen Dank für Ihre Anfrage.</h3>
+						<p>Wir werden diese umgehend bearbeiten und Sie kontaktieren.</p>
+						{{ /if }}
+					</div>
+				{{ else }}
+					{{ if errors }}
+						<div class="danger">
+							{{ errors }}
+								{{ value }}<br>
+							{{ /errors }}
+						</div>
+					{{ /if }}
+					<div class="formFieldsWrapper">
+					{{ fields }}
+
+						{{ if ( current_uri | substr(0,3) ) == '/en' }}
+							{{ if handle == 'vorname' }}
+								{{ display = 'First name' }}
+							{{ /if }}
+							{{ if handle == 'name' }}
+								{{ display = 'Last name' }}
+							{{ /if }}
+							{{ if handle == 'email' }}
+								{{ display = 'E-Mail' }}
+							{{ /if }}
+							{{ if handle == 'telefon' }}
+								{{ display = 'Phone' }}
+							{{ /if }}
+							{{ if handle == 'betreff' }}
+								{{ display = 'Subject' }}
+							{{ /if }}
+						{{ /if }}
+
+
+						<div class="formFieldSet {{ handle }}">
+							{{ if handle == 'text' }}
+								{{ if ( current_uri | substr(0,3) ) == '/en' }}
+									<div class="mt-15 mb-10">
+										<h4 class="primary">Your Message</h4>
+										<p>Describe your request to us.</p>
+									</div>
+								{{ else }}
+									<div class="mt-15 mb-10">
+										<h4 class="primary">Ihre Nachricht</h4>
+										<p>Beschreiben Sie uns Ihr Anliegen.</p>
+									</div>
+								{{ /if }}
+							{{ else }}
+								<label class="label">{{ display }}</label>
+							{{ /if }}
+							<div class="field">{{ field }}</div>
+							{{ if error }}
+								<p class="danger">{{ error }}</p>
+							{{ /if }}
+						</div>
+					{{ /fields }}
+					</div>
+
+					{{ captcha }}
+
+					{{ if error:captcha }}
+					<p>{{ error:captcha }}</p>
+					{{ /if }}
+
+					<input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+					{{ if ( current_uri | substr(0,3) ) == '/en' }}
+						{{ btnText = 'Send' }}
+					{{ else }}
+						{{ btnText = 'Absenden' }}
+					{{ /if }}
+
+					<button type="submit" class="btn btn-default has-icon has-text">
+						<span class="btnText" style="padding-right: 25px; margin-right: -5px;"><span>{{ btnText }}</span></span>
+						<span class="btnIcon" style="right:-18px;"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span>
+					</button>
+
+				{{ /if }}
+
+			{{ /form:kontakt }}
+		</div>
+	</div>
+</article>

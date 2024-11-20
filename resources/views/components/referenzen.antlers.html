@@ -1,0 +1,13 @@
+<div class="referencesLogosWrapper">
+	<div class="headline">Wir arbeiten unter anderem für</div>
+	<div class="swiper logoslideshow">
+		<div class="swiper-wrapper">
+			{{ collection:referenzen }}
+			<div class="swiper-slide slideLogo">
+				<a href="{{ link }}" target="_blank"><img src="{{ logo }}" alt="{{ alt }}"></a>
+			</div>
+			{{ /collection:referenzen }}
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>

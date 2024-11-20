@@ -1,0 +1,23 @@
+
+<article id="paragraph{{ id }}" class="paragraph paragraph0 {{ paragraph_class }} {{ seitenverhaeltnis }}{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ background_image }});">
+	{{ if background_video }}
+		{{ partial:elements/videoplayerbackground }}
+	{{ /if }}
+	<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="container{{ full_width ? '-fluid' : '' }}{{ background_video ? ' has-bgVideo' : '' }}">
+		<div class="textMediabox">
+			{{ if video_intern }}
+				<div class="mediabox">{{ partial:elements/videoplayerintern }}</div>
+			{{ elseif video_extern }}
+				<div class="mediabox">{{ partial:elements/videoplayer }}</div>
+			{{ elseif image }}
+				<div class="mediabox">{{ partial:elements/image }}</div>
+			{{ /if }}
+
+			<div class="textbox {{ textboxausrichtung }} {{ texbox_class }}">
+				<div class="inner">
+					{{ partial:elements/textblock }}
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

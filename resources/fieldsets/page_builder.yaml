@@ -1,0 +1,472 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      display: 'Page Builder'
+      collapse: true
+      sets:
+        absatzvarianten:
+          display: Content
+          icon: text-formatting-initial-letter
+          sets:
+            paragraph0:
+              display: 'Bild oben Text unten'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: artikel
+            paragraph1:
+              display: 'Bild links Text rechts'
+              icon: text-formatting-image-left
+              fields:
+                -
+                  import: artikel
+            paragraph2:
+              display: 'Bild rechts Text links'
+              icon: text-formatting-image-right
+              fields:
+                -
+                  import: artikel
+            paragraph3:
+              display: 'Bild unten Text oben'
+              icon: text-formatting-image-bottom
+              fields:
+                -
+                  import: artikel
+            text:
+              display: 'Nur Text'
+              instructions: 'Reiner Textabsatz'
+              icon: text-formatting-initial-letter
+              fields:
+                -
+                  handle: textspalten
+                  field:
+                    options:
+                      -
+                        key: one
+                        value: '1'
+                      -
+                        key: two
+                        value: '2'
+                      -
+                        key: three
+                        value: '3'
+                    default: one
+                    type: select
+                    display: Textspalten
+                    width: 50
+                -
+                  handle: paragraph_class
+                  field:
+                    type: text
+                    display: 'Paragraph Class'
+                    width: 50
+                -
+                  import: textelement
+            kontakt:
+              display: Kontaktformular
+              icon: text-formatting-type-cursor
+              fields:
+                -
+                  handle: paragraph_class
+                  field:
+                    type: text
+                    display: 'Paragraph Class'
+                    width: 33
+                -
+                  handle: hashtag_name
+                  field:
+                    type: text
+                    display: 'Hashtag Name'
+                    width: 33
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
+                -
+                  handle: headline
+                  field:
+                    buttons:
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - bold
+                      - italic
+                      - color
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - underline
+                      - strikethrough
+                      - horizontalrule
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Überschrift
+                -
+                  handle: formular
+                  field:
+                    max_items: 1
+                    type: form
+                    display: Formular
+        hero:
+          display: Hero
+          icon: text-formatting-image-top
+          sets:
+            hero0:
+              display: 'Bild oder Video im Hintergrund Text darüber'
+              icon: text-formatting-wrap-around-bounding-box
+              fields:
+                -
+                  import: artikel
+        slider:
+          display: Slider
+          icon: layout-carousel-horizontal
+          sets:
+            heroslider:
+              display: 'Hero Slider'
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  handle: mainbgimage
+                  field:
+                    max_files: 1
+                    container: assets
+                    folder: hintergrundbilder
+                    type: assets
+                    display: Hintergrundbild
+                    instructions: 'Hintergrundbild für den gesamten Slider. Wechselt nicht.'
+                -
+                  handle: slides
+                  field:
+                    type: replicator
+                    display: Slides
+                    collapse: true
+                    sets:
+                      slide:
+                        display: Slide
+                        sets:
+                          slide:
+                            display: Slide
+                            fields:
+                              -
+                                import: artikel
+            carouselslider:
+              display: 'Carousel Slider'
+              icon: layout-carousel-horizontal
+              fields:
+                -
+                  handle: mainbgimage
+                  field:
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                -
+                  handle: headline
+                  field:
+                    type: text
+                    display: Überschrift
+                -
+                  handle: slides
+                  field:
+                    type: replicator
+                    display: Slides
+                    collapse: true
+                    sets:
+                      slide:
+                        display: Slide
+                        sets:
+                          slide:
+                            display: Slide
+                            fields:
+                              -
+                                import: card
+            galleryslider:
+              display: 'Image Carousel Slider'
+              icon: media-image-picture-gallery
+              fields:
+                -
+                  handle: mainbgimage
+                  field:
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 66
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
+                -
+                  handle: headline
+                  field:
+                    type: text
+                    display: Überschrift
+                -
+                  import: bilder
+        sammlungen:
+          display: Sammlungen
+          icon: content-book-open
+          sets:
+            team:
+              display: Team
+              icon: id-face-scan
+              fields:
+                -
+                  handle: mainbgimage
+                  field:
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 66
+                    max_files: 1
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
+                -
+                  handle: headline
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                      - underline
+                      - strikethrough
+                      - horizontalrule
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Überschrift
+                -
+                  handle: content
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h4
+                      - h5
+                      - h6
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: team
+                  field:
+                    collections:
+                      - team
+                    type: entries
+                    display: Team
+            historie:
+              display: Historie
+              icon: time-clock
+              fields:
+                -
+                  handle: mainbgimage
+                  field:
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 66
+                    max_files: 1
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
+                -
+                  handle: headline
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                      - underline
+                      - strikethrough
+                      - horizontalrule
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Überschrift
+                -
+                  handle: content
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h4
+                      - h5
+                      - h6
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: historie
+                  field:
+                    collections:
+                      - historie
+                    type: entries
+                    display: Historie
+            blog:
+              display: Blog
+              instructions: 'Zeigt alle Blogeinträge im Spalten Layout an'
+              icon: content-book-open
+              fields:
+                -
+                  handle: background_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 33
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: Farben
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
+                -
+                  handle: entries_per_site
+                  field:
+                    type: text
+                    display: 'Einträge pro Seite'
+                    instructions: 'Standard 12'
+                    width: 33
+                -
+                  handle: headline
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                      - underline
+                      - strikethrough
+                      - horizontalrule
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Überschrift
+                -
+                  handle: content
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h4
+                      - h5
+                      - h6
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text

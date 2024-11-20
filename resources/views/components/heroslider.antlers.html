@@ -1,0 +1,33 @@
+<div class="heroslider swiper baseslider" style="background-image:url({{ mainbgimage }});">
+	<div class="swiper-wrapper">
+	{{ slides }}
+		<section class="swiper-slide hero heroslide {{ paragraph_class }}" style="background-image:url({{ background_image }});">
+			{{ if background_video }}
+				{{ partial:elements/videoplayerbackground }}
+			{{ /if }}
+			<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="container{{ full_width ? '-fluid' : '' }}{{ background_video ? ' has-bgVideo' : '' }}">
+				<div class="textMediabox">
+					{{ if video_intern }}
+						<div class="mediabox">{{ partial:elements/videoplayerintern }}</div>
+					{{ elseif video_extern }}
+						<div class="mediabox">{{ partial:elements/videoplayer }}</div>
+					{{ elseif image }}
+						<div class="mediabox">{{ partial:elements/maskedimage }}</div>
+					{{ /if }}
+
+					<div class="textbox {{ textboxausrichtung }} {{ texbox_class }}">
+						<div class="inner">
+							{{ partial:elements/textblock }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	{{ /slides }}
+	</div>
+	<div class="buttonWrapper">
+		<div class="buttonPrev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></div>
+   		<div class="buttonNext"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div>
+	</div>
+	<div class="sliderPagination"></div>
+</div>

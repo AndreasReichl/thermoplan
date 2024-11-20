@@ -1,0 +1,7 @@
+<section class="blogWrapper{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ background_image }});">
+	<div class="container">
+		{{ if headline | trim != "" && headline | strip_tags != "" }}<div class="blogHeadline">{{ headline }}</div>{{ /if }}
+		{{ if content | trim != "" && content | strip_tags != "" }}<div class="blogText">{{ content }}</div>{{ /if }}
+		{{ partial:elements/blog_listing }}
+	</div>
+</section>

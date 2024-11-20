@@ -1,0 +1,23 @@
+title: Videoelement
+fields:
+  -
+    handle: video_extern
+    field:
+      type: video
+      display: 'Video Extern'
+      instructions: 'Youtube, Vimeo, Url'
+  -
+    handle: video_intern
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Video Intern'
+      instructions: 'Video hochladen oder auswählen'
+  -
+    handle: video_thumbnail
+    field:
+      type: assets
+      max_files: 1
+      container: assets
+      display: 'Video Thumbnail'

@@ -1,0 +1,27 @@
+<div class="blogListing">
+	<div class="inner">
+		<div onclick="window.location.href='{{ url }}'" class="textboxMediabox">
+			{{ image }}
+			<div class="mediabox">
+				{{ partial:elements/image }}
+			</div>
+			{{ /image }}
+
+			<div class="textbox">
+				<div class="textboxInner">
+					<div class="blogTitles">
+						<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
+						{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h5 class="headline_above">{{ headline_above }}</h5>{{ /if }}
+						{{ if headline | trim != "" && headline | strip_tags != "" }}<h3 class="headline">{{ headline }}</h3>{{ /if }}
+						{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h4 class="subtitle">{{ subtitle }}</h4>{{ /if }}
+					</div>
+					<div class="links">
+						<a href="{{ url }}" class="btn btn-default has-icon">
+							<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

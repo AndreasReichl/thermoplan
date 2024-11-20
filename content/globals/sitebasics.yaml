@@ -4,7 +4,7 @@ data:
   logo_negative: sitebasics/logo_negativ.svg
   logo_icon: sitebasics/logo_icon.svg
   logo_footer: sitebasics/logo_positiv.svg
-  favicon: sitebasics/logo_icon.svg
+  favicon: sitebasics/favicon.svg
   apple_touch_icon: sitebasics/apple_touch_icon_180x180px.svg
   firma:
     -

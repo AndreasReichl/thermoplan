@@ -1,0 +1,114 @@
+title: 'Text Component'
+fields:
+  -
+    handle: headline_above
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - color
+        - underline
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: 'Headline above'
+      width: 100
+  -
+    handle: headline
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - color
+        - underline
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+        - quote
+      remove_empty_nodes: false
+      type: bard
+      display: Headline
+      width: 100
+  -
+    handle: subtitle
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - color
+        - underline
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: Subtitle
+      width: 100
+  -
+    handle: content
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+        - h1
+      remove_empty_nodes: false
+      type: bard
+      display: Inhalt
+      instructions: 'Freies Feld für Texte, Links und Informationen.'
+  -
+    handle: links
+    field:
+      mode: stacked
+      type: grid
+      display: Links
+      fields:
+        -
+          import: buttonstyles
+          prefix: button_
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      width: 50
+  -
+    handle: photocredit
+    field:
+      type: text
+      display: Bildtitel
+      instructions: 'Bildbeschreibung sichtbar.'
+      width: 50
+

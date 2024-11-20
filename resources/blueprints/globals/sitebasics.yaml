@@ -138,46 +138,6 @@ tabs:
               type: text
               display: 'TikTok Name'
               width: 50
-  references:
-    display: Referenzlogos
-    sections:
-      -
-        display: Logos
-        instructions: 'Logos die im Fussbereich angezeigt werden'
-        fields:
-          -
-            handle: footerlogos
-            field:
-              collapse: true
-              type: replicator
-              display: Footerlogos
-              sets:
-                neue_setgruppe:
-                  display: 'Neue Setgruppe'
-                  sets:
-                    logos:
-                      display: Logos
-                      icon: media-image-picture-orientation
-                      fields:
-                        -
-                          handle: logoname
-                          field:
-                            type: text
-                            display: Logoname
-                        -
-                          handle: footerlogo
-                          field:
-                            container: assets
-                            type: assets
-                            display: Footerlogo
-                            width: 50
-                            max_files: 1
-                        -
-                          handle: logolink
-                          field:
-                            type: link
-                            display: Logolink
-                            width: 50
   locations:
     display: Filialen
     sections:

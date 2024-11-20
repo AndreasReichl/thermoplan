@@ -1,0 +1,18 @@
+<div x-data="{ externalVideo: $persist(false) }">
+    <div class="videoLoadWrapper" x-show="!externalVideo">
+		<div class="hintIcon"><i class="icofont-video-clapper"></i></div>
+		<div>Der Inhalt dieses Bereiches, stammt von einer externen Seite. Dieser kann unter Umständen personenbezogene Daten übermitteln!<br />
+		Mit Klick auf den Button, bestätigen Sie das Laden des Inhaltes und die Nutzung von Youtube/Vimeo.<br />
+		Weitere Informationen finden Sie in unserer&nbsp;<a href="/datenschutz" target="_blank">Datenschutzerklärung</a>.
+		</div>
+		<button type="button" class="btn btn-primary" @click="externalVideo=true">Inhalt freigeben</button>
+	</div>
+
+    <div class="videoContent" x-show="externalVideo">
+		{{ if video | is_embeddable }}
+			<iframe class="responsive-iframe" src="{{ video | embed_url }}" type="text/html" width="640" height="360" frameborder="0"></iframe>
+		{{ else }}
+			<video class="responsive-iframe" src="{{ video | embed_url }}" width="640" height="360" controls></video>
+		{{ /if }}
+	</div>
+</div>

@@ -1,3 +1,6 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ home = 'en' }}
+{{ /if }}
 <a href="/" class="logoIcon">
 	<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
 </a>
@@ -6,19 +9,50 @@
 	<span class="burgerClose"><i class="icofont-close"></i></span>
 </div>
 <div class="mainnav">
-	<a href="/" class="logoMain">
-		<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
-	</a>
-	<div class="nav">
-	{{ nav:mainnav }}
-		<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
-	{{ /nav:mainnav }}
+	<div class="mainnavBg">
+		<svg xmlns="http://www.w3.org/2000/svg" width="1920.074" height="97.178" viewBox="0 0 1920.074 97.178">
+		<g>
+			<g transform="translate(0 53)">
+			<path d="M0,0H732.016l1.817,43.668H348.521l-12.51-12.137L38.818,33.156" transform="translate(289.058)" fill="#fff"/>
+			<path d="M0,0H294.212l28.037,28.037H428.142v7.151H318.877L290.84,7.152H0Z" transform="translate(0 0.455)" fill="#01215c"/>
+			<path d="M16,17l296.84-1,12.037,12.037H520.942" transform="translate(311.804 15.641)" fill="none" stroke="#01215c" stroke-width="1"/>
+			</g>
+			<g transform="translate(899 53)">
+			<path d="M732.016,0H0L.018,43.611H384.585L396.753,31.8H701.97Z" fill="#fff"/>
+			<path d="M428.142,0H133.93L105.893,28.037H0v7.151H109.265L137.3,7.152h290.84Z" transform="translate(592.932 0.455)" fill="#01215c"/>
+			<path d="M16,28.037H212.065L224.1,16l296.84,1" transform="translate(172.327 15.641)" fill="none" stroke="#01215c" stroke-width="1"/>
+			</g>
+		</g>
+		<rect width="1920" height="55" fill="#fff"/>
+		</svg>
+	</div>
+	<div class="navWrapper">
+		<div class="mainnavLeft nav">
+		{{ nav:mainnav_left }}
+			<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+		{{ /nav:mainnav_left }}
+		</div>
+		<a href="/" class="logoMain">
+			<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
+		</a>
+		<div class="mainnavRight nav">
+			{{ nav:mainnav_right }}
+				<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+			{{ /nav:mainnav_right }}
+		</div>
 	</div>
 	<div class="mobilNav">
+		<a href="/" class="logoMain">
+			<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
+		</a>
+		<div class="mainnavMobil">
 		{{ nav:mainnavmobil }}
 			<a href="{{ url }}" class="mobilMainmenu">{{ title }}</a>
 		{{ /nav:mainnavmobil }}
+		{{ partial:elements/languageswitch }}
+		</div>
 	</div>
+	{{ partial:elements/languagedropdown }}
 </div>
 {{ if header_spacer }}
 <div class="headerSpacer"></div>

@@ -1,0 +1,17 @@
+<section class="teamWrapper{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
+	<div class="container">
+		{{ if headline | trim != "" && headline | strip_tags != "" }}<div class="teamHeadline">{{ headline }}</div>{{ /if }}
+		{{ if content | trim != "" && content | strip_tags != "" }}<div class="teamText">{{ content }}</div>{{ /if }}
+		<article class="teamContent">
+				{{ team }}
+				<div class="teamEntry">
+					{{ image }}
+					<figure class="teamImage"><img src="{{ image }}" alt="{{ alt }}"></figure>
+					{{ /image }}
+					<h3 class="teamName">{{ title }}</h3>
+					<p class="teamPosition">{{ position }}</p>
+				</div>
+				{{ /team }}
+		</article>
+	</div>
+</section>

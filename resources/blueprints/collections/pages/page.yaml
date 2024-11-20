@@ -1,0 +1,94 @@
+title: Page
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Absatztitel
+              instructions: 'Titel des Eintrags. Muss ausgefüllt sein. Wird nicht auf der Seite angezeigt!'
+      -
+        display: Inhalt
+        fields:
+          -
+            import: page_builder
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            handle: robots
+            field:
+              options:
+                -
+                  key: 'index,follow'
+                  value: 'Seite wird indiziert und den Links gefolgt'
+                -
+                  key: 'index,nofollow'
+                  value: 'Seite wird indiziert, den Links wird nicht gefolgt'
+                -
+                  key: 'noindex,follow'
+                  value: 'Seite wird nicht indiziert, den Links aber gefolgt'
+                -
+                  key: 'noindex,nofollow'
+                  value: 'Seite wird nicht indiziert und den Links nicht gefolgt'
+              type: select
+              display: Robots
+          -
+            import: seodata
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: header_spacer
+            field:
+              default: true
+              type: toggle
+              display: 'Abstand von oben'
+          -
+            handle: show_references
+            field:
+              default: true
+              type: toggle
+              display: 'Logos im Footer'
+              instructions: 'Zeigt den Logoslider im Fuusbereich der Seite an.'

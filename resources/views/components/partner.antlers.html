@@ -1,0 +1,13 @@
+<div class="partnerLogosWrapper">
+	<h2>Partner</h2>
+	<div class="swiper logoslideshow">
+		<div class="swiper-wrapper">
+			{{ collection:partnerlogos }}
+			<div class="swiper-slide slideLogo">
+				<a href="{{ partnerwebsite }}" target="_blank"><img src="{{ partnerlogo }}" alt="{{ alt }}"></a>
+			</div>
+			{{ /collection:partnerlogos }}
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
