@@ -1,8 +1,40 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+page_builder:
+  -
+    id: m3refi8m
+    top_logo: sitebasics/logo_positiv.svg
+    headline_above_type: h4
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textColor
+                attrs:
+                  color: '#ffffff'
+            text: 'Wir sind in vielen Branchen weltweit zuhause'
+    headline_type: h2
+    subtitle_type: h3
+    full_width: false
+    seitenverhaeltnis: fourtySixty
+    inverted: false
+    type: hero0
+    enabled: true
+    background_video: closeup-of-a-new-red-ceramic-brick-2023-11-27-05-09-03-utc.mp4
+author: 273e00a1-d447-4899-b66e-01da895d5a76
+header_spacer: true
+show_references: true
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1732202301
 ---
 ## Welcome to your brand new Statamic site!
 

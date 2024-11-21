@@ -9,3 +9,5 @@ preferences:
         - logo
         - title
         - status
+    pages:
+      after_save: continue_editing

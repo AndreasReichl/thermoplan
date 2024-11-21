@@ -6,6 +6,7 @@
 /public/vendor/statamic
 /storage/*.key
 /vendor
+*.mp4
 .env
 .env.backup
 .env.production

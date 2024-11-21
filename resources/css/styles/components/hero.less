@@ -1,16 +1,19 @@
 // out:false
 
 .hero 						{ position: relative; padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom;
-	.textMediabox 			{ padding: 0; }
+	.textMediabox 			{ padding: 0; width: 100%; }
 	.textbox 				{
-		.inner 				{ padding:30px; word-break: break-word; hyphens:auto; }
+		.inner 				{ padding:30px; word-break: break-word; hyphens:auto;
+			.top_logo 		{ max-width: 40vw; }
+		}
 	}
 
 	@media (min-width: @screen-md-min) 	{
 		.textMediabox 		{ padding:0 0 60px 0; position: relative; }
-		.mediabox 			{ margin-left:20%; }
-		.textbox 			{ width:60%; position: absolute; top:50%; .translateY(-50%); left:0;
-			.inner 			{ padding:0; }
+		.textbox 			{ text-align: center;
+			.inner 			{ padding:0;
+				.top_logo 		{ margin:0 auto 30px auto; }
+			}
 		}
 	}
 }

@@ -1,0 +1,17 @@
+title: Imageelement
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      width: 50
+  -
+    handle: photocredit
+    field:
+      type: text
+      display: Bildtitel
+      instructions: 'Bildbeschreibung sichtbar.'
+      width: 50
