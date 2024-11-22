@@ -1,23 +1,6 @@
 title: Artikel
 fields:
-  -
-    handle: top_icon
-    field:
-      type: icon
-      display: 'Top Icon'
-      icon_set: default
-      directory: resources/assets/icons
-      width: 66
-  -
-    import: colors
-    prefix: topicon_
-  -
-    handle: top_logo
-    field:
-      max_files: 1
-      container: assets
-      type: assets
-      display: 'Top Logo'
+  - import: logo_icon_element
   -
     import: text_component
   -
@@ -27,23 +10,7 @@ fields:
   -
     import: videoelement
   -
-    handle: background_image
-    field:
-      max_files: 1
-      container: assets
-      type: assets
-      display: Hintergrundbild
-      width: 50
-  -
-    handle: background_video
-    field:
-      max_files: 1
-      container: assets
-      folder: hintergrundvideos
-      type: assets
-      display: Hintergrundvideo
-      instructions: 'Video als .mp4 hochladen.'
-      width: 50
+    import: backgroundelement
   -
     handle: hashtag_name
     field:
@@ -95,11 +62,3 @@ fields:
       display: 'Farben Invertiert'
       instructions: 'Hintergrund schwarz, Text weiss'
       width: 50
-  -
-    handle: hinweisbild
-    field:
-      container: assets
-      folder: sitebasics
-      type: assets
-      display: Hinweisbild
-      instructions: 'Hier kann z.B. ein runder Badge hochgeladen werden wie "Bis zu 80% sparen"'

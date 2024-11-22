@@ -30,11 +30,61 @@ page_builder:
     type: hero0
     enabled: true
     background_video: closeup-of-a-new-red-ceramic-brick-2023-11-27-05-09-03-utc.mp4
+  -
+    id: m3siz3cw
+    headline_above_type: h4
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'WIR LEBEN KERAMIK IN ALL IHREN FACETTEN'
+    headline_type: h2
+    subtitle:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textColor
+                attrs:
+                  color: '#919191'
+            text: 'FEIN. TECHNISCH. GROB.'
+    subtitle_type: h3
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Unser Unternehmen, das 1984 gegründet wurde, blickt auf eine 40-jährige Erfolgsgeschichte in der Grobkeramik zurück. Als international tätiges, mittelständisches Unternehmen sind wir spezialisiert auf Anlagenbau, Lagertechnik, Elektrotechnik und Verfahrenstechnik. Offen für neue Ideen, Technologien und Verfahren, entwickeln wir uns stetig weiter. Im Oktober 2023 haben wir mit der Eröffnung unserer neuen Betriebsstätte Nord in Brilon, die über eine eigene Fertigung verfügt, unsere Kapazitäten erweitert. Seitdem sind wir in der Lage, noch schneller und effizienter auf die Anforderungen unserer Kunden zu reagieren.'
+    links:
+      -
+        id: m3sj02gt
+        button_text: 'KONTAKTIEREN SIE UNS'
+        button_style: primary
+        button_link_feld: '#'
+        button_zielseite: _self
+    image: 01_thermoplan_grafik.png
+    full_width: false
+    seitenverhaeltnis: fiftyFifty
+    inverted: false
+    type: paragraph2
+    enabled: true
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: true
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1732202301
+updated_at: 1732284193
 ---
 ## Welcome to your brand new Statamic site!
 

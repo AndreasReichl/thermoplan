@@ -1,0 +1,20 @@
+title: Backgroundelement
+fields:
+  -
+    handle: background_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Hintergrundbild
+      width: 50
+  -
+    handle: background_video
+    field:
+      max_files: 1
+      container: assets
+      folder: hintergrundvideos
+      type: assets
+      display: Hintergrundvideo
+      instructions: 'Video als .mp4 hochladen.'
+      width: 50

@@ -131,7 +131,11 @@ fields:
               icon: text-formatting-wrap-around-bounding-box
               fields:
                 -
-                  import: artikel
+                  import: backgroundelement
+                -
+                  import: logo_icon_element
+                -
+                  import: text_component
         slider:
           display: Slider
           icon: layout-carousel-horizontal
@@ -228,21 +232,6 @@ fields:
               icon: id-face-scan
               fields:
                 -
-                  handle: mainbgimage
-                  field:
-                    container: assets
-                    type: assets
-                    display: Hintergrundbild
-                    width: 66
-                    max_files: 1
-                -
-                  handle: inverted
-                  field:
-                    type: toggle
-                    display: 'Farben Invertiert'
-                    instructions: 'Hintergrund schwarz Text weiss'
-                    width: 33
-                -
                   handle: headline
                   field:
                     buttons:
@@ -305,10 +294,6 @@ fields:
                       - team
                     type: entries
                     display: Team
-            historie:
-              display: Historie
-              icon: time-clock
-              fields:
                 -
                   handle: mainbgimage
                   field:
@@ -324,6 +309,10 @@ fields:
                     display: 'Farben Invertiert'
                     instructions: 'Hintergrund schwarz Text weiss'
                     width: 33
+            historie:
+              display: Historie
+              icon: time-clock
+              fields:
                 -
                   handle: headline
                   field:
@@ -387,33 +376,26 @@ fields:
                       - historie
                     type: entries
                     display: Historie
+                -
+                  handle: mainbgimage
+                  field:
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 66
+                    max_files: 1
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
             blog:
               display: Blog
               instructions: 'Zeigt alle Blogeinträge im Spalten Layout an'
               icon: content-book-open
               fields:
-                -
-                  handle: background_image
-                  field:
-                    max_files: 1
-                    container: assets
-                    type: assets
-                    display: Hintergrundbild
-                    width: 33
-                -
-                  handle: inverted
-                  field:
-                    type: toggle
-                    display: Farben
-                    instructions: 'Hintergrund schwarz Text weiss'
-                    width: 33
-                -
-                  handle: entries_per_site
-                  field:
-                    type: text
-                    display: 'Einträge pro Seite'
-                    instructions: 'Standard 12'
-                    width: 33
                 -
                   handle: headline
                   field:
@@ -470,3 +452,25 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Text
+                -
+                  handle: background_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 33
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 33
+                -
+                  handle: entries_per_site
+                  field:
+                    type: text
+                    display: 'Einträge pro Seite'
+                    instructions: 'Standard 12'
+                    width: 33

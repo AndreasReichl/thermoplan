@@ -5,39 +5,42 @@
 
 	.referencesLogosWrapper { background-color: var(--greylight); }
 
-	.footerNavWrapper 		{ background-color:var(--greylight); padding:60px 0;
-		.footerInner 		{ margin:0px auto; width:80vw;
+	.footerNavWrapper 		{ background-color:var(--greylight); padding:30px 0;
+		.footerInner 		{
 			@media (max-width: @screen-sm-max)	{ display:none; }
 		}
 
-		@media (min-width: @screen-md-min)	{ padding:90px 0;
+		@media (min-width: @screen-md-min)	{
 			.footerInner 	{ .flex-display(flex); .flex-wrap(wrap); .align-items(flex-end); .justify-content(space-between); }
 		}
 	}
 
 	h3 						{ text-transform: uppercase; font-size: clamp(14px, 1.2vw, 18px); font-weight:500; }
 
-	.footerLogo 			{ width:100%; height:auto; max-width:20vw; min-width:180px; margin:0 auto;
-		@media (min-width: @screen-md-min)	{ margin:0 0 40px 10vw; }
+	.footerLogo 			{ height:auto; width:25vw; min-width:200px; margin:0 auto 40px auto;
+		@media (min-width: @screen-md-min)	{ margin:0 0 40px 0; }
 	}
 
 	.footerLeft 			{
-		@media (min-width: @screen-md-min)	{ .flex-display(flex); .align-items(flex-end); gap:2vw;
-			.footerLocations 	{  .flex-display(flex); .align-items(flex-start); gap:2vw; }
+		@media (min-width: @screen-md-min)	{
+			.footerLocations 	{ margin-top:40px; .flex-display(flex); .align-items(flex-start); gap:3vw; }
+		}
+		@media (min-width: @screen-xl-min)	{ .flex-display(flex); .align-items(flex-end); gap:3vw;
+			.footerLocations 	{ margin-top:0px; }
 		}
 	}
 
 	.footerAddress 			{
 		address 			{ margin-top:15px; }
-		@media (min-width: @screen-md-min)	{ .flex-display(flex); .align-items(flex-end); gap:2vw; }
+		@media (min-width: @screen-md-min)	{ .flex-display(flex); .align-items(flex-end); gap:3vw; }
 	}
 
 	.footerNavCols 			{ margin-top:40px;
-		.footerMainmenu 	{ font-size:clamp(18px, 2vw, 24px);; font-weight: bold; }
+		.footerMainmenu 	{ font-size:clamp(18px, 2vw, 20px);; font-weight: bold; }
 		.footerSubmenu 		{ .opacity(1);
 			&:hover 		{ .opacity(1); }
 		}
-		@media (min-width: @screen-md-min)	{ .flex-display(flex); gap:6vw; }
+		@media (min-width: @screen-md-min)	{ .flex-display(flex); gap:3vw; }
 	}
 	.footerMainmenu 		{ .flex-display(flex); .align-items(center); gap:10px; }
 	.footerNavSubmenu 		{ .flex-display(flex); .flex-direction(column); gap:15px; margin-top:20px; }
@@ -68,7 +71,9 @@
 	.socialLinks 	{ .flex-display(flex); .align-items(flex-start); gap:15px; font-size: 18px; }
 }
 
-
+.addressEntry.firma {
+	@media (max-width: @screen-sm-max)	{ text-align:center; }
+}
 address 			{ .flex-display(flex); .flex-direction(column); line-height: 1.6; font-style: normal;
 	.addressEntry 	{ .flex-display(flex); .align-items(flex-end); gap:10px;
 		.icon 		{ width:15px; line-height: 0; }

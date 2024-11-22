@@ -1,0 +1,20 @@
+title: 'Logo Icon Element'
+fields:
+  -
+    handle: top_icon
+    field:
+      type: icon
+      display: 'Top Icon'
+      icon_set: default
+      directory: resources/assets/icons
+      width: 66
+  -
+    import: colors
+    prefix: topicon_
+  -
+    handle: top_logo
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Top Logo'

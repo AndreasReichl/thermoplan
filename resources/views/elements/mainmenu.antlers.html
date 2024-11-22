@@ -1,0 +1,10 @@
+<div class="menuItem">
+	<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+	{{ if children }}
+		<div class="mainnavSubmenu">
+			{{ children }}
+				<a href="{{ url }}" class="submenu">{{ title }}</a>
+			{{ /children }}
+		</div>
+	{{ /if }}
+</div>

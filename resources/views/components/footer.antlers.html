@@ -16,22 +16,21 @@
 	{{ /if }}
 
 	<div class="footerNavWrapper">
-
+		<div class="container">
 		{{ if sitebasics.logo_footer }}
 		<div class="footerLogo">
 			<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
 		</div>
 		{{ /if }}
-
+		{{ if sitebasics.firma }}
+		<div class="addressEntry firma">
+			<span class="label">{{ sitebasics.firma }}</span>
+		</div>
+		{{ /if }}
 		<div class="footerInner">
 			<div class="footerLeft">
 				<div class="footerAddress">
 					<address>
-						{{ if sitebasics.firma }}
-						<div class="addressEntry firma">
-							<span class="label">{{ sitebasics.firma }}</span>
-						</div>
-						{{ /if }}
 						{{ if sitebasics.strasse_hausnummer }}
 						<div class="addressEntry streetNumber">
 							{{ if sitebasics.icon_strasse }}<span class="icon">{{ sitebasics.icon_strasse }}</span>{{ /if }}
@@ -120,7 +119,7 @@
 				</nav>
 			</div>
 		</div>
-
+		</div>
 
 		<div class="footerBottomWrapper">
 			<nav class="footerNav">

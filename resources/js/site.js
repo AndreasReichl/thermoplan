@@ -10,20 +10,27 @@ Alpine.start();
 
 // on scroll
 
-let scrollPosition = window.scrollY;
-let logoContainer = document.getElementsByClassName('body')[0];
+// Hilfsfunktion für Scroll-Verhalten
+function handleScroll() {
+    const scrollPosition = window.scrollY;
+    const logoContainer = document.querySelector('.body');
+    const backToTopButton = document.getElementById('backToTopButton');
 
-window.addEventListener('scroll', function() {
+    // Logo-Änderung bei Scrollen
+    if (scrollPosition >= 100) {
+        logoContainer.classList.add('scrolled');
+    } else {
+        logoContainer.classList.remove('scrolled');
+    }
 
-	scrollPosition = window.scrollY;
-
-	if (scrollPosition >= 100) {
-		logoContainer.classList.add('scrolled');
-	} else {
-		logoContainer.classList.remove('scrolled');
-	}
-
-});
+    // Back-to-Top Button anzeigen
+    if (scrollPosition > 300) {
+        backToTopButton.classList.add('active');
+    } else {
+        backToTopButton.classList.remove('active');
+    }
+}
+window.addEventListener('scroll', handleScroll);
 
 // backToTopButton
 let backToTopButton = document.getElementById('backToTopButton');
@@ -194,3 +201,4 @@ const swiper5 = new Swiper(".logoslideshow", {
         },
     },
 });
+

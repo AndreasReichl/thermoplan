@@ -10,48 +10,32 @@
 </div>
 <div class="mainnav">
 	<div class="mainnavBg">
-		<svg xmlns="http://www.w3.org/2000/svg" width="1920.074" height="97.178" viewBox="0 0 1920.074 97.178">
-		<g>
-			<g transform="translate(0 53)">
-			<path d="M0,0H732.016l1.817,43.668H348.521l-12.51-12.137L38.818,33.156" transform="translate(289.058)" fill="#fff"/>
-			<path d="M0,0H294.212l28.037,28.037H428.142v7.151H318.877L290.84,7.152H0Z" transform="translate(0 0.455)" fill="#01215c"/>
-			<path d="M16,17l296.84-1,12.037,12.037H520.942" transform="translate(311.804 15.641)" fill="none" stroke="#01215c" stroke-width="1"/>
+		<svg xmlns="http://www.w3.org/2000/svg" width="1920.044" height="97.178" viewBox="0 0 1920.044 97.178">
+			<g transform="translate(-2088 3150)">
+				<path d="M952.991,96.668h-439.3l-12.51-12.137L203.986,86.156,167.509,55H0V0H1920V55H1752.481L1716,86.156l-297.193-1.625L1406.3,96.668Z" transform="translate(2088 -3150)" fill="#fff"/>
+				<path d="M16,17l296.84-1,12.037,12.037H780.942" transform="translate(2275.914 -3081.359)" fill="none" stroke="#01215c" stroke-width="1"/>
+				<path d="M780.942,17,484.1,16,472.065,28.037H16" transform="translate(3023.135 -3081.359)" fill="none" stroke="#01215c" stroke-width="1"/>
+				<path d="M428.186,0H257.812L229.774,28.037H123.881v7.151H233.146L261.183,7.152h167Z" transform="translate(3579.858 -3096)" fill="#01215c"/>
+				<path d="M123.881,0H294.256l28.037,28.037H428.186v7.151H318.921L290.884,7.152h-167Z" transform="translate(1964.119 -3096)" fill="#01215c"/>
 			</g>
-			<g transform="translate(899 53)">
-			<path d="M732.016,0H0L.018,43.611H384.585L396.753,31.8H701.97Z" fill="#fff"/>
-			<path d="M428.142,0H133.93L105.893,28.037H0v7.151H109.265L137.3,7.152h290.84Z" transform="translate(592.932 0.455)" fill="#01215c"/>
-			<path d="M16,28.037H212.065L224.1,16l296.84,1" transform="translate(172.327 15.641)" fill="none" stroke="#01215c" stroke-width="1"/>
-			</g>
-		</g>
-		<rect width="1920" height="55" fill="#fff"/>
 		</svg>
 	</div>
 	<div class="navWrapper">
 		<div class="mainnavLeft nav">
-		{{ nav:mainnav_left }}
-			<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
-		{{ /nav:mainnav_left }}
+			{{ nav:mainnav_left }}
+				{{ partial:elements/mainmenu }}
+			{{ /nav:mainnav_left }}
 		</div>
 		<a href="/" class="logoMain">
 			<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
 		</a>
 		<div class="mainnavRight nav">
 			{{ nav:mainnav_right }}
-				<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
+				{{ partial:elements/mainmenu }}
 			{{ /nav:mainnav_right }}
 		</div>
 	</div>
-	<div class="mobilNav">
-		<a href="/" class="logoMain">
-			<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
-		</a>
-		<div class="mainnavMobil">
-		{{ nav:mainnavmobil }}
-			<a href="{{ url }}" class="mobilMainmenu">{{ title }}</a>
-		{{ /nav:mainnavmobil }}
-		{{ partial:elements/languageswitch }}
-		</div>
-	</div>
+	{{ partial:elements/mobilmenu }}
 	{{ partial:elements/languagedropdown }}
 </div>
 {{ if header_spacer }}

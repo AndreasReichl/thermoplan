@@ -20,7 +20,102 @@ tabs:
               type: toggle
               display: Featured
           -
+            handle: vorschautext
+            field:
+              buttons:
+                - bold
+                - italic
+                - removeformat
+                - quote
+                - anchor
+                - color
+                - underline
+                - strikethrough
+                - small
+                - superscript
+                - subscript
+                - horizontalrule
+              remove_empty_nodes: false
+              type: bard
+              display: Vorschautext
+              instructions: 'Textblock der in der Übersicht angezeigt wird sobald dieser Inhalt hat. Wird hier nichts eingetragen, erscheint der Inhalt (Textfeld weiter unten) in abgeschnittener Form, falls dieser zu lang wäre. Dieser Vorschautext erscheint nicht in der Detailansicht!'
+          -
             import: text_component
+          -
+            import: imageelement
+          -
+            import: videoelement
+      -
+        display: 'Weitere Inhalte'
+        fields:
+          -
+            handle: weitere_inhalte
+            field:
+              type: replicator
+              display: 'Weitere Inhalte'
+              sets:
+                weitere_inhalte:
+                  display: 'Weitere Inhalte'
+                  icon: media-news-paper
+                  sets:
+                    einzelbild:
+                      display: Einzelbild
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: imageelement
+                    video:
+                      display: Video
+                      icon: media-webcam-video
+                      fields:
+                        -
+                          import: videoelement
+                    textblock:
+                      display: Textblock
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          handle: spaltenanzahl
+                          field:
+                            default: '1'
+                            type: text
+                            display: Spaltenanzahl
+                            instructions: 'Hier kann der Text in mehrere Spalten geteilt werden.'
+                        -
+                          import: textelement
+                    spalten:
+                      display: Spalten
+                      icon: dashboard-layout
+                      fields:
+                        -
+                          handle: spaltenanzahl
+                          field:
+                            default: '3'
+                            type: text
+                            display: Spaltenanzahl
+                            instructions: 'Anzahl der Spalten nebeneinander.'
+                        -
+                          handle: spaltenlayout
+                          field:
+                            type: replicator
+                            display: Spaltenlayout
+                            sets:
+                              spalte:
+                                display: Spalte
+                                icon: layout-header
+                                sets:
+                                  spalte:
+                                    display: Spalte
+                                    icon: text-formatting-image-top
+                                    fields:
+                                      -
+                                        import: card
+                    bildergalerie:
+                      display: Bildergalerie
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: bilder
   meta:
     display: Meta
     sections:

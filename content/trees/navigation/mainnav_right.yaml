@@ -7,6 +7,15 @@ tree:
     id: c2756314-d617-44e9-8723-d126f41dc88d
     title: Unternehmen
     url: unternehmen/
+    children:
+      -
+        id: d525985e-5abc-421f-88d9-14f67a13c2ea
+        title: Thermoplan
+        url: unternehmen/thermoplan/
+      -
+        id: a1b39eaf-84f4-4bdb-adcb-7e1e30c8816f
+        title: Ansprechpartner
+        url: unternehmen/ansprechpartner/
   -
     id: 8995a3f7-57ef-4870-a248-5d62d8bb2938
     title: Kontakt

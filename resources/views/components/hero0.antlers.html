@@ -2,7 +2,7 @@
 	{{ if background_video }}
 		{{ partial:elements/videoplayerbackground }}
 	{{ /if }}
-	<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="container{{ full_width ? '-fluid' : '' }}{{ background_video ? ' has-bgVideo' : '' }}">
+	<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }}>
 		<div class="textMediabox">
 			{{ if video_intern }}
 				<div class="mediabox">{{ partial:elements/videoplayerintern }}</div>
@@ -17,11 +17,6 @@
 					{{ partial:elements/textblock }}
 				</div>
 			</div>
-			{{ hinweisbild }}
-			<div class="hinweisbild">
-				<img src="{{ glide:url width="1200" }}" alt="{{ alt }}">
-			</div>
-			{{ /hinweisbild }}
 		</div>
 	</div>
 </section>

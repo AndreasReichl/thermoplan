@@ -1,0 +1,23 @@
+<div class="mobilNav">
+	<a href="/" class="logoMain">
+		<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
+	</a>
+	<div class="mainnavMobil">
+	{{ nav:mainnavmobil }}
+		{{ if children }}
+			<div x-data="{ open: false, id: '{{ id }}' }">
+				<div class="mobilMainmenu" @click="open = !open">{{ title }}</div>
+
+				<div :id="'mobilSubmenu' + id" :class="{ 'isOpen': open }" class="mobilSubmenu">
+					{{ children }}
+						<a href="{{ url }}" class="submenu"><i class="icofont-simple-right"></i> {{ title }}</a>
+					{{ /children }}
+				</div>
+			</div>
+		{{ else }}
+			<a href="{{ url }}" class="mobilMainmenu">{{ title }}</a>
+		{{ /if }}
+	{{ /nav:mainnavmobil }}
+	{{ partial:elements/languageswitch }}
+	</div>
+</div>

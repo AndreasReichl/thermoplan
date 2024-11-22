@@ -1,20 +1,19 @@
 // out:false
 
-.hero 						{ position: relative; padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom;
-	.textMediabox 			{ padding: 0; width: 100%; }
-	.textbox 				{
-		.inner 				{ padding:30px; word-break: break-word; hyphens:auto;
-			.top_logo 		{ max-width: 40vw; }
-		}
-	}
+.hero 						{ position: relative; }
 
+
+// Bild oder Video im Hintergrund, Text darüber
+.hero0 						{ padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom;
+	.textMediabox 			{ position: absolute; z-index:1; left:0; top:0; right:0; bottom:0; width:100%; .flex-display(flex); .align-items(center); .justify-content(center); .flex-direction(column); }
+	.textbox 				{ text-align: center; padding:0 30px;
+		.inner 				{ padding:0px; word-break: break-word; hyphens:auto; }
+	}
+	.top_logo 				{ max-width: 60vw; margin:0 auto 30px auto; }
 	@media (min-width: @screen-md-min) 	{
-		.textMediabox 		{ padding:0 0 60px 0; position: relative; }
-		.textbox 			{ text-align: center;
-			.inner 			{ padding:0;
-				.top_logo 		{ margin:0 auto 30px auto; }
-			}
-		}
+		.bgVideoWrapper 	{ aspect-ratio: 16/7; }
+		.textMediabox 		{ padding:0 0 60px 0; }
+		.top_logo 			{ max-width: 40vw; }
 	}
 }
 
