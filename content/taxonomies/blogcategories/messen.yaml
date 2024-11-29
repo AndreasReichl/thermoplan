@@ -1,0 +1,13 @@
+title: Messen
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Aktuelles rund um unsere Messeauftritte und Besuch.'
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1732887151
+blueprint: blogcategory
