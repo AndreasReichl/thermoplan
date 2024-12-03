@@ -1,7 +1,14 @@
 <div class="blogDetail">
 	<div class="container">
 		<div class="inner">
-
+			<nav class="breadcrumb">
+				<a href="/"><i class="icofont-home"></i></a><i class="icofont-rounded-right"></i>
+				<a href="/aktuelles">Aktuelles</a><i class="icofont-rounded-right"></i>
+				{{ if category }}
+					<a href="{{ category:url }}">{{ category:title }}</a><i class="icofont-rounded-right"></i>
+				{{ /if }}
+				<div class="itemActive">{{ title }}</div>
+			</nav>
 			<div class="contentTop">
 				<div class="inner">
 					{{ if blogcategories }}
@@ -9,7 +16,6 @@
 							{{ blogcategories }}
 								<a href="{{ url }}" class="btn-blogcategory">
 									{{ title }}
-									<span class="badge">{{ collection:blog where="category:{slug}" }}{{ count }}{{ /collection:blog }}</span>
 								</a>
 							{{ /blogcategories }}
 						</div>
@@ -25,11 +31,11 @@
 							<div class="textboxInner">
 
 								<div class="blogTitles">
-									<h5 class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</h5>
 									{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h4 class="headline_above">{{ headline_above }}</h4>{{ /if }}
 									{{ if headline | trim != "" && headline | strip_tags != "" }}<h1 class="headline">{{ headline }}</h1>{{ /if }}
 									{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h2 class="subtitle">{{ subtitle }}</h2>{{ /if }}
-								</div>
+									<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
+									</div>
 								{{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}
 								{{ if links }}
 								<div class="links">
@@ -48,29 +54,10 @@
 						</div>
 					</div>
 
-					{{ if weitere_inhalte }}
-						{{ weitere_inhalte }}
-						{{ if bilder }}
-								{{ partial:components/galleryslider }}
-						{{/if }}
-							{{ if textblock }}<div class="textblockWrapper">{{ textblock }}</div>{{ /if }}
-							{{ if blog_video }}
-								<div class="blogExternalVideoWrapper">
-									{{ partial:elements/videoplayer
-										:video='blog_video'
-									}}
-								</div>
-							{{ /if }}
-							{{ if blog_video_intern }}
-							<div class="blogVideoWrapper">
-								<video id="blogVideo{{ id }}" class="blogVideo" controls playsinline preload="metadata">
-									<source src="{{ blog_video_intern }}" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
-							</div>
-							{{ /if }}
-						{{ /weitere_inhalte }}
-					{{ /if }}
+					{{ weitere_inhalte scope="block" }}
+						{{ partial src="components/{type}" }}
+					{{ /weitere_inhalte }}
+
 
 				</div>
 			</div>
@@ -95,8 +82,8 @@
 				{{ /if }}
 
 				<div class="previousBlogPosts">
-					<p class="categoryHeadline">Das könnte Sie auch interessieren</p>
-					{{ collection:previous in="blog" as="posts" limit="2" sort="date:asc" }}
+					<p class="categoryHeadline">Nächster Artikel</p>
+					{{ collection:previous in="blog" as="posts" limit="1" sort="date:asc" }}
 
 					{{ if no_results }}
 						Keine weiteren Einträge vorhanden

@@ -1,0 +1,8 @@
+// out: false
+
+.breadcrumb 	{ .flex-display(flex); .align-items(center); gap:10px; color:var(--grey); margin-bottom:30px; font-size: clamp(12px, 0.8vw, 16px);
+	a 			{
+		&:hover { color:var(--primary-color); }
+	}
+	.itemActive { color:var(--primary-color); user-select: none; }
+}

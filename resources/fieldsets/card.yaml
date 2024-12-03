@@ -1,6 +1,8 @@
 title: Card
 fields:
   -
+    import: logo_icon_element
+  -
     import: text_component
   -
     import: imageelement

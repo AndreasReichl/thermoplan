@@ -1,0 +1,14 @@
+<div class="card">
+	{{ if video_intern }}
+		<div class="mediabox">{{ partial:elements/videoplayerintern }}</div>
+	{{ elseif video_extern }}
+		<div class="mediabox">{{ partial:elements/videoplayer }}</div>
+	{{ elseif image }}
+		<div class="mediabox">{{ partial:elements/image }}</div>
+	{{ /if }}
+	<div class="textbox {{ textboxausrichtung }} {{ texbox_class }}">
+		<div class="inner">
+			{{ partial:elements/textblock }}
+		</div>
+	</div>
+</div>

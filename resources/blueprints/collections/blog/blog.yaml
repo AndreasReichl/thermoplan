@@ -58,7 +58,7 @@ tabs:
                   display: 'Weitere Inhalte'
                   icon: media-news-paper
                   sets:
-                    einzelbild:
+                    imgae:
                       display: Einzelbild
                       icon: media-image-picture-orientation
                       fields:
@@ -70,12 +70,12 @@ tabs:
                       fields:
                         -
                           import: videoelement
-                    textblock:
+                    text:
                       display: Textblock
                       icon: text-formatting-initial-letter
                       fields:
                         -
-                          handle: spaltenanzahl
+                          handle: textspalten
                           field:
                             default: '1'
                             type: text
@@ -104,13 +104,13 @@ tabs:
                                 display: Spalte
                                 icon: layout-header
                                 sets:
-                                  spalte:
+                                  card:
                                     display: Spalte
                                     icon: text-formatting-image-top
                                     fields:
                                       -
                                         import: card
-                    bildergalerie:
+                    galleryslider:
                       display: Bildergalerie
                       icon: media-image-picture-gallery
                       fields:
@@ -176,3 +176,11 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: blogcategories
+            field:
+              type: terms
+              taxonomies:
+                - blogcategories
+              display: 'Blog Kategorien'
+              mode: select

@@ -20,10 +20,20 @@
 			<div class="textbox">
 				<div class="textboxInner">
 					<div class="blogTitles">
-						<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
+						{{ if blogcategories }}
+							<div class="blogCategories">
+								{{ blogcategories }}
+									<a href="{{ url }}" class="btn-blogcategory">
+										{{ title }}
+									</a>
+								{{ /blogcategories }}
+							</div>
+						{{ /if }}
 						{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h5 class="headline_above">{{ headline_above }}</h5>{{ /if }}
 						{{ if headline | trim != "" && headline | strip_tags != "" }}<h2 class="headline">{{ headline }}</h2>{{ /if }}
 						{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h3 class="subtitle">{{ subtitle }}</h3>{{ /if }}
+
+						<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
 					</div>
 					<div class="blogContent">
 						{{ if vorschautext }}

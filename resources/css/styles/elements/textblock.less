@@ -15,12 +15,18 @@
 }
 .links 				{ .flex-display(flex); .flex-wrap(wrap); gap:15px; }
 
-.textBlock 			{ padding:0 30px; }
+.textBlock  				{ padding:30px 0; }
 @media (min-width: @screen-lg-min) 	{
-	.textBlock 			{ padding:0;
-		p 				{ break-inside: avoid; margin: 0; }
-	}
-	.textspalten_one 	{ column-count: 1; }
-	.textspalten_two 	{ column-count: 2; column-gap:60px; text-align: left; }
-	.textspalten_three 	{ column-count: 3; column-gap:60px; text-align: left; }
+	.textBlock 				{ --column-gap:30px;
+	.textspalten >p			{ margin-bottom:var(--column-gap); break-inside: avoid; }
+	.textspalten_1 			{ column-count:1; column-gap:var(--column-gap); }
+	.textspalten_2 			{ column-count:2; column-gap:var(--column-gap); }
+	.textspalten_3 			{ column-count:3; column-gap:var(--column-gap); }
+	.textspalten_4 			{ column-count:4; column-gap:var(--column-gap); }
+	.textspalten_5 			{ column-count:5; column-gap:var(--column-gap); }
+	.textspalten_6 			{ column-count:6; column-gap:var(--column-gap); }
+	.textspalten_7 			{ column-count:7; column-gap:var(--column-gap); }
+	.textspalten_8 			{ column-count:8; column-gap:var(--column-gap); }
+	.textspalten_9 			{ column-count:9; column-gap:var(--column-gap); }
+}
 }

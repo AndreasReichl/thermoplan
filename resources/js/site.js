@@ -209,6 +209,16 @@ const swiper3 = new Swiper(".imageSlider", {
     },
 });
 
+const swiper4 = new Swiper(".blogSlider", {
+	slidesPerView: "auto",
+    spaceBetween: 40,
+    navigation: {
+        nextEl: ".buttonNext",
+        prevEl: ".buttonPrev",
+	},
+});
+
+
 const swiper5 = new Swiper(".logoslideshow", {
 	slidesPerView: 3,
     spaceBetween: 40,

@@ -223,6 +223,16 @@ fields:
                     display: Überschrift
                 -
                   import: bilder
+            blogslider:
+              display: 'Aktuelles Slider'
+              instructions: 'Zeigt die Einträge von Aktuelles als Slider an'
+              icon: layout-carousel-horizontal
+              fields:
+                -
+                  handle: headline
+                  field:
+                    type: text
+                    display: Überschrift
         sammlungen:
           display: Sammlungen
           icon: content-book-open

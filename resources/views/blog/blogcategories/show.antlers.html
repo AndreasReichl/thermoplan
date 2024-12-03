@@ -2,12 +2,12 @@
 	<div class="container">
 		<h1>{{ title }}</h1>
 		{{ if content }}<p>{{ content }}</p>{{ /if}}
-	{{ entries:blog paginate="4" as="posts" }}
-		<div class="blogPostsWrapper">
-			{{ posts }}
-				{{ partial:elements/blog_card }}
-			{{ /posts }}
-		</div>
-	{{ /entries:blog }}
+		{{ entries:blog paginate="4" as="posts" }}
+			<div class="blogPostsWrapper">
+				{{ posts }}
+					{{ partial:elements/blog_card }}
+				{{ /posts }}
+			</div>
+		{{ /entries:blog }}
 	</div>
 </div>

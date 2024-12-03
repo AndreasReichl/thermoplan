@@ -31,6 +31,11 @@ page_builder:
     enabled: true
     background_video: closeup-of-a-new-red-ceramic-brick-2023-11-27-05-09-03-utc.mp4
   -
+    id: m48lxqqz
+    headline: Aktuelles
+    type: blogslider
+    enabled: true
+  -
     id: m3siz3cw
     headline_above_type: h4
     headline:
@@ -84,7 +89,7 @@ author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: true
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1732284193
+updated_at: 1733239319
 ---
 ## Welcome to your brand new Statamic site!
 

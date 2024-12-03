@@ -2,9 +2,11 @@
 	<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
 	{{ if children }}
 		<div class="mainnavSubmenu">
+			<div class="inner">
 			{{ children }}
 				<a href="{{ url }}" class="submenu">{{ title }}</a>
 			{{ /children }}
+			</div>
 		</div>
 	{{ /if }}
 </div>

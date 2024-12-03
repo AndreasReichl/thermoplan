@@ -2,54 +2,54 @@ tree:
   -
     id: 108720f8-ae80-4fea-84e3-8d609700c401
     title: Aktuelles
-    url: aktuelles/
+    url: /aktuelles
   -
     id: 87f15039-038a-4100-b9ac-e77b3b5bcb67
     title: Produkte
-    url: produkte/
+    url: /produkte
     children:
       -
         id: 1033abab-6719-43df-bf10-78fb76148f91
         title: Anlagenbau
-        url: produkte/anlagenbau/
+        url: /produkte/anlagenbau
       -
         id: 9f28e901-abd8-4d7d-88ab-e45d5f3c0587
         title: 'Industrie Lösungen'
-        url: produkte/industrie-loesungen/
+        url: /produkte/industrie-loesungen
       -
         id: e61093af-aafa-4156-b5fd-2f57ec56175a
         title: Qualitätsprüfanlagen
-        url: produkte/qualitaetspruefanlagen/
+        url: /produkte/qualitaetspruefanlagen
       -
         id: b6fed139-faf1-4812-ba6c-5904ddf65772
         title: Lagertechnik
-        url: produkte/lagertechnik/
+        url: /produkte/lagertechnik
       -
         id: 475fde01-8a1d-4391-b993-7d4e02c8516b
         title: Elektrotechnik
-        url: produkte/elektrotechnik/
+        url: /produkte/elektrotechnik
       -
         id: cc4d7056-6caf-40b0-8796-9e9580d883b4
         title: Werksleittechnik
-        url: produkte/werksleittechnik/
+        url: /produkte/werksleittechnik
   -
     id: 319a8299-763b-4d20-80ed-b5d4878f8122
     title: Service
-    url: service/
+    url: /service
     children:
       -
         id: 35b0a307-7b73-444e-865f-6c3734ac346d
         title: Wartung
-        url: service/wartung/
+        url: /service/wartung
       -
         id: ee53a1df-e9d8-40b2-b769-5f7af7be4b38
         title: Schulungen
-        url: service/schulungen/
+        url: /service/schulungen
       -
         id: 2ded0509-1346-429d-b5c9-d239bdfeeeb0
         title: 'Störung melden'
-        url: service/stoerung-melden/
+        url: /service/stoerung-melden
       -
         id: 9bcc8e21-d919-4690-96d5-65631d321a9a
         title: Support
-        url: service/support/
+        url: /service/support
