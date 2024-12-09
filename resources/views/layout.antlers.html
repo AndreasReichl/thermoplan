@@ -12,7 +12,9 @@
 		<meta property="og:title" content="{{ seo_title ?? title ?? site:name }}" />
 		<meta property="og:description" content="{{ seo_description }}" />
 		<meta property="og:url" content="{{ site:permalink }}">
+		<meta property="og:site_name" content="{{ site:name }}" />
    		<meta property="og:type" content="website">
+		<meta property="og:locale" content="{{ site:locale }}" />
 		<meta name="author" content="{{ author.name }}">
 		<meta name="robots" content="{{ robots.key }}">
 		<base href="/" />

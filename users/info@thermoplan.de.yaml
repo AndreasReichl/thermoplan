@@ -11,3 +11,14 @@ preferences:
         - status
     pages:
       after_save: continue_editing
+    blog:
+      columns:
+        - title
+        - site
+        - slug
+        - date
+        - author
+        - status
+  locale: de
+  favorites: {  }
+  theme: light

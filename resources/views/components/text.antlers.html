@@ -1,7 +1,7 @@
-<article class="textBlock {{ paragraph_class }}">
+<section class="textBlock {{ paragraph_class }}">
 	<div class="container">
-		<div class="textspalten textspalten_{{ textspalten }}">
+		<div class="textspalten textspalten_{{ textspalten }}{{ if auto_text_width }} auto_text_width{{ /if }}">
 			{{ content }}
 		</div>
 	</div>
-</article>
+</section>

@@ -1,7 +1,7 @@
 {{ if ( current_uri | substr(0,3) ) == '/en' }}
 	{{ home = 'en' }}
 {{ /if }}
-<a href="/" class="logoIcon">
+<a href="{{ home }}" class="logoIcon">
 	<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
 </a>
 <div class="burgerBtn">
@@ -26,7 +26,7 @@
 				{{ partial:elements/mainmenu }}
 			{{ /nav:mainnav_left }}
 		</div>
-		<a href="/" class="logoMain">
+		<a href="{{ home }}" class="logoMain">
 			<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
 		</a>
 		<div class="mainnavRight nav">

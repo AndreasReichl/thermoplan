@@ -40,7 +40,7 @@ a, .btn, .btn-link, .btn-text-link 		{
 	&:hover, &:focus 	{ text-decoration:none; cursor:pointer; }
 }
 
-.disabled { cursor:@cursor-disabled; .opacity(0.5);
+.disabled { cursor:@cursor-disabled; .opacity(0.5); pointer-events: none;
   &, &:hover, &:focus, &.focus, &:active, &.active { cursor:@cursor-disabled; .opacity(0.5); }
 }
 

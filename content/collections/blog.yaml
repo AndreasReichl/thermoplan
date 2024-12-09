@@ -1,4 +1,7 @@
 title: Aktuelles
+sites:
+  - de
+propagate: true
 template: blog/show
 layout: layout
 taxonomies:

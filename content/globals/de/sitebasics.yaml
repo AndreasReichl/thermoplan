@@ -1,0 +1,123 @@
+logo: sitebasics/logo_positiv.svg
+logo_negative: sitebasics/logo_negativ.svg
+logo_icon: sitebasics/logo_icon.svg
+logo_footer: sitebasics/logo_positiv.svg
+favicon: sitebasics/favicon.svg
+apple_touch_icon: sitebasics/apple_touch_icon_180x180px.svg
+firma:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Thermoplan Anlagenbau'
+      -
+        type: hardBreak
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Elektrotechnik Verfahrenstechnik GmbH'
+      -
+        type: hardBreak
+      -
+        type: hardBreak
+hrb: 'München 73190'
+ustid: 'DE 129478938'
+anrede: herr
+vorname: Christian
+nachname: Nether
+position: Geschäftsleitung
+strasse_hausnummer: 'Hermann-Böcker-Str. 21'
+plz: '82140'
+ort: Olching
+phone: '+49 8142  44 45 79 - 0'
+fax: '+49 8142 44 45 79 - 19'
+email: info@thermoplan.de
+website: www.thermoplan.de
+opening_hours:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Mo-Do: 8:00 bis 17:00 Uhr'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Fr: 8:00 bis 14:00 Uhr'
+instagram: 'https://www.instagram.com/thermoplan.gmbh?igsh=dDV0ajRmM21xYzUw'
+instagram_name: thermoplan.gmbh
+locations:
+  -
+    id: m3olt2zu
+    firma:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Betriebsstätte Brilon'
+    strasse_hausnummer: 'Gernandstraße 19'
+    plz: '59929'
+    ort: Brilon
+    opening_hours:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Mo-Do: 7:30 bis 16:30 Uhr'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Fr: 7:30 bis 13:00 Uhr'
+    type: location
+    enabled: true
+  -
+    id: m3olubgr
+    firma:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Betriebsstätte Pressath'
+    strasse_hausnummer: 'Bahnhofstraße 17'
+    plz: '92690'
+    ort: Pressath
+    opening_hours:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Mo-Do: 8:00 bis 16:00 Uhr'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Fr: 8:00 bis 14:00 Uhr'
+    type: location
+    enabled: true

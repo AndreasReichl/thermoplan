@@ -1,17 +1,16 @@
 ---
-id: 929176ca-5ee9-4bb1-b073-020d41cc76d7
+id: 90a3deaa-2e00-4374-b29e-89f73a3f41e7
 blueprint: page
 title: Aktuelles
 page_builder:
   -
-    id: m3sqwk29
-    inverted: false
+    id: m4h81ua1
     headline:
       -
         type: heading
         attrs:
           textAlign: left
-          level: 1
+          level: 2
         content:
           -
             type: text
@@ -24,12 +23,13 @@ page_builder:
         content:
           -
             type: text
-            text: 'Rundum Thermoplan'
+            text: 'Rund um Thermoplan'
+    inverted: false
     type: blog
     enabled: true
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: true
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1732282493
+updated_at: 1733761129
 ---

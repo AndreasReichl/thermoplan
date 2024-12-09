@@ -5,3 +5,5 @@ preview_targets:
     url: '{permalink}'
     refresh: true
 layout: layout
+sites:
+  - de

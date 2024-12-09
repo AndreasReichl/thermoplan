@@ -1,4 +1,8 @@
 title: Referenzen
+sites:
+  - de
+  - en
+propagate: true
 template: default
 layout: layout
 revisions: false

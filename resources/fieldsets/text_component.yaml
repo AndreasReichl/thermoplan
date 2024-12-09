@@ -18,6 +18,7 @@ fields:
       type: bard
       display: 'Headline above'
       width: 66
+      localizable: false
   -
     handle: headline_above_type
     field:
@@ -50,6 +51,7 @@ fields:
       type: select
       display: 'Headline above Typ'
       width: 33
+      localizable: false
   -
     handle: headline
     field:
@@ -69,6 +71,7 @@ fields:
       type: bard
       display: Headline
       width: 66
+      localizable: false
   -
     handle: headline_type
     field:
@@ -101,6 +104,7 @@ fields:
       type: select
       display: 'Headline Typ'
       width: 33
+      localizable: false
   -
     handle: subtitle
     field:
@@ -119,6 +123,7 @@ fields:
       type: bard
       display: Subtitle
       width: 66
+      localizable: false
   -
     handle: subtitle_type
     field:
@@ -151,12 +156,17 @@ fields:
       type: select
       display: 'Subtitle Typ'
       width: 33
+      localizable: false
   -
     handle: content
     field:
       buttons:
+        - h1
         - h2
         - h3
+        - h4
+        - h5
+        - h6
         - bold
         - italic
         - unorderedlist
@@ -167,9 +177,6 @@ fields:
         - image
         - table
         - color
-        - h4
-        - h5
-        - h6
         - underline
         - strikethrough
         - horizontalrule
@@ -177,19 +184,19 @@ fields:
         - aligncenter
         - alignright
         - alignjustify
-        - h1
       remove_empty_nodes: false
       type: bard
       display: Inhalt
       instructions: 'Freies Feld für Texte, Links und Informationen.'
+      localizable: false
   -
     handle: links
     field:
       mode: stacked
       type: grid
       display: Links
+      localizable: false
       fields:
         -
           import: buttonstyles
           prefix: button_
-

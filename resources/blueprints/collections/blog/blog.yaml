@@ -14,11 +14,13 @@ tabs:
                 - required
               display: 'Titel des Eintrags'
               instructions: 'Wird nicht auf der Seite angezeigt'
+              localizable: false
           -
             handle: featured
             field:
               type: toggle
               display: Featured
+              localizable: false
           -
             handle: vorschautext
             field:
@@ -39,6 +41,7 @@ tabs:
               type: bard
               display: Vorschautext
               instructions: 'Textblock der in der Übersicht angezeigt wird sobald dieser Inhalt hat. Wird hier nichts eingetragen, erscheint der Inhalt (Textfeld weiter unten) in abgeschnittener Form, falls dieser zu lang wäre. Dieser Vorschautext erscheint nicht in der Detailansicht!'
+              localizable: false
           -
             import: text_component
           -
@@ -53,12 +56,13 @@ tabs:
             field:
               type: replicator
               display: 'Weitere Inhalte'
+              localizable: false
               sets:
                 weitere_inhalte:
                   display: 'Weitere Inhalte'
                   icon: media-news-paper
                   sets:
-                    imgae:
+                    image:
                       display: Einzelbild
                       icon: media-image-picture-orientation
                       fields:
@@ -81,8 +85,16 @@ tabs:
                             type: text
                             display: Spaltenanzahl
                             instructions: 'Hier kann der Text in mehrere Spalten geteilt werden.'
+                            localizable: false
                         -
                           import: textelement
+                        -
+                          handle: auto_text_width
+                          field:
+                            type: toggle
+                            display: 'Textbreite automatisch'
+                            instructions: 'Gibt an das der Textblock nur so breit ist wie sein Inhalt.'
+                            localizable: false
                     spalten:
                       display: Spalten
                       icon: dashboard-layout
@@ -94,11 +106,13 @@ tabs:
                             type: text
                             display: Spaltenanzahl
                             instructions: 'Anzahl der Spalten nebeneinander.'
+                            localizable: false
                         -
                           handle: spaltenlayout
                           field:
                             type: replicator
                             display: Spaltenlayout
+                            localizable: false
                             sets:
                               spalte:
                                 display: Spalte
@@ -110,6 +124,13 @@ tabs:
                                     fields:
                                       -
                                         import: card
+                        -
+                          handle: auto_text_width
+                          field:
+                            type: toggle
+                            display: 'Textbreite automatisch'
+                            instructions: 'Ist diese Option aktiviert, erstreckt sich der Text nicht über die komplette Seite wenn er kürzer ist.'
+                            localizable: false
                     galleryslider:
                       display: Bildergalerie
                       icon: media-image-picture-gallery
@@ -128,12 +149,14 @@ tabs:
               character_limit: 60
               type: text
               display: 'Meta Title'
+              localizable: false
           -
             handle: seo_description
             field:
               character_limit: 160
               type: textarea
               display: 'Meta Description'
+              localizable: false
   sidebar:
     display: Sidebar
     sections:
@@ -153,6 +176,7 @@ tabs:
               default: now
               validate:
                 - required
+              localizable: false
           -
             handle: author
             field:
@@ -184,3 +208,4 @@ tabs:
                 - blogcategories
               display: 'Blog Kategorien'
               mode: select
+              localizable: false

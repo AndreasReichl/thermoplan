@@ -1,14 +1,28 @@
-{{ collection:blog paginate="12" as="posts" }}
-	<div class="blogPostsWrapper">
-		{{ posts }}
-			{{ partial:elements/blog_card }}
-		{{ /posts }}
-	</div>
-	{{ paginate }}
-		<div class="pagniationWrapper">
-			<a href="{{ prev_page }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></a>
-			<span>Seite <span class="current">{{ current_page }}</span> von {{ total_pages }}</span>
-			<a href="{{ next_page }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-		</div>
-	{{ /paginate }}
+{{ collection:blog paginate="4" as="posts" }}
+    <div class="blogPostsWrapper">
+        {{ posts }}
+            {{ partial:elements/blog_card }}
+        {{ /posts }}
+    </div>
+
+    {{ paginate }}
+        {{ if total_pages > 1 }}
+            <div class="pagniationWrapper">
+                <a href="{{ prev_page }}" class="{{ if prev_page }}hasPrevPage{{ else }}disabled{{ /if }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left">
+                        <path d="m12 19-7-7 7-7"/>
+                        <path d="M19 12H5"/>
+                    </svg>
+                </a>
+                <span>Seite <span class="current">{{ current_page }}</span> von {{ total_pages }}</span>
+                <a href="{{ next_page }}" class="{{ if next_page }}hasNextPage{{ else }}disabled{{ /if }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        {{ /if }}
+    {{ /paginate }}
 {{ /collection:blog }}
+
