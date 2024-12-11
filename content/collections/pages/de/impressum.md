@@ -17,7 +17,6 @@ page_builder:
             text: Impressum
     headline_type: h1
     subtitle_type: h3
-    paragraph_class: mt-60
     full_width: false
     seitenverhaeltnis: fourtySixty
     inverted: false
@@ -263,5 +262,5 @@ author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: true
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1733767737
+updated_at: 1733929380
 ---

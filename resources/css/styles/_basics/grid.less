@@ -35,12 +35,19 @@
 @screen-xxl-min:              1920px;
 @screen-xxl-desktop:          @screen-xxl-min;
 
+// XXXLarge screen / ultrawide desktop
+@screen-xxxl:                  60vw;
+@screen-xxxl-unit:             2400;
+@screen-xxxl-min:              2400px;
+@screen-xxxl-desktop:          @screen-xxxl-min;
+
 // So media queries don't overlap when required, provide a maximum
 @screen-xs-max:              (@screen-sm-min - 1);
 @screen-sm-max:              (@screen-md-min - 1);
 @screen-md-max:              (@screen-lg-min - 1);
 @screen-lg-max:              (@screen-xl-min - 1);
 @screen-xl-max:              (@screen-xxl-min - 1);
+@screen-xxl-max:             (@screen-xxxl-min - 1);
 
 //== Grid system
 
@@ -53,6 +60,7 @@
 	@media (min-width: @screen-lg-min)	{ max-width:@screen-lg; }
 	@media (min-width: @screen-xl-min)	{ max-width:@screen-xl; }
 	@media (min-width: @screen-xxl-min)	{ max-width:@screen-xxl; }
+	@media (min-width: @screen-xxxl-min){ max-width:@screen-xxxl; }
 }
 .container-fluid  						{ padding-left: 0; padding-right: 0; width:100%; }
 
