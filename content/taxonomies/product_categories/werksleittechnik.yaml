@@ -1,0 +1,13 @@
+title: Werksleittechnik
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Unser Werksleitsystem steuert und überwacht alle wichtigen Prozesse zentral. Betriebs- und Qualitätsdaten können flexibel erfasst und von jedem Arbeitsplatz im Werk über die browserbasierte Oberfläche abgerufen werden.'
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1734009910
+blueprint: product_category

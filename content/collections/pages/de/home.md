@@ -88,7 +88,7 @@ author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: true
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1733761137
+updated_at: 1733994568
 template: home
 ---
 ## Welcome to your brand new Statamic site!

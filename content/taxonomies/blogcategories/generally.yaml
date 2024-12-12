@@ -1,0 +1,14 @@
+title: Generally
+blueprint: blogcategory
+websites_feld:
+  - en
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1734003637
+localizations:
+  en:
+    title: Generally
+    content: null
+    websites_feld: null
+    slug: generally
+    updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+    updated_at: 1733994747

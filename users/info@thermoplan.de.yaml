@@ -19,6 +19,21 @@ preferences:
         - date
         - author
         - status
+    products:
+      after_save: continue_editing
   locale: de
   favorites: {  }
   theme: light
+  taxonomies:
+    blogcategories:
+      columns:
+        - title
+        - slug
+  nav:
+    top_level:
+      'content::collections::pages': '@move'
+      'content::collections::aktuelles': '@move'
+      'content::collections::produkte': '@move'
+      'content::collections::team': '@move'
+      'content::collections::referenzen': '@move'
+      'content::collections::historie': '@move'

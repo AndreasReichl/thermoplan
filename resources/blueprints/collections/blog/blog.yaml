@@ -144,19 +144,7 @@ tabs:
         display: 'Neuer Abschnitt'
         fields:
           -
-            handle: seo_title
-            field:
-              character_limit: 60
-              type: text
-              display: 'Meta Title'
-              localizable: false
-          -
-            handle: seo_description
-            field:
-              character_limit: 160
-              type: textarea
-              display: 'Meta Description'
-              localizable: false
+            import: seodata
   sidebar:
     display: Sidebar
     sections:

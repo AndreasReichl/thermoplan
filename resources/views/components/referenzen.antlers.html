@@ -1,5 +1,12 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ referencesLogosHeadline = 'We work, among other things, for' }}
+{{ else }}
+	{{ referencesLogosHeadline = 'Wir arbeiten unter anderem für' }}
+{{ /if }}
 <div class="referencesLogosWrapper">
-	<div class="headline">Wir arbeiten unter anderem für</div>
+	<div class="headline">
+		{{ referencesLogosHeadline }}
+	</div>
 	<div class="swiper logoslideshow">
 		<div class="swiper-wrapper">
 			{{ collection:referenzen }}

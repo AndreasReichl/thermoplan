@@ -1,9 +1,23 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ blogMainSiteUrl = '/en/news' }}
+	{{ blogMainSiteName = 'News' }}
+	{{ blogDetailBtnText = 'back' }}
+	{{ blogDetailNoResultsText = 'No further entries available.' }}
+	{{ blogDetailNextArticle = 'Next article' }}
+{{ else }}
+	{{ blogMainSiteUrl = '/aktuelles' }}
+	{{ blogMainSiteName = 'Aktuelles' }}
+	{{ blogDetailBtnText = 'zurück' }}
+	{{ blogDetailNoResultsText = 'Keine weiteren Einträge vorhanden' }}
+	{{ blogDetailNextArticle = 'Nächster Artikel' }}
+{{ /if }}
+
 <div class="blogDetail">
 	<div class="container">
 		<div class="inner">
 			<nav class="breadcrumb">
 				<a href="/"><i class="icofont-home"></i></a><i class="icofont-rounded-right"></i>
-				<a href="/aktuelles">Aktuelles</a><i class="icofont-rounded-right"></i>
+				<a href="{{ blogMainSiteUrl }}">{{ blogMainSiteName }}</a><i class="icofont-rounded-right"></i>
 				{{ if category }}
 					<a href="{{ category:url }}">{{ category:title }}</a><i class="icofont-rounded-right"></i>
 				{{ /if }}
@@ -68,7 +82,7 @@
 				<div class="footerLinks">
 					<a onclick="history.back()" class="btn btn-default has-icon has-text">
 						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
-						<span class="btnText"><span>zurück</span></span>
+						<span class="btnText"><span>{{ blogDetailBtnText }}</span></span>
 					</a>
 				</div>
 				<div class="footerRight">
@@ -82,11 +96,11 @@
 				{{ /if }}
 
 				<div class="previousBlogPosts">
-					<p class="categoryHeadline">Nächster Artikel</p>
+					<p class="categoryHeadline">{{ blogDetailNextArticle }}</p>
 					{{ collection:previous in="blog" as="posts" limit="1" sort="date:asc" }}
 
 					{{ if no_results }}
-						Keine weiteren Einträge vorhanden
+						{{ blogDetailNoResultsText }}
 					{{ /if }}
 
 					{{ posts }}

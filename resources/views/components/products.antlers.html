@@ -1,0 +1,14 @@
+<section class="productWrapper{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ background_image }});">
+	<div class="container">
+		<nav class="breadcrumb">
+				<a href="/"><i class="icofont-home"></i></a><i class="icofont-rounded-right"></i>
+				{{ if category }}
+					<a href="{{ category:url }}">{{ category:title }}</a><i class="icofont-rounded-right"></i>
+				{{ /if }}
+				<div class="itemActive">{{ title }}</div>
+			</nav>
+		{{ if headline | trim != "" && headline | strip_tags != "" }}<div class="productHeadline">{{ headline }}</div>{{ /if }}
+		{{ if content | trim != "" && content | strip_tags != "" }}<div class="productText">{{ content }}</div>{{ /if }}
+		{{ partial:elements/product_listing }}
+	</div>
+</section>

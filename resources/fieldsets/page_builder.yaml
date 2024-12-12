@@ -6,6 +6,7 @@ fields:
       type: replicator
       display: 'Page Builder'
       collapse: true
+      localizable: false
       sets:
         absatzvarianten:
           display: Content
@@ -57,12 +58,14 @@ fields:
                     type: select
                     display: Textspalten
                     width: 50
+                    localizable: false
                 -
                   handle: paragraph_class
                   field:
                     type: text
                     display: 'Paragraph Class'
                     width: 50
+                    localizable: false
                 -
                   import: textelement
             kontakt:
@@ -75,12 +78,14 @@ fields:
                     type: text
                     display: 'Paragraph Class'
                     width: 33
+                    localizable: false
                 -
                   handle: hashtag_name
                   field:
                     type: text
                     display: 'Hashtag Name'
                     width: 33
+                    localizable: false
                 -
                   handle: inverted
                   field:
@@ -88,6 +93,7 @@ fields:
                     display: 'Farben Invertiert'
                     instructions: 'Hintergrund schwarz Text weiss'
                     width: 33
+                    localizable: false
                 -
                   handle: headline
                   field:
@@ -116,12 +122,14 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Überschrift
+                    localizable: false
                 -
                   handle: formular
                   field:
                     max_items: 1
                     type: form
                     display: Formular
+                    localizable: false
         hero:
           display: Hero
           icon: text-formatting-image-top
@@ -153,12 +161,14 @@ fields:
                     type: assets
                     display: Hintergrundbild
                     instructions: 'Hintergrundbild für den gesamten Slider. Wechselt nicht.'
+                    localizable: false
                 -
                   handle: slides
                   field:
                     type: replicator
                     display: Slides
                     collapse: true
+                    localizable: false
                     sets:
                       slide:
                         display: Slide
@@ -178,17 +188,20 @@ fields:
                     container: assets
                     type: assets
                     display: Hintergrundbild
+                    localizable: false
                 -
                   handle: headline
                   field:
                     type: text
                     display: Überschrift
+                    localizable: false
                 -
                   handle: slides
                   field:
                     type: replicator
                     display: Slides
                     collapse: true
+                    localizable: false
                     sets:
                       slide:
                         display: Slide
@@ -209,6 +222,7 @@ fields:
                     type: assets
                     display: Hintergrundbild
                     width: 66
+                    localizable: false
                 -
                   handle: inverted
                   field:
@@ -216,11 +230,13 @@ fields:
                     display: 'Farben Invertiert'
                     instructions: 'Hintergrund schwarz Text weiss'
                     width: 33
+                    localizable: false
                 -
                   handle: headline
                   field:
                     type: text
                     display: Überschrift
+                    localizable: false
                 -
                   import: bilder
             blogslider:
@@ -233,6 +249,7 @@ fields:
                   field:
                     type: text
                     display: Überschrift
+                    localizable: false
         sammlungen:
           display: Sammlungen
           icon: content-book-open
@@ -271,6 +288,7 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Überschrift
+                    localizable: false
                 -
                   handle: content
                   field:
@@ -297,6 +315,7 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Text
+                    localizable: false
                 -
                   handle: team
                   field:
@@ -304,6 +323,7 @@ fields:
                       - team
                     type: entries
                     display: Team
+                    localizable: false
                 -
                   handle: mainbgimage
                   field:
@@ -312,6 +332,7 @@ fields:
                     display: Hintergrundbild
                     width: 66
                     max_files: 1
+                    localizable: false
                 -
                   handle: inverted
                   field:
@@ -319,6 +340,7 @@ fields:
                     display: 'Farben Invertiert'
                     instructions: 'Hintergrund schwarz Text weiss'
                     width: 33
+                    localizable: false
             historie:
               display: Historie
               icon: time-clock
@@ -353,6 +375,7 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Überschrift
+                    localizable: false
                 -
                   handle: content
                   field:
@@ -379,6 +402,7 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Text
+                    localizable: false
                 -
                   handle: historie
                   field:
@@ -386,6 +410,7 @@ fields:
                       - historie
                     type: entries
                     display: Historie
+                    localizable: false
                 -
                   handle: mainbgimage
                   field:
@@ -394,6 +419,7 @@ fields:
                     display: Hintergrundbild
                     width: 66
                     max_files: 1
+                    localizable: false
                 -
                   handle: inverted
                   field:
@@ -401,6 +427,7 @@ fields:
                     display: 'Farben Invertiert'
                     instructions: 'Hintergrund schwarz Text weiss'
                     width: 33
+                    localizable: false
             blog:
               display: Blog
               instructions: 'Zeigt alle Blogeinträge im Spalten Layout an'
@@ -436,6 +463,7 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Überschrift
+                    localizable: false
                 -
                   handle: content
                   field:
@@ -462,6 +490,7 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Text
+                    localizable: false
                 -
                   handle: background_image
                   field:
@@ -470,6 +499,7 @@ fields:
                     type: assets
                     display: Hintergrundbild
                     width: 33
+                    localizable: false
                 -
                   handle: inverted
                   field:
@@ -477,6 +507,7 @@ fields:
                     display: 'Farben Invertiert'
                     instructions: 'Hintergrund schwarz Text weiss'
                     width: 33
+                    localizable: false
                 -
                   handle: entries_per_site
                   field:
@@ -484,3 +515,84 @@ fields:
                     display: 'Einträge pro Seite'
                     instructions: 'Standard 12'
                     width: 33
+                    localizable: false
+            products:
+              display: Produkte
+              instructions: 'Zeigt alle Produkte im Spalten Layout an'
+              icon: addon-boxes-stack
+              fields:
+                -
+                  handle: headline
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                      - underline
+                      - strikethrough
+                      - horizontalrule
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Überschrift
+                    localizable: false
+                -
+                  handle: content
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h4
+                      - h5
+                      - h6
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                    localizable: false
+                -
+                  handle: background_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Hintergrundbild
+                    width: 50
+                    localizable: false
+                -
+                  handle: inverted
+                  field:
+                    type: toggle
+                    display: 'Farben Invertiert'
+                    instructions: 'Hintergrund schwarz Text weiss'
+                    width: 50
+                    localizable: false

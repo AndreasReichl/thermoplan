@@ -1,0 +1,20 @@
+<div class="categoriesWrapper mt-60">
+    {{ taxonomy:product_categories }}
+        <div class="mb-30">
+            <h2 class="categoryTitle">{{ title }}</h2>
+            <div class="categoryContent">{{ content }}</div>
+
+            <div class="productsWrapper {{ title }}">
+                {{ collection:products where="product_categories:{id}" }}
+                    <div class="productCard">
+						{{ if product_categories }}
+							{{ title }}
+						{{ /if }}
+						{{ headline }}
+					</div>
+                {{ /collection:products }}
+            </div>
+        </div>
+    {{ /taxonomy:product_categories }}
+</div>
+

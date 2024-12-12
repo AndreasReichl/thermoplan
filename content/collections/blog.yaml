@@ -1,7 +1,8 @@
 title: Aktuelles
 sites:
   - de
-propagate: true
+  - en
+propagate: false
 template: blog/show
 layout: layout
 taxonomies:

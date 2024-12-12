@@ -1,6 +1,16 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ btnTextAllNews = 'All news' }}
+	{{ allNewsUrl = '/en/news' }}
+{{ else }}
+	{{ btnTextAllNews = 'Alle Neuigkeiten' }}
+	{{ allNewsUrl = '/aktuelles' }}
+{{ /if }}
 <div class="blogSliderWrapper">
 	<div class="swiper blogSlider">
-		{{ if headline }}<h2 class="headline">{{ headline }}</h2>{{ /if }}
+		<div class="blogSliderHeaderWrapper">
+			{{ if headline }}<h2 class="headline">{{ headline }}</h2>{{ /if }}
+			<a href="{{ allNewsUrl }}" class="btn btn-primary">{{ btnTextAllNews }}</a>
+		</div>
 		<div class="swiper-wrapper">
 			{{ collection:blog limit="9" as="posts" }}
 				{{ posts }}

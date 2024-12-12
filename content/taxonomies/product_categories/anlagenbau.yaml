@@ -1,0 +1,15 @@
+title: Anlagenbau
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Unser Fokus liegt auf der Reduzierung der Betriebskosten, der Gewährleistung höchster Produktqualität und einer benutzerfreundlichen Bedienbarkeit unserer Anlagen.'
+websites_feld:
+  - de
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1734009829
+blueprint: product_category

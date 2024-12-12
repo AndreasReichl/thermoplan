@@ -1,6 +1,6 @@
 title: Allgemein
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1733233574
+updated_at: 1734003620
 blueprint: blogcategory
 content:
   -
@@ -11,3 +11,5 @@ content:
       -
         type: text
         text: 'Allgemeines rund um Thermoplan'
+websites_feld:
+  - de

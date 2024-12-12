@@ -1,0 +1,73 @@
+title: Produkte
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+              display: 'Titel des Eintrags'
+              instructions: 'Wird nicht auf der Seite angezeigt'
+          -
+            import: text_component
+          -
+            import: logo_icon_element
+          -
+            import: imageelement
+          -
+            import: videoelement
+      -
+        display: Inhalte
+        fields:
+          -
+            import: page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - products
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: product_categories
+            field:
+              type: terms
+              taxonomies:
+                - product_categories
+              display: 'Produkt Kategorien'
+              mode: select
+              localizable: false

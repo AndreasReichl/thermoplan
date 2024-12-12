@@ -1,0 +1,105 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ productMainSiteUrl = '/en/products' }}
+	{{ productMainSiteName = 'Products' }}
+	{{ productDetailBtnText = 'back' }}
+	{{ productDetailNoResultsText = 'No further entries available.' }}
+	{{ productDetailNextArticle = 'Next article' }}
+{{ else }}
+	{{ productMainSiteUrl = '/produkte' }}
+	{{ productMainSiteName = 'Produkte' }}
+	{{ productDetailBtnText = 'zurück' }}
+	{{ productDetailNoResultsText = 'Keine weiteren Einträge vorhanden' }}
+	{{ productDetailNextArticle = 'Nächster Artikel' }}
+{{ /if }}
+
+<div class="productDetail">
+	<div class="container">
+		<div class="inner">
+			<nav class="breadcrumb">
+				<a href="/"><i class="icofont-home"></i></a><i class="icofont-rounded-right"></i>
+				<a href="{{ productMainSiteUrl }}">{{ productMainSiteName }}</a><i class="icofont-rounded-right"></i>
+				{{ if category }}
+					<a href="{{ category:url }}">{{ category:title }}</a><i class="icofont-rounded-right"></i>
+				{{ /if }}
+				<div class="itemActive">{{ title }}</div>
+			</nav>
+			<div class="contentTop">
+				<div class="inner">
+					{{ if product_categories }}
+						<div class="productCategories">
+							{{ product_categories }}
+								<a href="{{ url }}" class="btn-productcategory">
+									{{ title }}
+								</a>
+							{{ /product_categories }}
+						</div>
+					{{ /if }}
+					<div class="textboxMediabox">
+						{{ image }}
+						<div class="mediabox">
+							{{ partial:elements/image }}
+						</div>
+						{{ /image }}
+
+						<div class="textbox">
+							<div class="textboxInner">
+
+								<div class="productDetailTitles">
+									{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h4 class="headline_above">{{ headline_above }}</h4>{{ /if }}
+									{{ if headline | trim != "" && headline | strip_tags != "" }}<h1 class="headline">{{ headline }}</h1>{{ /if }}
+									{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h2 class="subtitle">{{ subtitle }}</h2>{{ /if }}
+									<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
+									</div>
+								{{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}
+								{{ if links }}
+								<div class="links">
+									{{ links }}
+										{{ partial:elements/button
+											:url='button_link_feld'
+											:style='button_style'
+											:target='button_zielseite'
+											:icon='button_icon'
+											:text='button_text'
+										}}
+									{{ /links }}
+								</div>
+							{{ /if }}
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{ page_builder scope="block" }}
+		{{ partial src="components/{type}" }}
+	{{ /page_builder }}
+
+	<div class="contentBottom">
+		<div class="footerLinks">
+			<a onclick="history.back()" class="btn btn-default has-icon has-text">
+				<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
+				<span class="btnText"><span>{{ productDetailBtnText }}</span></span>
+			</a>
+		</div>
+		<div class="footerRight">
+			<div class="previousProductPosts">
+				<p class="categoryHeadline">{{ productDetailNextArticle }}</p>
+				{{ collection:previous in="product" as="posts" limit="1" sort="date:asc" }}
+
+					{{ if no_results }}
+						{{ productDetailNoResultsText }}
+					{{ /if }}
+
+					{{ posts }}
+						{{ partial:elements/product_card_small }}
+					{{ /posts }}
+
+				{{ /collection:previous }}
+			</div>
+		</div>
+	</div>
+
+</div>

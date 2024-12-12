@@ -1,0 +1,13 @@
+<div class="productWrapper">
+	<div class="container">
+		<h1>{{ title }}</h1>
+		{{ if content }}<p>{{ content }}</p>{{ /if}}
+		{{ entries:products as="products" }}
+			<div class="productsWrapper">
+				{{ products }}
+					{{ partial:elements/product_card }}
+				{{ /products }}
+			</div>
+		{{ /entries:products }}
+	</div>
+</div>

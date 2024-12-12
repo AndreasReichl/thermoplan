@@ -1,0 +1,13 @@
+title: Elektrotechnik
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Thermoplan bietet maßgeschneiderte Steuerungslösungen mit umfassendem Know-how und setzt auf hochwertige Komponenten von Siemens sowie führenden Anbietern wie Omron, Mitsubishi und Allen Bradley.'
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1734009898
+blueprint: product_category

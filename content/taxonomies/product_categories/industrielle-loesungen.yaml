@@ -1,0 +1,13 @@
+title: 'Industrielle Lösungen'
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Effiziente Lösungen für die keramische Industrie: Von Schleifen, Gießen und Glasieren bis hin zur Formgebung und Trocknung – wir optimieren Ihre Prozesse für maximale Qualität und Effizienz.'
+updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
+updated_at: 1734009841
+blueprint: product_category

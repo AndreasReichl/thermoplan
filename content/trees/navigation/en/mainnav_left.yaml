@@ -1,0 +1,9 @@
+tree:
+  -
+    id: aaa6456b-1014-46dc-aca5-661fb8c9040b
+    title: News
+    url: /en/news
+  -
+    id: f8db71a5-ff3a-4644-9523-3fabb1fb42aa
+    title: Products
+    url: /en/products

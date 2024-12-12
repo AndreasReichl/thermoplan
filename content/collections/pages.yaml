@@ -13,7 +13,5 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
-origin_behavior: active
 structure:
   root: true
-  slugs: true
