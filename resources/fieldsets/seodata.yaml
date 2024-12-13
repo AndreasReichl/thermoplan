@@ -6,9 +6,18 @@ fields:
       type: text
       display: 'SEO Title'
       character_limit: 60
+      localizable: false
   -
     handle: seo_description
     field:
       character_limit: 160
       type: textarea
       display: 'SEO Description'
+      localizable: false
+  -
+    handle: seo_keywords
+    field:
+      type: text
+      display: 'SEO Keywords'
+      instructions: 'Keywords mit , trennen!'
+      localizable: false

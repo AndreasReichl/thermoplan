@@ -14,11 +14,29 @@ tabs:
               validate:
                 - required
               display: 'Titel des Eintrags'
-              instructions: 'Wird nicht auf der Seite angezeigt'
+              instructions: 'Wird in der Übersicht angezeigt'
+          -
+            handle: product_categories
+            field:
+              type: terms
+              taxonomies:
+                - product_categories
+              display: 'Produkt Kategorie'
+              mode: select
+              localizable: false
+              max_items: 1
+              validate:
+                - required
+          -
+            handle: product_icon
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Produkt Icon'
+              localizable: false
           -
             import: text_component
-          -
-            import: logo_icon_element
           -
             import: imageelement
           -
@@ -27,7 +45,15 @@ tabs:
         display: Inhalte
         fields:
           -
-            import: page_builder
+            import: weitere_inhalte
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seodata
   sidebar:
     display: Sidebar
     sections:
@@ -62,12 +88,3 @@ tabs:
               type: template
               display: Template
               localizable: true
-          -
-            handle: product_categories
-            field:
-              type: terms
-              taxonomies:
-                - product_categories
-              display: 'Produkt Kategorien'
-              mode: select
-              localizable: false

@@ -1,3 +1,20 @@
 <div class="productCard">
-	{{ headline }}
+	<div class="inner" onclick="window.location.href='{{ url }}'">
+		<div class="content">
+			{{ if product_icon }}{{ product_icon }}<div class="product_icon"><img src="{{ glide:url width="100" }}" alt="{{ alt }}"></div>{{ /product_icon }}{{ /if }}
+			<h3 class="title">{{ title }}</h3>
+		</div>
+		<div class="imgOverlay">
+			<svg xmlns="http://www.w3.org/2000/svg" width="345.896" height="32.341" viewBox="0 0 345.896 32.341">
+				<path d="M-15.207,3007.69l345.9.015v-32.341h-177.6l-18.879,18.879-149.422-.015Z" transform="translate(15.207 -2975.365)" fill="#fff"/>
+			</svg>
+			<a href="{{ url }}" class="btn btn-base has-icon">
+				<span class="btnIcon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.013 8.26">
+						<path id="arrow_right_alt" d="M5.919,7.261,8.363,4.818H0V3.441H8.363L5.919,1l.964-1,4.13,4.13L6.883,8.26Z" fill="currentColor" style="isolation: isolate"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
 </div>

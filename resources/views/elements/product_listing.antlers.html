@@ -1,18 +1,16 @@
-<div class="categoriesWrapper mt-60">
+<div class="categoriesWrapper">
     {{ taxonomy:product_categories }}
-        <div class="mb-30">
-            <h2 class="categoryTitle">{{ title }}</h2>
-            <div class="categoryContent">{{ content }}</div>
-
+        <div class="inner">
+            <div class="categoryWrapper">
+                <h2 class="categoryTitle">{{ title }}</h2>
+                <div class="categoryContent">{{ content }}</div>
+            </div>
             <div class="productsWrapper {{ title }}">
-                {{ collection:products where="product_categories:{id}" }}
-                    <div class="productCard">
-						{{ if product_categories }}
-							{{ title }}
-						{{ /if }}
-						{{ headline }}
-					</div>
-                {{ /collection:products }}
+                {{ if entries }}
+                    {{ entries }}
+                        {{ partial:elements/product_card }}
+                    {{ /entries }}
+                {{ /if }}
             </div>
         </div>
     {{ /taxonomy:product_categories }}

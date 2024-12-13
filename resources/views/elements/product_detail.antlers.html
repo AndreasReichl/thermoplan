@@ -3,15 +3,14 @@
 	{{ productMainSiteName = 'Products' }}
 	{{ productDetailBtnText = 'back' }}
 	{{ productDetailNoResultsText = 'No further entries available.' }}
-	{{ productDetailNextArticle = 'Next article' }}
+	{{ productDetailNextArticle = 'Next producte' }}
 {{ else }}
 	{{ productMainSiteUrl = '/produkte' }}
 	{{ productMainSiteName = 'Produkte' }}
 	{{ productDetailBtnText = 'zurück' }}
 	{{ productDetailNoResultsText = 'Keine weiteren Einträge vorhanden' }}
-	{{ productDetailNextArticle = 'Nächster Artikel' }}
+	{{ productDetailNextArticle = 'Weitere Produkte' }}
 {{ /if }}
-
 <div class="productDetail">
 	<div class="container">
 		<div class="inner">
@@ -25,13 +24,13 @@
 			</nav>
 			<div class="contentTop">
 				<div class="inner">
-					{{ if product_categories }}
+					{{ if productcategories }}
 						<div class="productCategories">
-							{{ product_categories }}
+							{{ productcategories }}
 								<a href="{{ url }}" class="btn-productcategory">
 									{{ title }}
 								</a>
-							{{ /product_categories }}
+							{{ /productcategories }}
 						</div>
 					{{ /if }}
 					<div class="textboxMediabox">
@@ -48,8 +47,7 @@
 									{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h4 class="headline_above">{{ headline_above }}</h4>{{ /if }}
 									{{ if headline | trim != "" && headline | strip_tags != "" }}<h1 class="headline">{{ headline }}</h1>{{ /if }}
 									{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h2 class="subtitle">{{ subtitle }}</h2>{{ /if }}
-									<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
-									</div>
+								</div>
 								{{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}
 								{{ if links }}
 								<div class="links">
@@ -67,39 +65,39 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+{{ weitere_inhalte scope="block" }}
+	{{ partial src="components/{type}" }}
+{{ /weitere_inhalte }}
+<section class="contentBottom">
+	<div class="container">
+		<div class="categoriesWrapper">
+			<div class="inner">
+				<div class="categoryWrapper">
+					<h2 class="categoryTitle">{{ productDetailNextArticle }}</h2>
+					<a onclick="history.back()" class="btn btn-default has-icon has-text">
+						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
+						<span class="btnText"><span>{{ productDetailBtnText }}</span></span>
+					</a>
+				</div>
+				<div class="productsWrapper">
+					{{ collection:next in="products" as="posts" limit="3" sort="order" }}
+						{{ if no_results }}
+							No more posts to read!
+						{{ /if }}
 
-	{{ page_builder scope="block" }}
-		{{ partial src="components/{type}" }}
-	{{ /page_builder }}
-
-	<div class="contentBottom">
-		<div class="footerLinks">
-			<a onclick="history.back()" class="btn btn-default has-icon has-text">
-				<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
-				<span class="btnText"><span>{{ productDetailBtnText }}</span></span>
-			</a>
-		</div>
-		<div class="footerRight">
-			<div class="previousProductPosts">
-				<p class="categoryHeadline">{{ productDetailNextArticle }}</p>
-				{{ collection:previous in="product" as="posts" limit="1" sort="date:asc" }}
-
-					{{ if no_results }}
-						{{ productDetailNoResultsText }}
-					{{ /if }}
-
-					{{ posts }}
-						{{ partial:elements/product_card_small }}
-					{{ /posts }}
-
-				{{ /collection:previous }}
+						{{ posts }}
+							<div class="post">
+							{{ partial:elements/product_card }}
+							</div>
+						{{ /posts }}
+					{{ /collection:next }}
+				</div>
 			</div>
 		</div>
 	</div>
-
-</div>
+</section>

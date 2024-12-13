@@ -11,27 +11,78 @@ tree:
       -
         id: 1033abab-6719-43df-bf10-78fb76148f91
         title: Anlagenbau
-        url: /produkte/anlagenbau
+        url: /produkte
+        children:
+          -
+            id: 3add52ce-0feb-48f5-8590-29cab66119a1
+            entry: fbf6277b-c4c8-4228-869c-cf7b628d187f
+          -
+            id: 44a43ca9-a351-4792-8f48-7acb1f1cef79
+            entry: 385ca911-40f7-4e05-b5ad-117d9e9c9342
+          -
+            id: 54360415-1f8f-46bf-95d3-e2b028e593ad
+            entry: be136103-b757-464c-9c14-eddade3cf5a0
+          -
+            id: f2a9f5fa-70a7-4e94-b63d-af265f59c288
+            entry: a510fc7a-543c-428b-a347-5aa16dbeea24
       -
         id: 9f28e901-abd8-4d7d-88ab-e45d5f3c0587
         title: 'Industrie Lösungen'
-        url: /produkte/industrie-loesungen
+        url: /produkte
+        children:
+          -
+            id: b4ab33aa-6d06-4c49-9356-5d830253ab50
+            entry: 30a05375-3190-459b-9e10-de80a8376422
+          -
+            id: 654bc17c-189e-4e65-8104-4747ba676b91
+            entry: 010c7e02-8d3f-40a9-95fe-34656cc9c314
+          -
+            id: 19e70ce6-3378-41e8-a083-444c940ab553
+            entry: e85a354f-1671-476c-9101-886acca95c27
+          -
+            id: 925e22ab-0df0-4c9a-8580-51208a9dca62
+            entry: 1453dd0b-5e89-4a8f-85b1-318e87d071c5
+          -
+            id: 5aca7a9b-e934-463f-ac84-a8ee111633b2
+            entry: 43249da7-7b02-4c47-a8b1-da2dbcf6ae49
       -
         id: e61093af-aafa-4156-b5fd-2f57ec56175a
         title: Qualitätsprüfanlagen
-        url: /produkte/qualitaetspruefanlagen
+        url: /produkte
+        children:
+          -
+            id: 091c79e2-2b17-4ad7-8d94-530b820bf632
+            entry: de0cf95f-5972-4d0b-bf48-b4ddd7f50098
       -
         id: b6fed139-faf1-4812-ba6c-5904ddf65772
         title: Lagertechnik
-        url: /produkte/lagertechnik
+        url: /produkte
+        children:
+          -
+            id: 3e4e0c9b-0a07-4a18-8ced-0530892493c4
+            entry: 38fb2ab0-a5a8-4c71-8554-aa9934bd34c1
       -
         id: 475fde01-8a1d-4391-b993-7d4e02c8516b
         title: Elektrotechnik
-        url: /produkte/elektrotechnik
+        url: /produkte
+        children:
+          -
+            id: 7cd37de5-0428-4937-944e-ea052421e339
+            entry: 33026763-1b1a-46e3-9da6-09c41d9a8722
       -
         id: cc4d7056-6caf-40b0-8796-9e9580d883b4
         title: Werksleittechnik
-        url: /produkte/werksleittechnik
+        url: /produkte
+        children:
+          -
+            id: 26e35afd-6e96-4cbb-aebb-e39c8b983062
+            entry: e300bdd4-162b-488e-b45d-9c30fe976d6f
+          -
+            id: 4143a4f4-c6a6-45f7-b952-31f9d82e8015
+            entry: 3a35f1fb-e5f7-4929-a7e8-3b56be07d5d8
+          -
+            id: c8fb1568-bf31-461a-a00a-99ef6e57bac4
+            entry: 1ff73d24-53d9-4f35-a62f-145a404b6998
   -
     id: 319a8299-763b-4d20-80ed-b5d4878f8122
     title: Service

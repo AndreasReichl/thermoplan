@@ -4,7 +4,21 @@
 		<div class="mainnavSubmenu">
 			<div class="inner">
 			{{ children }}
-				<a href="{{ url }}" class="submenu">{{ title }}</a>
+				{{ if children }}
+					<div class="submenuWrapper">
+						<div class="submenuTitle">{{ title }}</div>
+						<div class="subsubmenuWrapper">
+						{{ children }}
+							<a href="{{ url }}" class="subsubmenu">
+								<i class="icofont-long-arrow-right"></i>
+								{{ title }}
+							</a>
+						{{ /children }}
+						</div>
+					</div>
+				{{ else }}
+					<a href="{{ url }}" class="submenu">{{ title }}</a>
+				{{ /if }}
 			{{ /children }}
 			</div>
 		</div>

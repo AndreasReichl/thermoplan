@@ -1,0 +1,69 @@
+title: 'Weitere Inhalte'
+fields:
+  -
+    handle: weitere_inhalte
+    field:
+      type: replicator
+      display: 'Weitere Inhalte'
+      localizable: false
+      collapse: true
+      sets:
+        main:
+          display: Hauptteil
+          sets:
+            paragraph0:
+              display: 'Bild oben Text unten'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: artikel
+            paragraph1:
+              display: 'Bild links Text rechts'
+              icon: text-formatting-image-left
+              fields:
+                -
+                  import: artikel
+            paragraph2:
+              display: 'Bild rechts Text links'
+              icon: text-formatting-image-right
+              fields:
+                -
+                  import: artikel
+            paragraph3:
+              display: 'Bild unten Text oben'
+              icon: text-formatting-image-bottom
+              fields:
+                -
+                  import: artikel
+            text:
+              display: 'Nur Text'
+              instructions: 'Reiner Textabsatz'
+              icon: text-formatting-initial-letter
+              fields:
+                -
+                  handle: textspalten
+                  field:
+                    options:
+                      -
+                        key: one
+                        value: '1'
+                      -
+                        key: two
+                        value: '2'
+                      -
+                        key: three
+                        value: '3'
+                    default: one
+                    type: select
+                    display: Textspalten
+                    width: 50
+                    localizable: false
+                -
+                  handle: paragraph_class
+                  field:
+                    type: text
+                    display: 'Paragraph Class'
+                    width: 50
+                    localizable: false
+                -
+                  import: textelement

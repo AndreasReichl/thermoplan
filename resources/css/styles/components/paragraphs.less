@@ -6,6 +6,16 @@
 }
 
 .paragraph  				{ position: relative; padding:0; background-size:cover; background-repeat:no-repeat;
+	.paragraphLinesTop,
+	.paragraphLinesBottom,
+	.paragraphLinesTopLogo 	{ line-height: 0; padding-left:10vw;
+		@media (min-width: @screen-xxl-min)	{ padding-left:15vw; }
+		@media (min-width: @screen-xxxl-min)	{ padding-left:20vw; }
+	}
+	.paragraphLinesTopLogo 	{ .flex-display(flex); .align-items(flex-end); gap:30px;
+		.lineLogo 			{ width:30%; }
+		.lines 				{ width:70%; }
+	}
 	.textMediabox 			{ padding: 0; }
 	.mediabox 				{ .flex-display(flex); position: relative; }
 	.textbox 				{

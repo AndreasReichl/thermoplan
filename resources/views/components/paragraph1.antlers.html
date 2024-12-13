@@ -1,7 +1,12 @@
 
-<article id="paragraph{{ id }}" class="paragraph paragraph1 {{ paragraph_class }} {{ seitenverhaeltnis }}{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ background_image }});">
+<article id="paragraph{{ id }}" class="paragraph paragraph1 {{ paragraph_class }} {{ seitenverhaeltnis }}{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ background_image }}); background-color:{{ content_bg_color }};">
 	{{ if background_video }}
 		{{ partial:elements/videoplayerbackground }}
+	{{ /if }}
+	{{ if lines_top_logo }}
+		{{ partial:elements/lines_logo_top }}
+	{{ elseif lines_top }}
+		{{ partial:elements/lines_top }}
 	{{ /if }}
 	<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="container{{ full_width ? '-fluid' : '' }}{{ background_video ? ' has-bgVideo' : '' }}">
 		<div class="textMediabox">
@@ -20,4 +25,7 @@
 			</div>
 		</div>
 	</div>
+	{{ if lines_bottom }}
+		{{ partial:elements/lines_bottom }}
+	{{ /if }}
 </article>

@@ -1,6 +1,7 @@
 title: Artikel
 fields:
-  - import: logo_icon_element
+  -
+    import: logo_icon_element
   -
     import: text_component
   -
@@ -19,24 +20,28 @@ fields:
       instructions: 'Generiert eine Absatz ID. Dieser Name darf nur einmal vorkommen und sollte keine Leerzeichen enthalten. z.B. für Ankernavigation'
       width: 50
       instructions_position: below
+      localizable: false
   -
     handle: paragraph_class
     field:
       type: text
       display: 'Paragraph Class'
       width: 50
+      localizable: false
   -
     handle: textbox_class
     field:
       type: text
       display: 'Textbox Class'
       width: 50
+      localizable: false
   -
     handle: full_width
     field:
       type: toggle
       display: 'Absatzbreite über die gesamte Seite'
       width: 50
+      localizable: false
   -
     handle: seitenverhaeltnis
     field:
@@ -55,6 +60,7 @@ fields:
       display: Seitenverhältnis
       instructions: 'Seitenverhältnis Bild zu Text'
       width: 50
+      localizable: false
   -
     handle: inverted
     field:
@@ -62,3 +68,31 @@ fields:
       display: 'Farben Invertiert'
       instructions: 'Hintergrund schwarz, Text weiss'
       width: 50
+      localizable: false
+  -
+    handle: lines_top_logo
+    field:
+      type: toggle
+      display: 'Logo + Linien Beginn oben'
+      localizable: false
+      width: 50
+  -
+    handle: lines_top
+    field:
+      type: toggle
+      display: 'Linien Beginn oben'
+      localizable: false
+      width: 50
+  -
+    handle: lines_bottom
+    field:
+      type: toggle
+      display: 'Linien Abschluss unten'
+      localizable: false
+      width: 50
+  -
+    handle: content_bg_color
+    field:
+      type: color
+      display: 'Absatz Hintergrundfarbe'
+      localizable: false
