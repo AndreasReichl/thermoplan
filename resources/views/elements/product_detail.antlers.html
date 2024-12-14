@@ -3,13 +3,15 @@
 	{{ productMainSiteName = 'Products' }}
 	{{ productDetailBtnText = 'back' }}
 	{{ productDetailNoResultsText = 'No further entries available.' }}
-	{{ productDetailNextArticle = 'Next producte' }}
+	{{ productDetailNextArticle = 'Next product' }}
+	{{ productDetailNoMoreContent = 'No more entries' }}
 {{ else }}
 	{{ productMainSiteUrl = '/produkte' }}
 	{{ productMainSiteName = 'Produkte' }}
 	{{ productDetailBtnText = 'zurück' }}
 	{{ productDetailNoResultsText = 'Keine weiteren Einträge vorhanden' }}
 	{{ productDetailNextArticle = 'Weitere Produkte' }}
+	{{ productDetailNoMoreContent = 'Keine weiteren Produkte' }}
 {{ /if }}
 <div class="productDetail">
 	<div class="container">
@@ -79,25 +81,28 @@
 			<div class="inner">
 				<div class="categoryWrapper">
 					<h2 class="categoryTitle">{{ productDetailNextArticle }}</h2>
-					<a onclick="history.back()" class="btn btn-default has-icon has-text">
-						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
-						<span class="btnText"><span>{{ productDetailBtnText }}</span></span>
-					</a>
 				</div>
 				<div class="productsWrapper">
 					{{ collection:next in="products" as="posts" limit="3" sort="order" }}
-						{{ if no_results }}
-							No more posts to read!
-						{{ /if }}
-
 						{{ posts }}
 							<div class="post">
 							{{ partial:elements/product_card }}
 							</div>
 						{{ /posts }}
+						{{ if posts|count < 3 }}
+							{{ collection:products limit="3" sort="order" }}
+								<div class="post">
+									{{ partial:elements/product_card }}
+								</div>
+							{{ /collection:products }}
+						{{ /if }}
 					{{ /collection:next }}
 				</div>
 			</div>
+			<a onclick="history.back()" class="btn-back btn btn-default has-icon has-text">
+				<span class="btnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span>
+				<span class="btnText"><span>{{ productDetailBtnText }}</span></span>
+			</a>
 		</div>
 	</div>
 </section>

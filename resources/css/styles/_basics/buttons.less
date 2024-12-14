@@ -11,7 +11,7 @@
 
 @btn-font-size-xs:	clamp(6px, 0.4vw, 10px);
 @btn-height-xs:		auto;
-@btn-padding-xs:	12px 24px;
+@btn-padding-xs:	8px 24px;
 
 @btn-font-size-sm:	clamp(8px, 0.6vw, 12px);
 @btn-height-sm:		auto;
@@ -19,15 +19,15 @@
 
 @btn-font-size-md:	clamp(12px, 0.8vw, 14px);
 @btn-height-md:		auto;
-@btn-padding-md:	12px 32px;
+@btn-padding-md:	1.5vw 3.5vw;
 
 @btn-font-size-lg:	clamp(16px, 1.0vw, 20px);
 @btn-height-lg:		auto;
-@btn-padding-lg:	24px 48px;
+@btn-padding-lg:	12px 32px;
 
 @btn-font-size-xl:	clamp(20px, 1.2vw, 24px);
 @btn-height-xl:		auto;
-@btn-padding-xl:	28px 56px;
+@btn-padding-xl:	12px 32px;
 
 // --------------------------------------------------
 
@@ -53,7 +53,7 @@ a, .btn, .btn-link, .btn-text-link 		{
 .btn-lg				{ padding: @btn-padding-lg; font-size: @btn-font-size-lg; height: @btn-height-lg; border-radius: @btn-radius; }
 .btn-xl				{ padding: @btn-padding-xl; font-size: @btn-font-size-xl; height: @btn-height-xl; border-radius: @btn-radius; }
 
-.btn 				  { font-weight: 500; padding: @btn-padding-md; font-size: @btn-font-size-md; height: @btn-height-md; border-radius: @btn-radius; .flex-display(inline-flex); .justify-content(center); .align-items(center); margin-bottom: 0; touch-action: manipulation; user-select: none; cursor: pointer; background-image: none; border-width:@btn-border-size; border-style:solid; border-color:var(--border-color); text-align: center; width: auto;
+.btn 				  { font-weight: 500; padding: @btn-padding-xs; font-size: @btn-font-size-md; height: @btn-height-md; border-radius: @btn-radius; .flex-display(inline-flex); .justify-content(center); .align-items(center); margin-bottom: 0; touch-action: manipulation; user-select: none; cursor: pointer; background-image: none; border-width:@btn-border-size; border-style:solid; border-color:var(--border-color); text-align: center; width: auto;
 	&, &:active, &.active 							{ &:focus, &.focus { .tab-focus(); } }
 	&:hover, &:focus, &.focus 						{ text-decoration: none; }
 	&:active, &.active 								{ outline: 0; background-image: none; }
@@ -67,9 +67,13 @@ a, .btn, .btn-link, .btn-text-link 		{
   &.has-icon.has-text {
 	>*:last-child { margin-left:10px; }
   }
+
+  @media (min-width: @screen-lg-min) 	{ padding: @btn-padding-lg; }
 }
 
-.btnIcon      { line-height:0; max-width:20px; height:auto; }
+.btnIcon      { line-height:0; width:3.5vw; max-width:16px; height:auto;
+	@media (min-width: @screen-md-min) 	{ max-width:20px; }
+}
 
 // Colors
 // --------------------------------------------------

@@ -29,6 +29,11 @@ preferences:
       columns:
         - title
         - slug
+    product_categories:
+      columns:
+        - title
+        - slug
+        - order
   nav:
     top_level:
       'content::collections::pages': '@move'

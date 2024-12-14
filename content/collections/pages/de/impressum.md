@@ -27,14 +27,6 @@ page_builder:
         type: paragraph
         attrs:
           textAlign: left
-  -
-    id: m4h81gc5
-    textspalten: one
-    content:
-      -
-        type: paragraph
-        attrs:
-          textAlign: left
         content:
           -
             type: text
@@ -256,11 +248,13 @@ page_builder:
           -
             type: text
             text: 'Alle Inhalte wurden mit großer Sorgfalt erstellt und werden ständig aktualisiert. Trotzdem können wir für Richtigkeit, Vollständigkeit und Aktualität keine Gewähr übernehmen. Unsere Web-Seiten enthalten teilweise weiterführende Links auf externe Seiten, für die wir keinerlei Verantwortung übernehmen können. Alle genannten Warenzeichen, Markennamen und Produktbezeichnungen sind Eigentum der jeweiligen Firmen.'
-    type: text
-    enabled: true
+    paragraph_class: mt-60
+    lines_top_logo: false
+    lines_top: false
+    lines_bottom: false
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: true
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1733929380
+updated_at: 1734187410
 ---

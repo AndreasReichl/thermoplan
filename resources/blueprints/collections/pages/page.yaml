@@ -14,6 +14,7 @@ tabs:
                 - required
               display: Absatztitel
               instructions: 'Titel des Eintrags. Muss ausgefüllt sein. Wird nicht auf der Seite angezeigt!'
+              localizable: false
       -
         display: Inhalt
         fields:
@@ -43,6 +44,7 @@ tabs:
                   value: 'Seite wird nicht indiziert und den Links nicht gefolgt'
               type: select
               display: Robots
+              localizable: false
           -
             import: seodata
   sidebar:
@@ -85,10 +87,12 @@ tabs:
               default: true
               type: toggle
               display: 'Abstand von oben'
+              localizable: false
           -
             handle: show_references
             field:
               default: true
               type: toggle
               display: 'Logos im Footer'
-              instructions: 'Zeigt den Logoslider im Fuusbereich der Seite an.'
+              instructions: 'Zeigt den Logoslider im Fussbereich der Seite an.'
+              localizable: false

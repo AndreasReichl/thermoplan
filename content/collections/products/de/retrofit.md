@@ -25,9 +25,10 @@ subtitle:
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734080449
+updated_at: 1734188339
 product_categories: anlagenbau
 product_icon: icon_retrofit.svg
+show_references: true
 content:
   -
     type: paragraph

@@ -88,3 +88,11 @@ tabs:
               type: template
               display: Template
               localizable: true
+          -
+            handle: show_references
+            field:
+              default: true
+              type: toggle
+              display: 'Logos im Footer'
+              instructions: 'Zeigt den Logoslider im Fussbereich der Seite an.'
+              localizable: false

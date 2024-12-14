@@ -1,6 +1,6 @@
 <div class="categoriesWrapper">
-    {{ taxonomy:product_categories }}
-        <div class="inner">
+    {{ taxonomy:product_categories sort="order:asc" }}
+        <div id="product_{{ slug }}" class="inner">
             <div class="categoryWrapper">
                 <h2 class="categoryTitle">{{ title }}</h2>
                 <div class="categoryContent">{{ content }}</div>

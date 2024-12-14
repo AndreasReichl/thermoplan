@@ -51,6 +51,12 @@ tabs:
       -
         fields:
           -
+            handle: order
+            field:
+              type: text
+              display: Reihenfolge
+              localizable: false
+          -
             handle: slug
             field:
               type: slug

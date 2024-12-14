@@ -9,5 +9,6 @@ content:
         type: text
         text: 'Wir bieten zuverlässige Lösungen von der Planung neuer Anlagen bis hin zu Retrofit und Wartung. Dank moderner Frequenzregler optimieren wir auch ältere Anlagen für schnelle und präzise Positionierung.'
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734009882
+updated_at: 1734186260
 blueprint: product_category
+order: '4'
