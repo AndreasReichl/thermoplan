@@ -37,7 +37,7 @@
 					{{ /if }}
 					<div class="textboxMediabox">
 						{{ image }}
-						<div class="mediabox">
+						<div class="mediabox{{ if bildschatten }} imgShadow{{ /if }}">
 							{{ partial:elements/image }}
 						</div>
 						{{ /image }}
@@ -75,6 +75,9 @@
 {{ weitere_inhalte scope="block" }}
 	{{ partial src="components/{type}" }}
 {{ /weitere_inhalte }}
+{{ if footer_line_top }}
+{{ partial:elements/lines_top }}
+{{ /if }}
 <section class="contentBottom">
 	<div class="container">
 		<div class="categoriesWrapper">
@@ -90,7 +93,7 @@
 							</div>
 						{{ /posts }}
 						{{ if posts|count < 3 }}
-							{{ collection:products limit="3" sort="order" }}
+							{{ collection:products limit="2" sort="order" }}
 								<div class="post">
 									{{ partial:elements/product_card }}
 								</div>

@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734189741
+updated_at: 1734361456
 headline:
   -
     type: paragraph
@@ -116,7 +116,7 @@ weitere_inhalte:
     image: 02_bluebox.jpeg
     background_image: weisszugrauverlauf.svg
     full_width: false
-    seitenverhaeltnis: sixtyFourty
+    seitenverhaeltnis: fiftyFifty
     inverted: false
     lines_top_logo: true
     lines_top: false
@@ -124,7 +124,9 @@ weitere_inhalte:
     type: paragraph2
     enabled: true
 show_references: true
-content:
+bildschatten: true
+footer_line_top: false
+subtitle:
   -
     type: paragraph
     attrs:
@@ -134,8 +136,11 @@ content:
         type: text
         marks:
           -
-            type: bold
+            type: textColor
+            attrs:
+              color: '#919191'
         text: 'Die Komplettlösung in einer Anlage'
+content:
   -
     type: paragraph
     attrs:

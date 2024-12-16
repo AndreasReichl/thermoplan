@@ -1,0 +1,14 @@
+<section class="singleProduct">
+	<div class="container">
+		<div class="inner">
+			{{ if image }}<div class="mediabox">{{ partial:elements/image }}</div>{{ /if }}
+			<div class="textblock">{{ partial:elements/textblock }}</div>
+			{{ if specification_content }}
+				<div class="specificationContent">{{ specification_content }}</div>
+			{{ /if }}
+			{{ if hydrogen_approved }}
+				<div class="approved"><img src="/assets/icons/icon_hydrogen_approved.svg" alt="{{ alt }}"></div>
+			{{ /if }}
+		</div>
+	</div>
+</section>

@@ -7,7 +7,7 @@
             </div>
             <div class="productsWrapper {{ title }}">
                 {{ if entries }}
-                    {{ entries }}
+                    {{ entries sort="order:asc" }}
                         {{ partial:elements/product_card }}
                     {{ /entries }}
                 {{ /if }}

@@ -67,3 +67,20 @@ fields:
                     localizable: false
                 -
                   import: textelement
+            product:
+              display: Produkt
+              icon: addon-boxes-stack
+              fields:
+                -
+                  import: imageelement
+                -
+                  handle: hydrogen_approved
+                  field:
+                    type: toggle
+                    display: 'H2 geeignet'
+                    localizable: false
+                -
+                  import: text_component
+                -
+                  import: textelement
+                  prefix: specification_

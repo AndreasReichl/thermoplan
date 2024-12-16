@@ -27,6 +27,7 @@ tabs:
               max_items: 1
               validate:
                 - required
+              width: 50
           -
             handle: product_icon
             field:
@@ -35,10 +36,17 @@ tabs:
               type: assets
               display: 'Produkt Icon'
               localizable: false
+              width: 50
           -
             import: text_component
           -
             import: imageelement
+          -
+            handle: bildschatten
+            field:
+              type: toggle
+              display: Bildschatten
+              localizable: false
           -
             import: videoelement
       -
@@ -95,4 +103,12 @@ tabs:
               type: toggle
               display: 'Logos im Footer'
               instructions: 'Zeigt den Logoslider im Fussbereich der Seite an.'
+              localizable: false
+          -
+            handle: footer_line_top
+            field:
+              default: true
+              type: toggle
+              display: 'Footer-Linien oberhalb anzeigen'
+              instructions: 'Zeigt die Trennlinie oberhalb der Logos an'
               localizable: false

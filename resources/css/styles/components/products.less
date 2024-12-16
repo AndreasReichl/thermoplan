@@ -97,14 +97,25 @@
 		.inner 				{
 			.contentTop 			{ width:100%;
 				.textboxMediabox 	{ .flex-display(flex);
-					.mediabox 		{ .flex-size(1); order:1;
-						>* 			{ .border-radius(8px); .box-shadow; }
-					}
-					.textbox 		{ .flex-size(2); padding:0px;
+					.mediabox 		{ .flex-size(3); order:1; }
+					.textbox 		{ .flex-size(4); padding:0px;
 						>* 			{ padding-right:60px; }
 					}
 				}
 			}
 		}
+	}
+}
+
+
+.singleProduct 					{
+
+	@media (min-width: @screen-md-min)	{
+		.inner 					{ .flex-display(flex); gap:60px; position: relative; }
+		.mediabox 				{ width:10vw; }
+		.approved 				{ width:20vw; max-width:120px; }
+		.textblock 				{ .flex-size(3); }
+		.specificationContent 	{ .flex-size(2); }
+
 	}
 }
