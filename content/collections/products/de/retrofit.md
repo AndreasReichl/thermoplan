@@ -21,14 +21,173 @@ subtitle:
     content:
       -
         type: text
+        marks:
+          -
+            type: textColor
+            attrs:
+              color: '#919191'
         text: 'als zeitgemäße Lösung'
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734188339
+updated_at: 1734428967
 product_categories: anlagenbau
 product_icon: icon_retrofit.svg
 show_references: true
+bildschatten: false
+seo_title: Retrofit
+seo_description: 'Retrofit: Anlagen modernisieren & Lebensdauer verlängern. Effizient, sicher & kostengünstig auf aktuellen Standard – minimaler Stillstand, maximale Effizienz!'
+seo_keywords: 'Retrofit, Anlagenmodernisierung, Lebensdauerverlängerung, Sicherheitstechnik aktualisieren, effiziente Anlagenoptimierung, geringer Anlagenstillstand'
+footer_line_top: false
+weitere_inhalte:
+  -
+    id: m4sa6fz2
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Vorteile des Retrofit'
+    headline_type: h2
+    subtitle_type: h3
+    content:
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Geringere Investitionskosten als eine Neuanschaffung'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Anlagen werden wartungsfreundlicher'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: Ersatzteilsicherheit
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Fernwartungsmöglichkeit dank neuer Technik'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Keine Notwendigkeit von neuen Genehmigungs-verfahren'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Einhaltung der aktuellen Sicherheitsstandards'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Herstellerunabhängig bei Retrofit'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Verschiedenste Steuerungshersteller realisierbar'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Produktivität und Qualität werden gesteigert'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Minimale Anlagenstillstandszeit'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Durch den Einsatz neuer Regler-Generationen verbesserte Präzision und Anlagengeschwindigkei'
+    image: simatic-collage.png
+    background_image: weisszugrauverlauf.svg
+    full_width: false
+    seitenverhaeltnis: fourtySixty
+    inverted: false
+    lines_top_logo: true
+    lines_top: false
+    lines_bottom: true
+    type: paragraph1
+    enabled: true
 content:
   -
     type: paragraph

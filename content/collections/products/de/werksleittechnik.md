@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734357705
+updated_at: 1734451265
 headline:
   -
     type: paragraph
@@ -18,7 +18,7 @@ headline:
     content:
       -
         type: text
-        text: Werksleittechnik
+        text: WERKSLEITTECHNIK
 subtitle:
   -
     type: paragraph
@@ -36,6 +36,11 @@ subtitle:
 show_references: true
 image: planys.png
 photocredit: 'P L A N Y S  i n t e g r a l vereint umfassende und detaillierte Prozesskontrolle und -analyse.'
+bildschatten: false
+seo_title: 'Werksleittechnik: Betriebsdatenerfassung, Energiemonitoring und mehr'
+seo_description: 'Optimieren Sie Ihre Produktionsprozesse mit unserem Werksleitsystem für Betriebsdatenerfassung, Produktverfolgung und Energiemonitoring in einer Lösung.'
+seo_keywords: 'Werksleittechnik, Betriebsdatenerfassung, Energiemonitoring, Produktverfolgung, ERP-Schnittstelle, Industrie 4.0, Prozesssteuerung, Datenmanagement, Mehrarbeitsplatzfähig, Planys integral'
+footer_line_top: true
 content:
   -
     type: paragraph

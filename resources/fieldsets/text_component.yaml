@@ -1,58 +1,6 @@
 title: 'Text Component'
 fields:
   -
-    handle: headline_above
-    field:
-      buttons:
-        - bold
-        - italic
-        - removeformat
-        - color
-        - underline
-        - horizontalrule
-        - alignleft
-        - aligncenter
-        - alignright
-        - alignjustify
-      remove_empty_nodes: false
-      type: bard
-      display: 'Headline above'
-      width: 66
-      localizable: false
-  -
-    handle: headline_above_type
-    field:
-      options:
-        -
-          key: h1
-          value: H1
-        -
-          key: h2
-          value: H2
-        -
-          key: h3
-          value: H3
-        -
-          key: h4
-          value: H4
-        -
-          key: h5
-          value: H5
-        -
-          key: h6
-          value: H6
-        -
-          key: div
-          value: Div
-        -
-          key: span
-          value: Span
-      default: h4
-      type: select
-      display: 'Headline above Typ'
-      width: 33
-      localizable: false
-  -
     handle: headline
     field:
       buttons:

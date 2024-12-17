@@ -1,6 +1,5 @@
 {{ if top_icon }}<div class="top_icon" style="color:{{ topicon_farbe }};">{{ top_icon }}</div>{{ /if }}
 {{ if top_logo }}{{ top_logo }}<div class="top_logo"><img src="{{ glide:url width="100" }}" alt="{{ alt }}"></div>{{ /top_logo }}{{ /if }}
-{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<{{ headline_above_type }} class="headline_above">{{ headline_above }}</{{ headline_above_type }}>{{ /if }}
 {{ if headline | trim != "" && headline | strip_tags != "" }}<{{ headline_type }} class="headline">{{ headline }}</{{ headline_type }}>{{ /if }}
 {{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<{{ subtitle_type }} class="subtitle">{{ subtitle }}</{{ subtitle_type }}>{{ /if }}
 {{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}

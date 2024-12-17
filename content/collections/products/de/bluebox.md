@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734361456
+updated_at: 1734450926
 headline:
   -
     type: paragraph
@@ -18,7 +18,7 @@ headline:
     content:
       -
         type: text
-        text: Qualitätsprüfanlagen
+        text: QUALITÄTSPRÜFANLAGEN
 image: 01_bluebox.png
 weitere_inhalte:
   -
@@ -140,6 +140,9 @@ subtitle:
             attrs:
               color: '#919191'
         text: 'Die Komplettlösung in einer Anlage'
+seo_title: 'Bluebox Qualitätsprüfanlage'
+seo_description: 'Unsere Bluebox bietet eine Komplettlösung für die Qualitätssicherung: 3D-Lasermessung, Klangprüfung und Oberflächenprüfung zur präzisen Fehlererkennung.'
+seo_keywords: 'Qualitätsprüfanlagen, 3D-Lasermessung, Klangprüfung, Oberflächenprüfung, Ziegelprüfung, Maßhaltigkeit, optische Fehlererkennung'
 content:
   -
     type: paragraph

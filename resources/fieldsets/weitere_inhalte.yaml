@@ -67,6 +67,12 @@ fields:
                     localizable: false
                 -
                   import: textelement
+                -
+                  handle: lines_bottom
+                  field:
+                    type: toggle
+                    display: 'Linien unten anzeigen'
+                    localizable: false
             product:
               display: Produkt
               icon: addon-boxes-stack

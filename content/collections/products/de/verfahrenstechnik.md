@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734357728
+updated_at: 1734451436
 headline:
   -
     type: paragraph
@@ -18,7 +18,7 @@ headline:
     content:
       -
         type: text
-        text: Verfahrenstechnik
+        text: VERFAHRENSTECHNIK
 subtitle:
   -
     type: paragraph
@@ -35,6 +35,11 @@ subtitle:
         text: 'Prozesssteuerungen, Brenntechnik, Wägetechnik, Plastizitätsregelung, Energie-/Qualitätsoptimierung, Leittechnik, Energie- und Mengenbilanz, Sensoren und Aktoren'
 image: bde-pc.png
 show_references: true
+bildschatten: false
+seo_title: Verfahrenstechnik
+seo_description: 'Optimieren Sie Ihre Prozesse mit innovativer Verfahrenstechnik. Wir bieten Lösungen in Ofensteuerung, Brenntechnik, Energieoptimierung und mehr.'
+seo_keywords: 'Verfahrenstechnik, Prozesssteuerung, Brenntechnik, Wägetechnik, Energieoptimierung, Plastizitätsregelung, Dosiersysteme, Leittechnik, CO2-Neutralität'
+footer_line_top: true
 content:
   -
     type: paragraph

@@ -1,7 +1,10 @@
 <article class="textBlock {{ paragraph_class }}">
 	<div class="container">
-		<div class="textspalten textspalten_{{ textspalten }}{{ if auto_text_width }} auto_text_width{{ /if }}">
+		<div class="textspalten textspalten_{{ textspalten:label }}{{ if auto_text_width }} auto_text_width{{ /if }}">
 			{{ content }}
 		</div>
 	</div>
+	{{ if lines_bottom }}
+		{{ partial:elements/lines_bottom }}
+	{{ /if }}
 </article>

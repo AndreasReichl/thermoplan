@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734364768
+updated_at: 1734452484
 headline:
   -
     type: paragraph
@@ -18,7 +18,7 @@ headline:
     content:
       -
         type: text
-        text: Brenntechnik
+        text: BRENNTECHNIK
 subtitle:
   -
     type: paragraph
@@ -58,7 +58,7 @@ footer_line_top: true
 weitere_inhalte:
   -
     id: m4r6lq7v
-    image: hgtyp76-g-f.jpeg
+    image: 01_hgtyp76-g_f.jpeg
     headline_above_type: h4
     headline:
       -
@@ -175,150 +175,67 @@ weitere_inhalte:
                 type: bold
             text: 'Technische Daten:'
       -
-        type: table
+        type: paragraph
+        attrs:
+          textAlign: left
         content:
           -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: 'Brennstoff:'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: 'Erdgas / Flüssiggas'
+            type: text
+            text: 'Brennstoff: Erdgas / Flüssiggas'
           -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: 'Brennerleistung:'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: 'max. 150 KW / SIC Typ 50'
-                      -
-                        type: hardBreak
-                      -
-                        type: text
-                        text: 'max. 100 KW / SIC Typ 40'
-                      -
-                        type: hardBreak
-                      -
-                        type: text
-                        text: 'max. 70 KW / SIC Typ 30'
+            type: hardBreak
           -
-            type: tableRow
-            content:
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: 'Gasdruck am Brenner:'
-              -
-                type: tableCell
-                attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: '5 bis max. 120 mbar'
+            type: text
+            text: 'Brennerleistung: '
+      -
+        type: bulletList
+        content:
           -
-            type: tableRow
+            type: listItem
             content:
               -
-                type: tableCell
+                type: paragraph
                 attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
+                  textAlign: left
                 content:
                   -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: 'Luftdruck am Brenner:'
+                    type: text
+                    text: 'max. 150 KW / SIC Typ 50'
+          -
+            type: listItem
+            content:
               -
-                type: tableCell
+                type: paragraph
                 attrs:
-                  colspan: 1
-                  rowspan: 1
-                  colwidth: null
+                  textAlign: left
                 content:
                   -
-                    type: paragraph
-                    attrs:
-                      textAlign: left
-                    content:
-                      -
-                        type: text
-                        text: '5 – 30 mbar'
+                    type: text
+                    text: 'max. 100 KW / SIC Typ 40'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'max. 70 KW / SIC Typ 30'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Gasdruck am Brenner: 5 bis max. 120 mbar'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Luftdruck am Brenner: 5 – 30 mbar'
     hydrogen_proofed: true
     hydrogen_approved: true
     subtitle:
@@ -335,6 +252,495 @@ weitere_inhalte:
                 attrs:
                   color: '#919191'
             text: 'Brenner zur Beheizung von Industrieöfen'
+  -
+    id: m4snongb
+    image: 02_typ33-sic_sic-g.jpeg
+    hydrogen_approved: true
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'G+M Universal Injektorbrenner: Ausführung Typ 33-SIC/SIC-G'
+    headline_type: h2
+    subtitle:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textColor
+                attrs:
+                  color: '#919191'
+            text: 'Brenner zur Beheizung von Industrieöfen entwickelt speziell für die Grobkeramikproduktion'
+    subtitle_type: h3
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Erzeugen hohe Turbulenzen und gleichmäßige Temperaturverteilung'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'geeignet für hohen Ziegelbesatz'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'als Decken- oder Seitenbrenner verwendbar'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'für verlängerte Standzeit in korrosiver schwefelhaltiger Ofenatmosphäre'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Brennerrohr einschließlich Düse aus SIC Keramik'
+    specification_content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Technische Daten:'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Brennstoff: Erdgas / Flüssiggas / leichtes-schweres Heizöl'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Brennerleistung: max. 70 KW'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Gasdruck am Brenner: max. 500 mbar'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Luftdruck am Brenner: 5 – 80 mbar'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Installation / Einbau:'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Ohne Flammenüberwachung ab 750°C (Temperatur im Brennkanal)'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Richtlinien nach EN 746-2'
+    type: product
+    enabled: true
+  -
+    id: m4snus7y
+    image: 03_typ33-st_sic-g_02.jpeg
+    hydrogen_approved: true
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'G+M Universal Injektorbrenner: Ausführung Typ 33-ST/SIC-G'
+    headline_type: h2
+    subtitle:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textColor
+                attrs:
+                  color: '#919191'
+            text: 'Brenner zur Beheizung von Industrieöfen'
+    subtitle_type: h3
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'entwickelt speziell für die Grobkeramikproduktion.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Erzeugen hohe Turbulenzen und'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'gleichmäßige Temperaturverteilung'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'geeignet für hohen Ziegelbesatz'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'als Decken- oder Seitenbrenner verwendbar.'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Brennerdüse aus SIC Keramik, Brennerrohr in Edelstahlausführung'
+    specification_content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Technische Daten:'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Brennstoff: Erdgas / Flüssiggas / leichtes-schweres Heizöl'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Brennerleistung: max. 70 KW'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Gasdruck am Brenner: max. 500 mbar'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Luftdruck am Brenner: 5 – 80 mbar'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Installation / Einbau:'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Ohne Flammenüberwachung ab 750°C (Temperatur im Brennkanal)'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Richtlinien nach EN 746-2'
+    type: product
+    enabled: true
+  -
+    id: m4so0nf9
+    image: 04_typ33-st_sic-g.jpeg
+    hydrogen_approved: true
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'G+M Universal Venturi Ausführung Typ 33-ST/SIC-G'
+    headline_type: h2
+    subtitle:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textColor
+                attrs:
+                  color: '#919191'
+            text: 'Brenner zur Beheizung von Industrieöfen'
+    subtitle_type: h3
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'entwickelt speziell für die Grobkeramikproduktion.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'Erzeugen hohe Turbulenzen und'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'gleichmäßige Temperaturverteilung'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                attrs:
+                  textAlign: left
+                content:
+                  -
+                    type: text
+                    text: 'als Decken- oder Seitenbrenner verwendbar.'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: Betrieb
+          -
+            type: text
+            text: ': Modus EIN – AUS / Impuls'
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Brennerrohr gefertigt in Stahl, verlängerte Venturi - Brennerdüse aus SIC Keramik, Energieeinsparung durch Nutzung der vorhandenen Heißluft im Brennkanal'
+    specification_content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Technische Daten:'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Brennstoff: Erdgas'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Brennerleistung: max. 70 KW'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Gasdruck am Brenner: max. 1,5 bar (abhängig von der Düsenbohrung)'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Luftdruck am Brenner: 2 – 10 mbar'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Installation / Einbau:'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Ohne Flammenüberwachung ab 750°C (Temperatur im Brennkanal)'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Richtlinien nach EN 746-2'
+    type: product
+    enabled: true
+seo_title: 'Brenntechnik: Brennerlösungen von G+M Feuerungsanlagen'
+seo_description: 'Profitieren Sie von hoch effizienten Brennerlösungen für Ihre Produktion. G+M Feuerungsanlagen bieten Brenner für optimale Energie- & Qualitätssteigerung.'
+seo_keywords: 'Brenntechnik, Brennerlösungen, G+M Feuerungsanlagen, Energieeffizienz, Produktionssteigerung, maßgeschneiderte Brenner, zuverlässige Brenner'
 content:
   -
     type: paragraph

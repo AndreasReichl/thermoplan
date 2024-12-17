@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734189211
+updated_at: 1734450798
 headline:
   -
     type: paragraph
@@ -18,9 +18,14 @@ headline:
     content:
       -
         type: text
-        text: Trocknung
+        text: TROCKNUNG
 show_references: true
-content:
+bildschatten: false
+seo_title: 'Effiziente Trocknungslösungen für Keramik und Porzellan'
+seo_description: 'Innovative Trocknungstechnologien für Keramik, Porzellan & mehr: kurze Trockenzeiten, optimale Effizienz & höchste Qualität bei reduzierten Kosten.'
+seo_keywords: 'Trocknungstechnologie, Keramiktrocknung, Porzellantrocknung, effiziente Trocknung, kontrollierte Trocknung, niedrige Bruchquote, optimierte Luftführung'
+footer_line_top: true
+subtitle:
   -
     type: paragraph
     attrs:
@@ -30,8 +35,11 @@ content:
         type: text
         marks:
           -
-            type: bold
-        text: 'Effiziente Trocknungslösungen für hochwertige Materialien:'
+            type: textColor
+            attrs:
+              color: '#919191'
+        text: 'Effiziente Trocknungslösungen für hochwertige Materialien'
+content:
   -
     type: paragraph
     attrs:

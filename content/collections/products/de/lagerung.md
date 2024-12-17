@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734189920
+updated_at: 1734451011
 headline:
   -
     type: paragraph
@@ -18,9 +18,14 @@ headline:
     content:
       -
         type: text
-        text: Lagertechnik
+        text: LAGERTECHNIK
 image: 01_lagertechnik.jpg
 show_references: true
+bildschatten: false
+seo_title: 'Lagertechnik: Planung, Modernisierung und Retrofit-Lösungen'
+seo_description: 'Profitieren Sie von unserer 15-jährigen Erfahrung in der Lagertechnik. Wir bieten Planung, Installation, Retrofit, Wartung und minimale Ausfallzeiten durch Wochenendumbauten.'
+seo_keywords: 'Lagertechnik, Retrofit-Lösungen, Neuanlage, Modernisierung, mechanische Wartung, Frequenzregler, präzise Positionierung, minimale Ausfallzeiten'
+footer_line_top: true
 content:
   -
     type: paragraph

@@ -42,3 +42,6 @@ preferences:
       'content::collections::team': '@move'
       'content::collections::referenzen': '@move'
       'content::collections::historie': '@move'
+  assets:
+    assets:
+      per_page: 100

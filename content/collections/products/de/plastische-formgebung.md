@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734189081
+updated_at: 1734450790
 headline:
   -
     type: paragraph
@@ -18,8 +18,13 @@ headline:
     content:
       -
         type: text
-        text: 'Plastische Formgebung'
+        text: 'PLASTISCHE FORMGEBUNG'
 show_references: true
+bildschatten: false
+seo_title: 'NC-Roller-Technologie Formgebung für die Keramikindustrie'
+seo_description: 'Fortschrittliche NC-Roller-Technologie für präzise keramische Formgebung: hohe Produktqualität, kurze Umrüstzeiten & maximale Flexibilität.'
+seo_keywords: 'NC-Roller-Technologie, keramische Formgebung, Servo-Drehstrommotoren, präzise Roller, dünnes Porzellan, flexible Produktion'
+footer_line_top: true
 content:
   -
     type: paragraph

@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734362014
+updated_at: 1734451134
 headline:
   -
     type: paragraph
@@ -18,7 +18,7 @@ headline:
     content:
       -
         type: text
-        text: Elektrotechnik
+        text: ELEKTROTECHNIK
 subtitle:
   -
     type: paragraph
@@ -165,6 +165,9 @@ weitere_inhalte:
     enabled: true
 bildschatten: false
 footer_line_top: false
+seo_title: 'Steuerungs(um)bau: 30 Jahre Erfahrung in der Elektrotechnik'
+seo_description: 'Über 30 Jahre Erfahrung. Wir bieten Beratung, Planung, Konstruktion, Modernisierung und Effizienzsteigerung mit Siemens und weiteren führenden Anbietern.'
+seo_keywords: 'Steuerungsbau, Elektrotechnik, SPS-Programmierung, Siemens Steuerung, Omron, Mitsubishi, Allen Bradley, Modernisierung, TIA Umstellung, Schaltschrankba'
 content:
   -
     type: paragraph
