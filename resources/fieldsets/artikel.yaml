@@ -59,15 +59,22 @@ fields:
       type: select
       display: Seitenverhältnis
       instructions: 'Seitenverhältnis Bild zu Text'
-      width: 50
+      width: 33
       localizable: false
+  -
+    handle: content_bg_color
+    field:
+      type: color
+      display: 'Absatz Hintergrundfarbe'
+      localizable: false
+      width: 33
   -
     handle: inverted
     field:
       type: toggle
       display: 'Farben Invertiert'
       instructions: 'Hintergrund schwarz, Text weiss'
-      width: 50
+      width: 33
       localizable: false
   -
     handle: lines_top_logo
@@ -75,24 +82,18 @@ fields:
       type: toggle
       display: 'Logo + Linien Beginn oben'
       localizable: false
-      width: 50
+      width: 33
   -
     handle: lines_top
     field:
       type: toggle
       display: 'Linien Beginn oben'
       localizable: false
-      width: 50
+      width: 33
   -
     handle: lines_bottom
     field:
       type: toggle
       display: 'Linien Abschluss unten'
       localizable: false
-      width: 50
-  -
-    handle: content_bg_color
-    field:
-      type: color
-      display: 'Absatz Hintergrundfarbe'
-      localizable: false
+      width: 33

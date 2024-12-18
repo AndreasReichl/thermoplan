@@ -6,6 +6,8 @@ fields:
       type: video
       display: 'Video Extern'
       instructions: 'Youtube, Vimeo, Url'
+      width: 33
+      localizable: false
   -
     handle: video_intern
     field:
@@ -14,7 +16,8 @@ fields:
       type: assets
       display: 'Video Intern'
       instructions: 'Video hochladen oder auswählen'
-      width: 50
+      width: 33
+      localizable: false
   -
     handle: video_thumbnail
     field:
@@ -22,4 +25,5 @@ fields:
       max_files: 1
       container: assets
       display: 'Video Thumbnail'
-      width: 50
+      width: 33
+      localizable: false

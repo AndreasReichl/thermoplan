@@ -7,11 +7,20 @@ fields:
       container: assets
       type: assets
       display: Image
-      width: 50
+      width: 33
+      localizable: false
   -
     handle: photocredit
     field:
       type: text
       display: Bildtitel
       instructions: 'Bildbeschreibung sichtbar.'
-      width: 50
+      width: 33
+      localizable: false
+  -
+    handle: bildschatten
+    field:
+      type: toggle
+      display: Bildschatten
+      localizable: false
+      width: 33

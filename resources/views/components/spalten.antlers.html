@@ -1,5 +1,19 @@
-<section class="gridWrapper gridRows_{{ spaltenanzahl }}">
-	{{ spaltenlayout scope="block" }}
-		{{ partial src="elements/card" }}
-	{{ /spaltenlayout }}
+<section class="spaltenLayout" style="background-color:{{ content_bg_color }};">
+	{{ if lines_top_logo }}
+		{{ partial:elements/lines_logo_top }}
+	{{ elseif lines_top }}
+		{{ partial:elements/lines_top }}
+	{{ /if }}
+	<div class="container">
+		<div class="inner">
+			<div class="gridWrapper gridRows_{{ spaltenanzahl }}">
+				{{ spaltenlayout scope="block" }}
+					{{ partial src="elements/card" }}
+				{{ /spaltenlayout }}
+			</div>
+		</div>
+	</div>
+	{{ if lines_bottom }}
+		{{ partial:elements/lines_bottom }}
+	{{ /if }}
 </section>

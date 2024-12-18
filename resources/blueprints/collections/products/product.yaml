@@ -42,12 +42,6 @@ tabs:
           -
             import: imageelement
           -
-            handle: bildschatten
-            field:
-              type: toggle
-              display: Bildschatten
-              localizable: false
-          -
             import: videoelement
       -
         display: Inhalte

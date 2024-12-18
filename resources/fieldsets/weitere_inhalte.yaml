@@ -90,3 +90,66 @@ fields:
                 -
                   import: textelement
                   prefix: specification_
+            spalten:
+              display: Spalten
+              icon: dashboard-layout
+              fields:
+                -
+                  handle: spaltenanzahl
+                  field:
+                    default: '3'
+                    type: text
+                    display: Spaltenanzahl
+                    localizable: false
+                    width: 33
+                -
+                  handle: content_bg_color
+                  field:
+                    type: color
+                    display: 'Absatz Hintergrundfarbe'
+                    localizable: false
+                    width: 33
+                -
+                  handle: lines_top_logo
+                  field:
+                    type: toggle
+                    display: 'Logo + Linien Beginn oben'
+                    localizable: false
+                    width: 33
+                -
+                  handle: lines_top
+                  field:
+                    type: toggle
+                    display: 'Linien Beginn oben'
+                    localizable: false
+                    width: 33
+                -
+                  handle: lines_bottom
+                  field:
+                    type: toggle
+                    display: 'Linien unten anzeigen'
+                    localizable: false
+                    width: 33
+                -
+                  handle: card_background
+                  field:
+                    type: toggle
+                    display: 'Spalten mit Hintegrund und Schatten'
+                    localizable: false
+                    width: 33
+                -
+                  handle: spaltenlayout
+                  field:
+                    type: replicator
+                    display: Spaltenlayout
+                    localizable: false
+                    sets:
+                      inhalte:
+                        display: Inhalte
+                        sets:
+                          spalten:
+                            display: Spalten
+                            icon: dashboard-layout
+                            fields:
+                              -
+                                import: card
