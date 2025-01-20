@@ -21,6 +21,8 @@ preferences:
         - status
     products:
       after_save: continue_editing
+    team:
+      after_save: continue_editing
   locale: de
   favorites: {  }
   theme: light
@@ -39,7 +41,9 @@ preferences:
       'content::collections::pages': '@move'
       'content::collections::aktuelles': '@move'
       'content::collections::produkte': '@move'
+      'content::collections::karriere': '@move'
       'content::collections::team': '@move'
+      'content::collections::kontakte': '@move'
       'content::collections::referenzen': '@move'
       'content::collections::historie': '@move'
   assets:

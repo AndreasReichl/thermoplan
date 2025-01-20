@@ -1,0 +1,18 @@
+title: Karriere
+sites:
+  - de
+propagate: false
+template: karriere/show
+layout: layout
+revisions: false
+route: '/karriere/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

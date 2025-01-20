@@ -1,0 +1,119 @@
+title: Karriere
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: 'Titel des Eintrags'
+              instructions: 'Wird nicht auf der Seite angezeigt'
+              localizable: false
+          -
+            handle: featured
+            field:
+              type: toggle
+              display: Featured
+              localizable: false
+          -
+            handle: vorschautext
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Vorschautext
+              instructions: 'Textblock der in der Übersicht angezeigt wird sobald dieser Inhalt hat. Wird hier nichts eingetragen, erscheint der Inhalt (Textfeld weiter unten) in abgeschnittener Form, falls dieser zu lang wäre. Dieser Vorschautext erscheint nicht in der Detailansicht!'
+              localizable: false
+          -
+            import: text_component
+          -
+            import: imageelement
+          -
+            import: videoelement
+      -
+        display: 'Weitere Inhalte'
+        fields:
+          -
+            handle: weitere_inhalte
+            field:
+              type: replicator
+              display: 'Weitere Inhalte'
+              localizable: false
+              sets:
+                weitere_inhalte:
+                  display: 'Weitere Inhalte'
+                  icon: text-formatting-initial-letter
+                  sets:
+                    image:
+                      display: Einzelbild
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: imageelement
+                    text:
+                      display: Textblock
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: textelement
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'SEO Daten'
+        fields:
+          -
+            import: seodata
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - karriere
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: karrierecategories
+            field:
+              type: terms
+              taxonomies:
+                - karrierecategories
+              display: 'Karriere Kategorien'
+              mode: select
+              localizable: true
+          -
+            handle: adressen
+            field:
+              mode: select
+              collections:
+                - contacts
+              type: entries
+              display: Adressen
+              instructions: 'Ein oder mehrere Adressen für die Kontaktaufnahme auswählen'
+              localizable: true

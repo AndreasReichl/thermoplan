@@ -14,12 +14,14 @@ tabs:
               validate:
                 - required
               display: Name
+              localizable: false
           -
             handle: position
             field:
               type: text
               display: Tätigkeit
               width: 50
+              localizable: false
           -
             handle: image
             field:
@@ -29,6 +31,23 @@ tabs:
               max_files: 1
               folder: team
               restrict: true
+              localizable: false
+              width: 33
+              mode: grid
+          -
+            handle: phone
+            field:
+              type: text
+              display: Phone
+              width: 33
+              localizable: false
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+              width: 33
+              localizable: false
   sidebar:
     display: Sidebar
     sections:
@@ -49,17 +68,3 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-          -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1

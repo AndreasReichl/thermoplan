@@ -1,12 +1,10 @@
 {{ hashtag = hashtag_name ? hashtag_name : id  }}
 
-
-<article id="{{ hashtag }}" class="paragraph paragraph4 kontaktformular {{ paragraph_class }}{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
+<article id="{{ hashtag }}" class="paragraph paragraph0 kontaktformular {{ paragraph_class }}{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
 	<div class="container{{ full_width ? '-fluid' : '' }}">
-		{{ if headline | trim != "" && headline | strip_tags != "" }}<div class="teamHeadline">{{ headline }}</div>{{ /if }}
+		{{ partial:elements/textblock }}
 		<div class="form formWrapper">
 			{{ form:kontakt }}
-
 				{{ if success }}
 					<div class="success">
 						{{ success }}
@@ -54,17 +52,20 @@
 							{{ if handle == 'text' }}
 								{{ if ( current_uri | substr(0,3) ) == '/en' }}
 									<div class="mt-15 mb-10">
-										<h4 class="primary">Your Message</h4>
+										<h3 class="primary">Your Message</h3>
 										<p>Describe your request to us.</p>
 									</div>
 								{{ else }}
 									<div class="mt-15 mb-10">
-										<h4 class="primary">Ihre Nachricht</h4>
+										<h3 class="primary">Ihre Nachricht</h3>
 										<p>Beschreiben Sie uns Ihr Anliegen.</p>
 									</div>
 								{{ /if }}
 							{{ else }}
-								<label class="label">{{ display }}</label>
+								<label class="label">
+									{{ display }}
+									{{ if field.validate | contains: "required" }}<span class="required">*</span>{{ /if }}
+								</label>
 							{{ /if }}
 							<div class="field">{{ field }}</div>
 							{{ if error }}
@@ -88,9 +89,9 @@
 						{{ btnText = 'Absenden' }}
 					{{ /if }}
 
-					<button type="submit" class="btn btn-default has-icon has-text">
-						<span class="btnText" style="padding-right: 25px; margin-right: -5px;"><span>{{ btnText }}</span></span>
-						<span class="btnIcon" style="right:-18px;"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span>
+					<button type="submit" class="btn btn-primary has-icon has-text">
+						<span class="btnText"><span>{{ btnText }}</span></span>
+						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span>
 					</button>
 
 				{{ /if }}

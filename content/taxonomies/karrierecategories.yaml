@@ -1,0 +1,9 @@
+title: 'Karriere Kategorien'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+layout: layout
+sites:
+  - de

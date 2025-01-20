@@ -1,7 +1,6 @@
 <section class="teamWrapper{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
-	<div class="container">
-		{{ if headline | trim != "" && headline | strip_tags != "" }}<div class="teamHeadline">{{ headline }}</div>{{ /if }}
-		{{ if content | trim != "" && content | strip_tags != "" }}<div class="teamText">{{ content }}</div>{{ /if }}
+	<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="container">
+		{{ partial:elements/textblock }}
 		<article class="teamContent">
 				{{ team }}
 				<div class="teamEntry">
@@ -10,6 +9,20 @@
 					{{ /image }}
 					<h3 class="teamName">{{ title }}</h3>
 					<p class="teamPosition">{{ position }}</p>
+					<address>
+						{{ if phone }}
+						<div class="addressEntry contactPhone">
+							<span class="labelText">Tel.:</span>
+							<span class="label">{{ phone }}</span>
+						</div>
+						{{ /if }}
+						{{ if email }}
+						<div class="addressEntry contactEmail">
+							<span class="labelText">E-Mail:</span>
+							<span class="label">{{ email }}</span>
+						</div>
+						{{ /if }}
+					</address>
 				</div>
 				{{ /team }}
 		</article>

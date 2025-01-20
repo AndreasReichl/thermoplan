@@ -1,0 +1,93 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        fields:
+          -
+            handle: firma
+            field:
+              type: text
+              display: Firma
+              localizable: false
+          -
+            handle: vorname
+            field:
+              type: text
+              display: Vorname
+              width: 50
+              validate:
+                - required
+              localizable: false
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              width: 50
+              validate:
+                - required
+              localizable: false
+          -
+            handle: strasse_hausnummer
+            field:
+              type: text
+              display: 'Strasse Hausnummer'
+              validate:
+                - required
+              localizable: false
+          -
+            handle: zip
+            field:
+              type: text
+              display: PLZ
+              width: 33
+              validate:
+                - required
+              localizable: false
+          -
+            handle: place
+            field:
+              type: text
+              display: Ort
+              width: 66
+              validate:
+                - required
+              localizable: false
+          -
+            handle: telefon
+            field:
+              input_type: tel
+              type: text
+              display: Telefon
+              width: 50
+              localizable: false
+          -
+            handle: mobil
+            field:
+              input_type: tel
+              type: text
+              display: Mobil
+              width: 50
+              localizable: false
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: E-Mail
+              validate:
+                - required
+              localizable: false
+          -
+            handle: betreff
+            field:
+              type: text
+              display: Betreff
+              localizable: false
+          -
+            handle: text
+            field:
+              type: textarea
+              display: Text
+              localizable: false

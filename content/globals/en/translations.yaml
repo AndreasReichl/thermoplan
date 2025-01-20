@@ -1,0 +1,27 @@
+karriereMainSiteUrl: /karriere
+karriereMainSiteName: Career
+karriereDetailBtnText: back
+karriereDetailNoResultsText: 'No further entries available'
+karriereDetailNextArticle: 'Nächste Stellenanzeige'
+karriereDetailHeadlineRight: 'Next job advertisement'
+karriereDetailTextRight:
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Nothing suitable found?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "You didn't find a position that exactly matches your profile? We look forward to receiving your unsolicited application. Let us know in which area you would like to contribute your skills and what makes you stand out – perhaps your talent is exactly what our team is missing."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Send us your unsolicited application and become part of our shared future!'

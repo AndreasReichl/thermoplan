@@ -1,0 +1,27 @@
+karriereMainSiteUrl: /karriere
+karriereMainSiteName: Karriere
+karriereDetailBtnText: zurück
+karriereDetailNoResultsText: 'Keine weiteren Einträge vorhanden'
+karriereDetailNextArticle: 'Nächste Stellenanzeige'
+karriereDetailHeadlineRight: 'Bewerben Sie sich jetzt'
+karriereDetailTextRight:
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Nichts Passendes gefunden?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Sie haben keine Position gefunden, die exakt zu Ihrem Profil passt? Wir freuen uns auf Ihre Initiativbewerbung. Teilen Sie uns mit, in welchem Bereich Sie Ihre Fähigkeiten einbringen möchten und was Sie auszeichnet – vielleicht ist Ihr Talent genau das, was unserem Team noch fehlt.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Senden Sie uns Ihre Initiativbewerbung und werden Sie Teil unserer gemeinsamen Zukunft!'

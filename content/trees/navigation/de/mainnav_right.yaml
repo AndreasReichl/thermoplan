@@ -2,7 +2,7 @@ tree:
   -
     id: f7fa02f8-5137-469c-ad32-1734205bde3a
     title: Karriere
-    url: /unternehmen/karriere
+    url: /karriere
   -
     id: c2756314-d617-44e9-8723-d126f41dc88d
     title: Unternehmen
@@ -11,12 +11,12 @@ tree:
       -
         id: d525985e-5abc-421f-88d9-14f67a13c2ea
         title: Thermoplan
-        url: /unternehmen/thermoplan
+        url: /unternehmen
       -
         id: a1b39eaf-84f4-4bdb-adcb-7e1e30c8816f
         title: Ansprechpartner
-        url: /unternehmen/ansprechpartner
+        url: '/unternehmen#ansprechpartner'
   -
     id: 8995a3f7-57ef-4870-a248-5d62d8bb2938
     title: Kontakt
-    url: /unternehmen/kontakt
+    url: /kontakt

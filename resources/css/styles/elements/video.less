@@ -3,11 +3,11 @@
 	.hintIcon 		{ font-size: clamp(70px, 10vw, 120px); line-height: 1; }
 }
 
-.bgVideoWrapper 		{ width:100%; height:auto; aspect-ratio: 4/3; overflow:hidden; position: relative; background-color:var(--black);
+.bgVideoWrapper 		{ width:100%; height:auto; aspect-ratio: 4/3; overflow:hidden !important; position: relative; background-color:var(--black);
 	&:before 			{ content:''; position: absolute; top:0; left:0; right:0; bottom:0; height:100%; width:100%; background-color:var(--black); .opacity(0.3); }
 }
 .bgVideo 				{ width:100%; height:100%; object-fit: cover; }
-.paragraphVideoWrapper 	{ position: relative; overflow:hidden; line-height: 0;
+.paragraphVideoWrapper 	{ position: relative; overflow:hidden !important; line-height: 0;
 	video 				{ width:100%; height:auto; }
 	.controls 			{ .opacity(1); .transition-smooth; }
 	&:hover 			{

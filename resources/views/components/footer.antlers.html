@@ -29,47 +29,22 @@
 		<div class="footerInner">
 			<div class="footerLeft">
 				<div class="footerAddress">
-					<address>
-						{{ if sitebasics.strasse_hausnummer }}
-						<div class="addressEntry streetNumber">
-							{{ if sitebasics.icon_strasse }}<span class="icon">{{ sitebasics.icon_strasse }}</span>{{ /if }}
-							<span class="label">{{ sitebasics.strasse_hausnummer }}</span>
-						</div>
-						{{ /if }}
-						{{ if sitebasics.ort }}
-						<div class="addressEntry place">
-							{{ if sitebasics.icon_place }}<span class="icon">{{ sitebasics.icon_place }}</span>{{ /if }}
-							<span class="label">{{ sitebasics.plz }} {{ sitebasics.ort }}</span>
-						</div>
-						{{ /if }}
-						{{ if sitebasics.phone }}
-						<div class="addressEntry phone">
-							{{ if sitebasics.icon_phone }}<span class="icon">{{ sitebasics.icon_phone }}</span>{{ else }}<span>Tel.:</span>{{ /if }}
-							<span class="label">{{ sitebasics.phone }}</span>
-						</div>
-						{{ /if }}
-						{{ if sitebasics.fax }}
-						<div class="addressEntry fax">
-							{{ if sitebasics.icon_fax }}<span class="icon">{{ sitebasics.icon_fax }}</span>{{ else }}<span>Fax:</span>{{ /if }}
-							<span class="label">{{ sitebasics.fax }}</span>
-						</div>
-						{{ /if }}
-						{{ if sitebasics.mobile }}
-						<div class="addressEntry mobile">
-							{{ if sitebasics.icon_mobile }}<span class="icon">{{ sitebasics.icon_mobile }}</span>{{ else }}<span>Mobil:</span>{{ /if }}
-							<span class="label">{{ sitebasics.mobile }}</span>
-						</div>
-						{{ /if }}
-						{{ if sitebasics.email }}
-						<div class="addressEntry email">
-							{{ if sitebasics.icon_email }}<span class="icon">{{ sitebasics.icon_email}}</span>{{ else }}<span>E-Mail:</span>{{ /if }}
-							<span class="label">{{ sitebasics.email }}</span>
-						</div>
-						{{ /if }}
-						{{ if sitebasics.opening_hours }}
-						<div class="addressEntry opening_hours">{{ sitebasics.opening_hours }}</div>
-						{{ /if }}
-					</address>
+					{{ partial:elements/address
+						:strasse_hausnummer='sitebasics.strasse_hausnummer'
+						:icon_strasse='sitebasics.icon_strasse'
+						:ort='sitebasics.ort'
+						:icon_place='sitebasics.icon_place'
+						:plz='sitebasics.plz'
+						:phone='sitebasics.phone'
+						:icon_phone='sitebasics.icon_phone'
+						:fax='sitebasics.fax'
+						:icon_fax='sitebasics.icon_fax'
+						:mobile='sitebasics.mobile'
+						:icon_mobile='sitebasics.icon_mobile'
+						:email='sitebasics.email'
+						:icon_email='sitebasics.icon_email'
+						:opening_hours='sitebasics.opening_hours'
+					}}
 				</div>
 				<div class="footerLocations">
 					{{ sitebasics.locations }}

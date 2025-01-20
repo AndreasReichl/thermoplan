@@ -98,15 +98,15 @@
 					<p class="categoryHeadline">{{ blogDetailNextArticle }}</p>
 					{{ collection:previous in="blog" as="posts" limit="1" sort="date:asc" }}
 
-					{{ if no_results }}
-						{{ blogDetailNoResultsText }}
-					{{ /if }}
+						{{ if no_results }}
+							{{ blogDetailNoResultsText }}
+						{{ /if }}
 
-					{{ posts }}
-						{{ partial:elements/blog_card_small }}
-					{{ /posts }}
+						{{ posts }}
+							{{ partial:elements/blog_card_small }}
+						{{ /posts }}
 
-				{{ /collection:previous }}
+					{{ /collection:previous }}
 				</div>
 				</div>
 			</div>

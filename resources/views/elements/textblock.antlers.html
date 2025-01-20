@@ -1,3 +1,4 @@
+<div class="textblockWrapper {{ if textblock_class }} {{ textblock_class }}{{ /if }}">
 {{ if top_icon }}<div class="top_icon" style="color:{{ topicon_farbe }};">{{ top_icon }}</div>{{ /if }}
 {{ if top_logo }}{{ top_logo }}<div class="top_logo"><img src="{{ glide:url width="100" }}" alt="{{ alt }}"></div>{{ /top_logo }}{{ /if }}
 {{ if headline | trim != "" && headline | strip_tags != "" }}<{{ headline_type }} class="headline">{{ headline }}</{{ headline_type }}>{{ /if }}
@@ -16,3 +17,4 @@
 		{{ /links }}
 	</div>
 {{ /if }}
+</div>

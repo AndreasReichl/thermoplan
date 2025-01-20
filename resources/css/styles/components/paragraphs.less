@@ -21,6 +21,7 @@
 	.textbox 				{
 		.inner 				{ padding:30px; word-break: break-word; hyphens:auto;
 			>.content		{ margin:30px 0; }
+			.textblockWrapper 	{ margin-bottom:0; }
 		}
 
 	}
@@ -28,6 +29,8 @@
 	&.inverted 				{
 		.textMediabox 		{ color:var(--white); background-color:var(--black); }
 	}
+
+	&.kontaktformular 		{ padding:0 30px; }
 
 	@media (min-width: @screen-md-min) 	{
 		.textMediabox 		{ padding:60px 0; }
@@ -40,6 +43,7 @@
 				.inner 			{ padding:0 30px; }
 			}
 		}
+		&.kontaktformular 		{ padding:0; }
 	}
 
 }

@@ -1,0 +1,51 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        display: Karriere
+        instructions: 'Globale Texte für den Bereich Karriere'
+        fields:
+          -
+            handle: karriereMainSiteUrl
+            field:
+              type: text
+              display: karriereMainSiteUrl
+              localizable: true
+          -
+            handle: karriereMainSiteName
+            field:
+              type: text
+              display: karriereMainSiteName
+              localizable: true
+          -
+            handle: karriereDetailBtnText
+            field:
+              type: text
+              display: karriereDetailBtnText
+              localizable: true
+          -
+            handle: karriereDetailNoResultsText
+            field:
+              type: text
+              display: karriereDetailNoResultsText
+              localizable: true
+          -
+            handle: karriereDetailNextArticle
+            field:
+              type: text
+              display: karriereDetailNextArticle
+              localizable: true
+          -
+            handle: karriereDetailHeadlineRight
+            field:
+              type: text
+              display: karriereDetailHeadlineRight
+              localizable: true
+          -
+            handle: karriereDetailTextRight
+            field:
+              remove_empty_nodes: true
+              type: bard
+              display: karriereDetailTextRight
+              localizable: true

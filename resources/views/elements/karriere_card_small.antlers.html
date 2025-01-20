@@ -1,0 +1,59 @@
+<div class="karriereListingSmall{{ if !image }} noImage{{ /if }}">
+	<div class="inner">
+		<div onclick="window.location.href='{{ url }}'" class="textboxMediabox">
+			{{ image }}
+			<div class="mediabox">
+				<div class="imgOverlay">
+					<div class="overlayHorizontal">
+						<svg xmlns="http://www.w3.org/2000/svg" width="464" height="48.633" viewBox="0 0 464 48.633">
+						<g transform="translate(-239.049 -1782.436)">
+							<path d="M-15.207,3018.728l464,.021v-43.384H210.558l-25.325,25.324-200.441-.021Z" transform="translate(254.256 -1192.928)" fill="#01215c"/>
+							<path d="M-15.207,3018.728l464,.021v-43.384H212.658l-25.325,25.324-202.54-.021Z" transform="translate(254.256 -1187.679)" fill="#fff"/>
+						</g>
+						</svg>
+
+					</div>
+					<div class="overlayVertical">
+						<svg xmlns="http://www.w3.org/2000/svg" width="46.346" height="385.407" viewBox="0 0 46.346 385.407">
+						<g transform="translate(-1854.206 -25.79)">
+							<g transform="translate(71.769 680.175) rotate(-90)">
+							<path d="M14.727,3016.689h385.4v-41.325H199.842l-24.123,24.123H14.727Z" transform="translate(254.256 -1192.928)" fill="#01215c"/>
+							<path d="M14.722,3016.711l385.407-.068v-41.325l-198.287.047-24.123,24.123-163,.021Z" transform="translate(254.256 -1187.928)" fill="#fff"/>
+							</g>
+						</g>
+						</svg>
+					</div>
+				</div>
+				{{ partial:elements/image }}
+			</div>
+			{{ /image }}
+
+			<div class="textbox">
+				<div class="textboxInner">
+					<div class="karriereTitles">
+						{{ if karrierecategories }}
+							<div class="karriereCategories">
+								{{ karrierecategories }}
+									<div class="btn-karrierecategory">{{ title }}</div>
+								{{ /karrierecategories }}
+							</div>
+						{{ /if }}
+						{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h5 class="headline_above">{{ headline_above }}</h5>{{ /if }}
+						{{ if headline | trim != "" && headline | strip_tags != "" }}<h3 class="headline">{{ headline }}</h3>{{ /if }}
+						{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h4 class="subtitle">{{ subtitle }}</h4>{{ /if }}
+						<div class="date"><span class="icofont-clock-time"></span>{{ date format="d.m.Y" }}</div>
+					</div>
+					<div class="links">
+						<a href="{{ url }}" class="btn btn-default has-icon">
+							<span class="btnIcon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.013 8.26">
+								<path id="arrow_right_alt" d="M5.919,7.261,8.363,4.818H0V3.441H8.363L5.919,1l.964-1,4.13,4.13L6.883,8.26Z" fill="currentColor" style="isolation: isolate"/>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

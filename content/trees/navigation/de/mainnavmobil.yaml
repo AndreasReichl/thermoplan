@@ -11,27 +11,27 @@ tree:
       -
         id: 0aaad153-4849-4b24-bd49-76d9e6c5866e
         title: Anlagenbau
-        url: /produkte/anlagenbau
+        url: '/produkte#product_anlagenbau'
       -
         id: 0b95e867-ca5c-42cd-bf24-5e63a2273019
         title: 'Industrie Lösungen'
-        url: /produkte/industrie-loesungen
+        url: '/produkte#product_industrielle-loesungen'
       -
         id: f5a769fd-1b7f-450e-9446-1abd1f1b8379
         title: Qualitätsprüfanlagen
-        url: /produkte/qualitaetspruefanlagen
+        url: '/produkte#product_qualitaetspruefanlagen'
       -
         id: 7910613e-0ab9-419b-b9db-4e1cb830b08f
         title: Lagertechnik
-        url: /produkte/lagertechnik
+        url: '/produkte#product_lagertechnik'
       -
         id: 26cb22f7-e585-4b45-88ea-412cc820c180
         title: Elektrotechnik
-        url: /produkte/elektrotechnik
+        url: '/produkte#product_elektrotechnik'
       -
         id: e79f24ce-3c8f-4c0d-b7c1-d5874821b631
         title: Werksleittechnik
-        url: /produkte/werksleittechnik
+        url: '/produkte#product_werksleittechnik'
   -
     id: e3af1044-0bc5-4d71-89d8-9945524f4087
     title: Service
@@ -40,23 +40,19 @@ tree:
       -
         id: 10a1dca9-fa56-4248-a119-b0fa4a57ba83
         title: Wartung
-        url: /service/wartung
+        url: '/service#wartung'
       -
         id: 33df300c-c216-41bb-87c7-e7e9ae76f3bb
         title: Schulungen
-        url: /service/schulungen
+        url: '/service#schulungen'
       -
         id: 8f493d67-dc79-48ba-a879-7b2c8e0edab3
-        title: 'Störung melden'
-        url: /service/stoerung-melden
-      -
-        id: 44b117d3-b0fa-432d-bba4-590b7d946c38
-        title: Support
-        url: /service/support
+        title: 'Störung melden / Support'
+        url: '/service#stoerung-melden'
   -
     id: ce0691ae-56ce-4730-b5d9-fea18f23e3a0
     title: Karriere
-    url: unternehmen/karriere
+    url: /karriere
   -
     id: 35b1b0c4-6365-409c-a417-3e89d99c6bd2
     title: Unternehmen
@@ -65,12 +61,12 @@ tree:
       -
         id: 950499cc-12a7-474c-a5c4-1b6dcddf31ef
         title: Thermoplan
-        url: /unternehmen/thermoplan
+        url: /unternehmen
       -
         id: 119fcb55-b75e-4c6a-bc77-fcc90436be24
         title: Ansprechpartner
-        url: /unternehmen/ansprechpartner
+        url: '/unternehmen#ansprechpartner'
   -
     id: 42b42205-34e1-4545-9eee-17205c965f09
     title: Kontakt
-    url: /unternehmen/kontakt
+    url: /kontakt

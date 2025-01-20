@@ -1,5 +1,5 @@
 // out: false
-.component_footer 			{ overflow:hidden; position: relative;
+.component_footer 			{ overflow:hidden !important; position: relative;
 
 	.footerGraficTop 		{ line-height: 0; padding-left:10vw;
 	 @media (min-width: @screen-xxl-min)	{ padding-left:15vw; }
@@ -80,6 +80,7 @@
 address 			{ .flex-display(flex); .flex-direction(column); line-height: 1.6; font-style: normal;
 	.addressEntry 	{ .flex-display(flex); .align-items(flex-end); gap:10px;
 		.icon 		{ width:15px; line-height: 0; }
+		.labelText 	{ color:var(--grey); }
 		.label 		{ font-style: normal; }
 		&.phone,
 		&.email,

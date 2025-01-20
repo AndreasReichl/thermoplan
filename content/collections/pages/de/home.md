@@ -35,8 +35,8 @@ page_builder:
     type: blogslider
     enabled: true
   -
-    id: m3siz3cw
-    headline_above_type: h4
+    id: m5y008kz
+    absatz_layout: 2
     headline:
       -
         type: paragraph
@@ -73,22 +73,26 @@ page_builder:
             text: 'Unser Unternehmen, das 1984 gegründet wurde, blickt auf eine 40-jährige Erfolgsgeschichte in der Grobkeramik zurück. Als international tätiges, mittelständisches Unternehmen sind wir spezialisiert auf Anlagenbau, Lagertechnik, Elektrotechnik und Verfahrenstechnik. Offen für neue Ideen, Technologien und Verfahren, entwickeln wir uns stetig weiter. Im Oktober 2023 haben wir mit der Eröffnung unserer neuen Betriebsstätte Nord in Brilon, die über eine eigene Fertigung verfügt, unsere Kapazitäten erweitert. Seitdem sind wir in der Lage, noch schneller und effizienter auf die Anforderungen unserer Kunden zu reagieren.'
     links:
       -
-        id: m3sj02gt
+        id: m5y015kt
         button_text: 'KONTAKTIEREN SIE UNS'
         button_style: primary
         button_link_feld: '#'
         button_zielseite: _self
     image: 01_thermoplan_grafik.png
+    bildschatten: false
     full_width: false
     seitenverhaeltnis: fiftyFifty
     inverted: false
-    type: paragraph2
+    lines_top_logo: false
+    lines_top: false
+    lines_bottom: false
+    type: paragraph0
     enabled: true
 author: 273e00a1-d447-4899-b66e-01da895d5a76
-header_spacer: true
+header_spacer: false
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1733994568
+updated_at: 1737036766
 template: home
 ---
 ## Welcome to your brand new Statamic site!

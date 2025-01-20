@@ -1,0 +1,15 @@
+<section class="karriereWrapper{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ background_image }});">
+	<div class="container">
+		<nav class="breadcrumb">
+			<a href="/"><i class="icofont-home"></i></a><i class="icofont-rounded-right"></i>
+			{{ if category }}
+				<a href="{{ category:url }}">{{ category:title }}</a><i class="icofont-rounded-right"></i>
+			{{ /if }}
+			<div class="itemActive">{{ title }}</div>
+		</nav>
+		<div class="karriereText">
+		{{ partial:elements/textblock }}
+		</div>
+		{{ partial:elements/karriere_listing }}
+	</div>
+</section>

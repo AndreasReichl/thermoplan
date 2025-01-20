@@ -35,6 +35,7 @@
 @import "components/modal.less";
 @import "components/dropdowns.less";
 @import "components/products.less";
+@import "components/karriere.less";
 /* End Component-Styles */
 
 :root {
@@ -43,11 +44,11 @@
 
 /* CORE SETTINGS */
 html 	        { padding:0; margin:0; font-family: var(--fontFamily); scroll-behavior:smooth; overflow-x: hidden; position:relative; min-height:100%; height:auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-body 	        { padding:0; margin:0; font-family: var(--fontFamily); min-height:100%; height:auto; line-height:1; font-size: clamp(14px,1vw,18px); width:100vw; overflow-x: hidden;;}
+body 	        { padding:0; margin:0; font-family: var(--fontFamily); min-height:100%; height:auto; line-height:1; font-size: clamp(14px,1vw,18px); width:100vw; overflow-x: hidden; }
 main 	        { display: block; }
 h1 		        { padding:0; margin:0; font-size: clamp(36px, 3.5vw, 50px); font-weight:400; p { line-height:1.2; margin:0; } }
 h2 		        { padding:0; margin:0; font-size: clamp(20px, 3vw, 30px); font-weight:400; p { line-height:1.2; margin:0;  } }
-h3 		        { padding:0; margin:0; font-size: clamp(16px, 1.5vw, 20px); font-weight:400; p { line-height:1.2; margin:0;  } }
+h3 		        { padding:0; margin:0; font-size: clamp(18px, 2vw, 24px); font-weight:400; p { line-height:1.4; margin:0;  } }
 h4 		        { padding:0; margin:0; font-size: clamp(14px, 1.2vw, 18px); font-weight:400; p { line-height:1.2; margin:0;  } }
 h5 		        { padding:0; margin:0; font-size: clamp(12px, 0.8vw, 16px); font-weight:normal; p { line-height:1.2; margin:0;  } }
 h6 		        { padding:0; margin:0; font-size: clamp(10px, 0.8vw, 12px); font-weight:normal; p { line-height:1.2; margin:0;  } }
@@ -97,3 +98,9 @@ body.scrolled {
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(10px); opacity: 0;}
 }
+.container,
+.container-fluid,
+.historyslider { scroll-margin-top:60px;
+	@media (min-width: @screen-md-min)	{ scroll-margin-top:250px; }
+}
+

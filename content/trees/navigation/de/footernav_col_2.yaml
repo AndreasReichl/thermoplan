@@ -7,16 +7,12 @@ tree:
       -
         id: 423732c3-6195-45f6-87be-2f1f71bd946c
         title: Wartung
-        url: /service/wartung
+        url: '/service#wartung'
       -
         id: 53111bcf-fc27-43cb-b3a9-4f8a6fd71f99
         title: Schulungen
-        url: /service/schulungen
+        url: '/service#schulungen'
       -
         id: ce0e2bfc-0d6e-4374-b009-c2aaafd3e740
-        title: 'Störung melden'
-        url: /service/stoerung-melden
-      -
-        id: 098d85dc-6e31-48e3-bf04-6b04c1836391
-        title: Support
-        url: /service/support
+        title: 'Störung melden / Support'
+        url: '/service#stoerung-melden'

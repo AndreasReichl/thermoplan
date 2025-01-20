@@ -1,27 +1,44 @@
 // out:false
 
-.spaltenLayout >* >.inner				{ padding:30px 0;
-	@media (min-width: @screen-md-min) 	{ padding:60px 0; }
+.spaltenLayout 				{ background-size: cover; background-position: center;
+	>* >.inner				{ padding:30px; position: relative; z-index: 2;
+		.textblockWrapper 					{ .flex-display(flex); .flex-direction(column); gap:15px; }
+		@media (min-width: @screen-md-min) 	{ padding:90px 0; }
+	}
 }
 
-.gridWrapper 				{ display:grid; gap:30px;
- 	&.gridRows_1 			{ grid-template-columns: repeat(1, 1fr); }
- 	&.gridRows_2 			{ grid-template-columns: repeat(2, 1fr); }
- 	&.gridRows_3 			{ grid-template-columns: repeat(3, 1fr); }
- 	&.gridRows_4 			{ grid-template-columns: repeat(4, 1fr); }
- 	&.gridRows_5 			{ grid-template-columns: repeat(5, 1fr); }
- 	&.gridRows_6 			{ grid-template-columns: repeat(6, 1fr); }
- 	&.gridRows_7 			{ grid-template-columns: repeat(7, 1fr); }
- 	&.gridRows_8 			{ grid-template-columns: repeat(8, 1fr); }
- 	&.gridRows_9 			{ grid-template-columns: repeat(9, 1fr); }
+.parallax-container 		{ position: relative; overflow:hidden !important;
+	.parallax-background 	{ transition: transform 0.1s linear; position: absolute; top: 0; left: 0; width:120%; height:120%; background-size: cover; background-position:top center; transform: translateY(0); will-change: transform; }
+}
 
-	@media (min-width: @screen-md-min) 	{ gap:60px; }
+.parallaxImage {
+    position: relative;
+    will-change: transform;
+    transition: transform 0.1s linear; /* Für sanftere Übergänge */
+}
+
+.gridWrapper 				{ display:grid; gap:30px; grid-template-columns: repeat(1, 1fr);
+
+	@media (min-width: @screen-md-min) 	{ gap:60px;
+		&.gridRows_1 		{ grid-template-columns: repeat(1, 1fr); }
+		&.gridRows_2 		{ grid-template-columns: repeat(2, 1fr); }
+		&.gridRows_3 		{ grid-template-columns: repeat(3, 1fr); }
+		&.gridRows_4 		{ grid-template-columns: repeat(4, 1fr); }
+		&.gridRows_5 		{ grid-template-columns: repeat(5, 1fr); }
+		&.gridRows_6 		{ grid-template-columns: repeat(6, 1fr); }
+		&.gridRows_7 		{ grid-template-columns: repeat(7, 1fr); }
+		&.gridRows_8 		{ grid-template-columns: repeat(8, 1fr); }
+		&.gridRows_9 		{ grid-template-columns: repeat(9, 1fr); }
+	}
 }
 
 
 .card						{ .flex-display(flex); .flex-direction(column);
-	.mediabox 				{ overflow:hidden; .border-radius(8px 8px 0 0); .flex-display(flex); }
-	.inner					{ .flex-size(1); .flex-display(flex); .flex-direction(column); gap:10px; }
+	.mediabox 				{ overflow:hidden !important; .border-radius(8px 8px 0 0); .flex-display(flex); }
+	.inner					{ .flex-size(1); .flex-display(flex); .flex-direction(column); gap:10px;
+		>.content 			{ margin:15px 0; }
+		.textblockWrapper 	{ margin-bottom:0; }
+	}
 
 	.cardHeadline,
 	.cardSubtitle 			{ .flex-display(flex); .align-items(center); gap:12px;

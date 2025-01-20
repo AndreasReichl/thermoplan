@@ -15,7 +15,7 @@
 	}
 }
 
-.swiper 									{
+.swiper 									{ overflow:hidden !important;
 	&.inverted 								{ background-color: var(--black); color:var(--white); }
 	@media (min-width: @screen-md-min) 		{
 		.buttonWrapper						{ position: absolute; z-index:99; right:2vw; top:50%; .flex-display(flex); .flex-direction(column); margin-top:0;
@@ -50,9 +50,9 @@
 
 // galleryslider
 
-.galleryslider 			{ padding:30px; overflow: unset; width:100%;
+.galleryslider 			{ width:100%;
 	>.headline 			{ color:var(--grey); font-weight: bold; margin-bottom:30px; }
-	.gallery-item 		{ position: relative; overflow:hidden; height: auto; aspect-ratio: 16/9; .border-radius(8px); cursor: pointer;
+	.gallery-item 		{ position: relative; overflow:hidden !important; height: auto; aspect-ratio: 16/9; .border-radius(8px); cursor: pointer;
 		img 			{ object-fit: cover; width:100%; height: 100%; }
 	}
 
@@ -64,8 +64,8 @@
 .historyslider 			{ padding:30px; overflow: unset; background-size: cover; background-repeat: no-repeat; background-position: center center;
 	.titleWrapper 		{ margin-bottom:40px; }
 	>.headline 			{ color:var(--grey); font-weight: bold; }
-	.historyslide 		{ .flex-display(flex); .flex-direction(column); .border-radius(8px); background-color:var(--white); .box-shadow; width:400px; height:auto;
-		&:after 		{ content:''; height:2px; width:40px; background-color:var(--greylight); position: absolute; right:-40px; top:50%; .translateY(-50%); }
+	.historyslide 		{ .flex-display(flex); .flex-direction(column); .border-radius(8px); background-color:var(--white); .box-shadow; width:360px; height:auto;
+		&:after 		{ content:''; height:2px; width:40px; background-color:var(--primary-color); position: absolute; right:-40px; top:50%; .translateY(-50%); }
 		.textMediabox 	{ padding:30px; }
 		.historyYear 	{ margin-bottom:15px; color:var(--primary-color); }
 		&:last-child 	{
@@ -98,18 +98,18 @@
 // blogslider
 
 .blogSliderWrapper 				{ overflow: unset; background-color:var(--greylight); }
-.blogSlider 					{
+.blogSlider 					{ padding:30px;
 	.blogSliderHeaderWrapper 	{ margin-bottom:30px; .flex-display(flex);
 		.btn 					{ margin-left:auto; }
 	}
-	.blogslide 					{ .flex-display(flex); .flex-direction(column); .border-radius(8px); background-color:var(--primary-color); color:var(--white); .box-shadow; width:auto; min-width: 360px; height:auto; overflow:hidden;
-		.textboxMediabox		{ .flex-display(flex); height:100%; min-height:200px;
-			.mediabox 			{ width:280px;line-height: 0; position: relative; overflow: hidden; margin-bottom: 0px !important;
-				.imgOverlay 	{ position: absolute; z-index:1; right:-1px; top:0; bottom:-1px; width:auto; }
-				figure 			{ height:100%; aspect-ratio: 4/3; }
+	.blogslide 					{ .flex-display(flex); .flex-direction(column); .border-radius(8px); background-color:var(--primary-color); color:var(--white); .box-shadow; width:80vw; height:auto; overflow:hidden !important;
+		.textboxMediabox		{ height:100%;
+			.mediabox 			{ line-height: 0; position: relative; overflow: hidden; margin-bottom: 0px !important;
+				.imgOverlay 	{ display:none; }
+				figure 			{ width:100%; height:100%; aspect-ratio: 16/9; }
 				img 			{ object-fit: cover; width:100%; height:100%; }
 			}
-			.textbox 			{ position: relative; width:360px;
+			.textbox 			{ position: relative; height:100%;
 				>*				{ min-height: 120px; height:auto; }
 				.blogTitles 	{ padding:30px; margin-bottom: 0px !important;
 					>* 			{ hyphens:none; }
@@ -117,6 +117,7 @@
 					.headline 	{ font-size:clamp(16px,1.8vw,20px); margin-bottom:10px; }
 					.subtitle 	{ margin-bottom:10px; }
 				}
+				.blogContent 			{ padding:0 30px; }
 				.date 			{ font-size:clamp(8px,1vw,12px); margin-bottom:10px; .opacity(0.5);
 					span 		{ margin-right:5px; }
 				}
@@ -124,5 +125,15 @@
 			}
 		}
 	}
-	@media (min-width: @screen-md-min) 		{ padding:60px 10vw 90px 10vw; }
+	@media (min-width: @screen-md-min) 		{ padding:60px 10vw 90px 10vw;
+		.blogslide 					{ min-width: 360px; width:auto;
+			.textboxMediabox		{ .flex-display(flex);  min-height:200px;
+				.mediabox 			{ width:280px;
+					.imgOverlay 	{ position: absolute; z-index:1; right:-1px; top:0; bottom:-1px; width:auto; display:block; }
+					figure 			{ aspect-ratio: 4/3; }
+				}
+				.textbox 			{ width:360px; height:auto; }
+			}
+		}
+	}
 }

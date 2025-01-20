@@ -1,12 +1,9 @@
-<div class="historyslider swiper historySlider{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
-	{{ if headline || content }}
+<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="historyslider swiper historySlider{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
 	<div class="titleWrapper">
-	{{ if headline }}<div class="headline">{{ headline }}</div>{{ /if }}
-	{{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}
+	{{ partial:elements/textblock }}
 	</div>
-	{{ /if }}
 	<div class="swiper-wrapper">
-	{{ historie }}
+	{{ collection:historie }}
 		<article class="swiper-slide historyslide">
 			<div class="textMediabox">
 				{{ if image }}
@@ -20,7 +17,7 @@
 				</div>
 			</div>
 		</article>
-	{{ /historie }}
+	{{ /collection:historie }}
 	</div>
 	<div class="overlayLeft"></div>
 	<div class="overlayRight"></div>

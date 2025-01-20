@@ -6,6 +6,25 @@ import Alpine from 'alpinejs';
 import persist from '@alpinejs/persist';
 window.Alpine = Alpine;
 Alpine.plugin(persist);
+
+// Parallax Background
+Alpine.data('parallax', () => ({
+    offset: 0,
+    init() {
+        window.addEventListener('scroll', () => {
+            const rect = this.$el.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Berechnung des Offsets basierend auf der Scroll-Position
+            if (rect.top < windowHeight && rect.bottom > 0) {
+                // Position relativ zum Fenster berechnen
+                const scrollPosition = (rect.top - windowHeight) / windowHeight;
+                this.offset = scrollPosition * 100; // Multipliziere mit einem Faktor, um den Effekt anzupassen
+            }
+        });
+    }
+}));
+
 Alpine.start();
 
 // on scroll
@@ -56,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	let mainwrapper  = document.querySelector('body');
 	let burgerButton = document.querySelector('.burgerBtn'),
 		mainmenuButtons = document.querySelectorAll('.mainmenu'),
+		submenuButtons = document.querySelectorAll('.submenu'),
 		isClosed = true;
 
 	// Event listener for burger button
@@ -69,6 +89,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			closeBurgerMenu();
 		});
 	});
+
+    // Korrektur: Event listener für jedes Submenu-Button
+	submenuButtons.forEach(button => {
+		button.addEventListener('click', function () {
+			closeBurgerMenu();
+		});
+	});;
 
 	// Function to toggle burger menu
 	function toggleBurgerMenu() {
@@ -237,6 +264,23 @@ const swiper5 = new Swiper(".logoslideshow", {
           slidesPerView: 7,
         },
     },
+});
+
+const swiper6 = new Swiper(".historySlider", {
+	initialSlide: 0,
+	slidesPerView: "auto",
+	centeredSlides: false,
+    spaceBetween: 40,
+	loop:false,
+	grabCursor: true,
+	speed:1000,
+	easing: 'ease-in-out',
+	effect: "slide",
+	autoplay: false,
+	navigation: {
+		nextEl: ".buttonNext",
+		prevEl: ".buttonPrev",
+	},
 });
 
 // Modalgallery

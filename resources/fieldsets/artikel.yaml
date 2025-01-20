@@ -1,6 +1,27 @@
 title: Artikel
 fields:
   -
+    handle: absatz_layout
+    field:
+      options:
+        -
+          key: 0
+          value: 'Bild oben Text unten'
+        -
+          key: 1
+          value: 'Bild links Text rechts'
+        -
+          key: 2
+          value: 'Bild rechts Text links'
+        -
+          key: 3
+          value: 'Bild unten Text oben'
+      placeholder: 'Bild oben Text unten'
+      max_items: 1
+      type: select
+      display: 'Absatz Layout'
+      localizable: false
+  -
     import: logo_icon_element
   -
     import: text_component
@@ -47,20 +68,21 @@ fields:
     field:
       options:
         -
-          key: fourtySixty
-          value: '40:60'
-        -
           key: fiftyFifty
           value: '50:50'
         -
+          key: fourtySixty
+          value: '40:60'
+        -
           key: sixtyFourty
           value: '60:40'
-      default: fourtySixty
+      default: fiftyFifty
       type: select
       display: Seitenverhältnis
       instructions: 'Seitenverhältnis Bild zu Text'
       width: 33
       localizable: false
+      max_items: 1
   -
     handle: content_bg_color
     field:

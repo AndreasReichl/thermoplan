@@ -6,8 +6,9 @@
 }
 .teamHeadline 		{ margin-bottom:10px; }
 .teamText 			{ margin-bottom:30px; }
-.teamContent 		{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 2vw;
-	@media (min-width: @screen-md-min) 		{ grid-template-columns: repeat(3, 1fr); }
+.teamContent 		{ display: grid; grid-template-columns: repeat(1, 1fr); gap:30px;
+	@media (min-width: @screen-sm-min) 		{ grid-template-columns: repeat(2, 1fr); }
+	@media (min-width: @screen-md-min) 		{ grid-template-columns: repeat(3, 1fr); gap: 2vw; }
 	@media (min-width: @screen-lg-min) 		{ grid-template-columns: repeat(4, 1fr); }
 }
 

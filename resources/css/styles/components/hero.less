@@ -4,8 +4,16 @@
 
 
 // Bild oder Video im Hintergrund, Text darüber
-.hero0 						{ padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom;
-	.textMediabox 			{ position: absolute; z-index:1; left:0; top:0; right:0; bottom:0; width:100%; .flex-display(flex); .align-items(center); .justify-content(center); .flex-direction(column); }
+.hero0 						{ padding:0; background-size:cover; background-repeat:no-repeat; background-position: bottom; overflow:hidden !important;
+	&.hasbgVideo 			{
+		.textMediabox 		{ position: absolute; z-index:1; left:0; top:0; right:0; bottom:0; width:100%; }
+	}
+	&.hasbgImage 			{
+		.textMediabox 		{ position: relative; z-index:1; padding:70px 0 60px 0;
+			@media (min-width: @screen-md-min) 	{ padding:12vw 0 6vw 0; }
+		}
+	}
+	.textMediabox 			{ .flex-display(flex); .align-items(center); .justify-content(center); .flex-direction(column); }
 	.textbox 				{ text-align: center; padding:0 30px;
 		.inner 				{ padding:0px; word-break: break-word; hyphens:auto; }
 	}

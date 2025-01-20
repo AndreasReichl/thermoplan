@@ -1,4 +1,11 @@
-<section class="spaltenLayout" style="background-color:{{ content_bg_color }};">
+{{ if parallax_bg }}
+<section {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} x-data="parallax" class="spaltenLayout parallax-container" style="background-color:{{ content_bg_color }};">
+	<div class="parallax-background"
+        :style="'transform: translateY(' + offset + 'px); background-image: url({{ background_image }});'">
+    </div>
+{{ else }}
+<section {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="spaltenLayout" style="background-image: url({{ background_image }}); background-color:{{ content_bg_color }};">
+{{ /if }}
 	{{ if lines_top_logo }}
 		{{ partial:elements/lines_logo_top }}
 	{{ elseif lines_top }}
@@ -6,6 +13,7 @@
 	{{ /if }}
 	<div class="container">
 		<div class="inner">
+			<div class="textblockWrapper">{{ partial:elements/textblock }}</div>
 			<div class="gridWrapper gridRows_{{ spaltenanzahl }}">
 				{{ spaltenlayout scope="block" }}
 					{{ partial src="elements/card" }}

@@ -148,3 +148,9 @@ fields:
         -
           import: buttonstyles
           prefix: button_
+  -
+    handle: textblock_class
+    field:
+      type: text
+      display: 'Absatz Klasse'
+      localizable: false

@@ -1,0 +1,103 @@
+<div class="karriereDetail">
+	<div class="container">
+		<div class="inner">
+			<nav class="breadcrumb">
+				<a href="/"><i class="icofont-home"></i></a><i class="icofont-rounded-right"></i>
+				<a href="{{ translations.karriereMainSiteUrl }}">{{ translations.karriereMainSiteName }}</a><i class="icofont-rounded-right"></i>
+				{{ if category }}
+					<a href="{{ category:url }}">{{ category:title }}</a><i class="icofont-rounded-right"></i>
+				{{ /if }}
+				<div class="itemActive">{{ title }}</div>
+			</nav>
+			<div class="contentTop">
+				<div class="innerWrapper">
+					<div class="contentLeft">
+						{{ if karrierecategories }}
+							<div class="karriereCategories">
+								{{ karrierecategories }}
+									<div class="btn-karrierecategory">{{ title }}</div>
+								{{ /karrierecategories }}
+							</div>
+						{{ /if }}
+						<div class="textboxMediabox">
+							<div class="karriereDetailTitles">
+								{{ if headline_above | trim != "" && headline_above | strip_tags != "" }}<h4 class="headline_above">{{ headline_above }}</h4>{{ /if }}
+								{{ if headline | trim != "" && headline | strip_tags != "" }}<h1 class="headline">{{ headline }}</h1>{{ /if }}
+								{{ if subtitle | trim != "" && subtitle | strip_tags != "" }}<h2 class="subtitle">{{ subtitle }}</h2>{{ /if }}
+							</div>
+
+							{{ image }}
+							<div class="mediabox">
+								{{ partial:elements/image }}
+							</div>
+							{{ /image }}
+
+							<div class="textbox">
+								<div class="textboxInner">
+									{{ if content | trim != "" && content | strip_tags != "" }}<div class="content">{{ content }}</div>{{ /if }}
+									{{ if links }}
+									<div class="links">
+										{{ links }}
+											{{ partial:elements/button
+												:url='button_link_feld'
+												:style='button_style'
+												:target='button_zielseite'
+												:icon='button_icon'
+												:text='button_text'
+											}}
+										{{ /links }}
+									</div>
+								{{ /if }}
+								</div>
+							</div>
+						</div>
+
+						{{ weitere_inhalte scope="block" }}
+							{{ partial src="components/{type}" }}
+						{{ /weitere_inhalte }}
+					</div>
+
+					<div class="contentRight">
+						<div class="contentRightInner">
+							<div class="karriereAddressRight">
+								<h3>{{ translations.karriereDetailHeadlineRight }}</h3>
+								{{ adressen scope="block" }}
+									{{ partial src="components/contacts" }}
+								{{ /adressen }}
+							</div>
+							<div class="karriereTextblockRight">
+								{{ translations.karriereDetailTextRight }}
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="contentBottom">
+				<div class="footerLinks">
+					<a onclick="history.back()" class="btn btn-primary has-icon has-text">
+						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></span></span>
+						<span class="btnText"><span>{{ translations.karriereDetailBtnText }}</span></span>
+					</a>
+				</div>
+				<div class="footerRight">
+					<div class="previouskarrierePosts">
+						<p class="categoryHeadline">{{ translations.karriereDetailNextArticle }}</p>
+						{{ collection:next in="karriere" as="posts" limit="1" sort="date:asc" }}
+
+						{{ if no_results }}
+							<p class="nomoreContent">{{ translations.karriereDetailNoResultsText }}</p>
+						{{ /if }}
+
+						{{ posts }}
+							{{ partial:elements/karriere_card_small }}
+						{{ /posts }}
+
+					{{ /collection:next }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
