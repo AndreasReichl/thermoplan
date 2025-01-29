@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Anfrage</title>
+
+		<style>
+			body { font-family: sans-serif; padding: 15px 30px; color:#01215C; }
+			#logo { width: 200px; margin-bottom: 30px; }
+			h1 { color:#01215C; }
+			table td, table td * { vertical-align: top; line-height: 1.4; }
+			table .question { color:gray; font-size:14px; width:200px; }
+			table td { font-size:16px; margin-bottom:15px; }
+		</style>
+	</head>
+
+	<body>
+		<img id="logo" src="{{ config:app:url }}{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" />
+
+		<h1>Websiteanfrage</h1>
+
+		<table>
+			{{ fields }}
+				<tr>
+					<td class="question">{{ display }}</td>
+					<td class="answer">{{ value }}</td>
+				</tr>
+			{{ /fields }}
+		</table>
+	</body>
+</html>
