@@ -84,7 +84,7 @@
 				<div class="footerRight">
 					<div class="previouskarrierePosts">
 						<p class="categoryHeadline">{{ translations.karriereDetailNextArticle }}</p>
-						{{ collection:next in="karriere" as="posts" limit="1" sort="date:asc" }}
+						{{ collection:previous in="karriere" as="posts" limit="1" sort="date:asc" }}
 
 						{{ if no_results }}
 							<p class="nomoreContent">{{ translations.karriereDetailNoResultsText }}</p>
@@ -94,7 +94,7 @@
 							{{ partial:elements/karriere_card_small }}
 						{{ /posts }}
 
-					{{ /collection:next }}
+					{{ /collection:previous }}
 					</div>
 				</div>
 			</div>

@@ -5,7 +5,7 @@ input,
 textarea   { background-color:transparent; color:var(--font-color); display:inline-block; width:-webkit-fill-available; border:1px solid var(--border-color); .border-radius(4px);
 	&.not-valid { border-color:var(--danger-color); }
 }
-textarea  { padding:12px; }
+textarea  { padding:12px; width:100%; }
 
 input      { height:42px; padding:0 12px;
 	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -20,6 +20,9 @@ input      { height:42px; padding:0 12px;
 			font-style:normal !important;
 	}
 }
+input[type="text"],
+input[type="tel"],
+input[type="email"] { width:100%; }
 
 label >span { cursor: pointer; }
 input[type="radio"],
