@@ -16,83 +16,88 @@
 
 	<div class="footerNavWrapper">
 		<div class="container">
-		{{ if sitebasics.logo_footer }}
-		<div class="footerLogo">
-			<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
-		</div>
-		{{ /if }}
-		{{ if sitebasics.firma }}
-		<div class="addressEntry firma">
-			<span class="label">{{ sitebasics.firma }}</span>
-		</div>
-		{{ /if }}
-		<div class="footerInner">
-			<div class="footerLeft">
-				<div class="footerAddress">
-					{{ partial:elements/address
-						:strasse_hausnummer='sitebasics.strasse_hausnummer'
-						:icon_strasse='sitebasics.icon_strasse'
-						:ort='sitebasics.ort'
-						:icon_place='sitebasics.icon_place'
-						:plz='sitebasics.plz'
-						:phone='sitebasics.phone'
-						:icon_phone='sitebasics.icon_phone'
-						:fax='sitebasics.fax'
-						:icon_fax='sitebasics.icon_fax'
-						:mobile='sitebasics.mobile'
-						:icon_mobile='sitebasics.icon_mobile'
-						:email='sitebasics.email'
-						:icon_email='sitebasics.icon_email'
-						:opening_hours='sitebasics.opening_hours'
-					}}
-				</div>
-				<div class="footerLocations">
-					{{ sitebasics.locations }}
-						{{ partial:elements/address }}
-					{{ /sitebasics.locations }}
-				</div>
+			{{ if sitebasics.siegel}}
+			<div class="footerSiegel">
+				<img src="{{ sitebasics.siegel.url }}" alt="{{ sitebasics.siegel.alt }}" />
 			</div>
+			{{ /if }}
+			{{ if sitebasics.logo_footer }}
+			<div class="footerLogo">
+				<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
+			</div>
+			{{ /if }}
+			{{ if sitebasics.firma }}
+			<div class="addressEntry firma">
+				<span class="label">{{ sitebasics.firma }}</span>
+			</div>
+			{{ /if }}
+			<div class="footerInner">
+				<div class="footerLeft">
+					<div class="footerAddress">
+						{{ partial:elements/address
+							:strasse_hausnummer='sitebasics.strasse_hausnummer'
+							:icon_strasse='sitebasics.icon_strasse'
+							:ort='sitebasics.ort'
+							:icon_place='sitebasics.icon_place'
+							:plz='sitebasics.plz'
+							:phone='sitebasics.phone'
+							:icon_phone='sitebasics.icon_phone'
+							:fax='sitebasics.fax'
+							:icon_fax='sitebasics.icon_fax'
+							:mobile='sitebasics.mobile'
+							:icon_mobile='sitebasics.icon_mobile'
+							:email='sitebasics.email'
+							:icon_email='sitebasics.icon_email'
+							:opening_hours='sitebasics.opening_hours'
+						}}
+					</div>
+					<div class="footerLocations">
+						{{ sitebasics.locations }}
+							{{ partial:elements/address }}
+						{{ /sitebasics.locations }}
+					</div>
+				</div>
 
 
-			<div class="footerNavCols">
-				<nav class="footerNavCol1">
-				{{ nav:footernav_col_1 }}
-					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
-					{{ if children }}
-						<div class="footerNavSubmenu">
-							{{ children }}
-								<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
-							{{ /children }}
-						</div>
-					{{ /if }}
-				{{ /nav:footernav_col_1 }}
-				</nav>
-				<nav class="footerNavCol2">
-				{{ nav:footernav_col_2 }}
-					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
-					{{ if children }}
-						<div class="footerNavSubmenu">
-							{{ children }}
-								<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
-							{{ /children }}
-						</div>
-					{{ /if }}
-				{{ /nav:footernav_col_2 }}
-				</nav>
-				<nav class="footerNavCol3">
-				{{ nav:footernav_col_3 }}
-					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
-					{{ if children }}
-						<div class="footerNavSubmenu">
-							{{ children }}
-								<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
-							{{ /children }}
-						</div>
-					{{ /if }}
-				{{ /nav:footernav_col_3 }}
-				</nav>
+				<div class="footerNavCols">
+					<nav class="footerNavCol1">
+					{{ nav:footernav_col_1 }}
+						<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+						{{ if children }}
+							<div class="footerNavSubmenu">
+								{{ children }}
+									<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
+								{{ /children }}
+							</div>
+						{{ /if }}
+					{{ /nav:footernav_col_1 }}
+					</nav>
+					<nav class="footerNavCol2">
+					{{ nav:footernav_col_2 }}
+						<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+						{{ if children }}
+							<div class="footerNavSubmenu">
+								{{ children }}
+									<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
+								{{ /children }}
+							</div>
+						{{ /if }}
+					{{ /nav:footernav_col_2 }}
+					</nav>
+					<nav class="footerNavCol3">
+					{{ nav:footernav_col_3 }}
+						<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+						{{ if children }}
+							<div class="footerNavSubmenu">
+								{{ children }}
+									<a href="{{ url }}" class="footerSubmenu">{{ title }}</a>
+								{{ /children }}
+							</div>
+						{{ /if }}
+					{{ /nav:footernav_col_3 }}
+					</nav>
+				</div>
 			</div>
-		</div>
 		</div>
 
 		<div class="footerBottomWrapper">
