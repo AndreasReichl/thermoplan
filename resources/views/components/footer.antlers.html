@@ -1,3 +1,8 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ footerCopyright = '© Thermoplan Anlagenbau Elektrotechnik Verfahrenstechnik GmbH. All rights reserved.' }}
+{{ else }}
+	{{ footerCopyright = '© Thermoplan Anlagenbau Elektrotechnik Verfahrenstechnik GmbH. Alle Rechte vorbehalten.' }}
+{{ /if }}
 <footer class="component_footer">
 
 	<div class="footerGraficTop">
@@ -126,7 +131,7 @@
 		</div>
 
 		<div class="footerCopyrightWrapper">
-			<div class="footerCopyright">© Thermoplan Anlagenbau Elektrotechnik Verfahrenstechnik GmbH. Alle Rechte vorbehalten.</div>
+			<div class="footerCopyright">{{ footerCopyright }}</div>
 			<a href="https://www.andreasreichl.com" target="_blank" class="designBy" data-tooltip="Website by Andreas Reichl Mediendesign" data-flow="top">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.958" height="24" viewBox="0 0 22.958 24">
 				<defs>

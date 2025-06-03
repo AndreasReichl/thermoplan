@@ -7,3 +7,45 @@ tree:
     id: f8db71a5-ff3a-4644-9523-3fabb1fb42aa
     title: Products
     url: /en/products
+    children:
+      -
+        id: 80499162-6a5b-47aa-9bab-13f7eadbfd4b
+        title: 'Plant Engineering'
+        url: '/en/products#product_plant_engineering'
+      -
+        id: 333f80e4-c2b7-482c-bfd7-4d090393e131
+        title: 'Industrial Solutions'
+        url: '/en/products#product_industrial_solutions'
+      -
+        id: 33134966-5086-4db3-9fe7-00ea5afa83dd
+        title: 'Quality Inspection Systems'
+        url: '/en/products#product_quality_inspection_systems'
+      -
+        id: 2f7f0b78-7a68-445a-bcb3-565b8080ebe7
+        title: 'Warehouse Technology'
+        url: '/en/products#product_warehouse_technology'
+      -
+        id: 4b218d3b-bc4d-4c8a-a402-a55b5e5923d1
+        title: 'Electrical Engineering'
+        url: '/en/products#product_electrical_engineering'
+      -
+        id: d06aa7c7-e44f-4509-9dc2-d4ea9cd675a4
+        title: 'Factory Control Technology'
+        url: '/en/products#product_factory_control_technology'
+  -
+    id: b39acfc8-1b72-4aef-b8cd-4049bd7dfa5a
+    title: Service
+    url: /en/service
+    children:
+      -
+        id: f0130590-e800-4f86-8983-4084eef48b77
+        title: Maintenance
+        url: '/en/service#maintenance'
+      -
+        id: a967795c-a864-4769-ac6b-c9b8215dd7e0
+        title: Training
+        url: '/en/service#training'
+      -
+        id: 2af905b9-f558-4b13-b1db-0703927239f3
+        title: 'Report Issue / Support'
+        url: '/en/service#report_issue'

@@ -14,13 +14,13 @@ tabs:
                 - required
               display: 'Titel des Eintrags'
               instructions: 'Wird nicht auf der Seite angezeigt'
-              localizable: false
+              localizable: true
           -
             handle: featured
             field:
               type: toggle
               display: Featured
-              localizable: false
+              localizable: true
           -
             handle: vorschautext
             field:
@@ -41,7 +41,7 @@ tabs:
               type: bard
               display: Vorschautext
               instructions: 'Textblock der in der Übersicht angezeigt wird sobald dieser Inhalt hat. Wird hier nichts eingetragen, erscheint der Inhalt (Textfeld weiter unten) in abgeschnittener Form, falls dieser zu lang wäre. Dieser Vorschautext erscheint nicht in der Detailansicht!'
-              localizable: false
+              localizable: true
           -
             import: text_component
           -
@@ -56,7 +56,7 @@ tabs:
             field:
               type: replicator
               display: 'Weitere Inhalte'
-              localizable: false
+              localizable: true
               sets:
                 weitere_inhalte:
                   display: 'Weitere Inhalte'
@@ -85,7 +85,7 @@ tabs:
                             type: text
                             display: Spaltenanzahl
                             instructions: 'Hier kann der Text in mehrere Spalten geteilt werden.'
-                            localizable: false
+                            localizable: true
                         -
                           import: textelement
                         -
@@ -94,7 +94,7 @@ tabs:
                             type: toggle
                             display: 'Textbreite automatisch'
                             instructions: 'Gibt an das der Textblock nur so breit ist wie sein Inhalt.'
-                            localizable: false
+                            localizable: true
                     spalten:
                       display: Spalten
                       icon: dashboard-layout
@@ -106,13 +106,13 @@ tabs:
                             type: text
                             display: Spaltenanzahl
                             instructions: 'Anzahl der Spalten nebeneinander.'
-                            localizable: false
+                            localizable: true
                         -
                           handle: spaltenlayout
                           field:
                             type: replicator
                             display: Spaltenlayout
-                            localizable: false
+                            localizable: true
                             sets:
                               spalte:
                                 display: Spalte
@@ -130,7 +130,7 @@ tabs:
                             type: toggle
                             display: 'Textbreite automatisch'
                             instructions: 'Ist diese Option aktiviert, erstreckt sich der Text nicht über die komplette Seite wenn er kürzer ist.'
-                            localizable: false
+                            localizable: true
                     galleryslider:
                       display: Bildergalerie
                       icon: media-image-picture-gallery
@@ -164,7 +164,7 @@ tabs:
               default: now
               validate:
                 - required
-              localizable: false
+              localizable: true
           -
             handle: author
             field:
@@ -196,4 +196,4 @@ tabs:
                 - blogcategories
               display: 'Blog Kategorien'
               mode: select
-              localizable: false
+              localizable: true

@@ -10,7 +10,7 @@ tabs:
             field:
               type: text
               required: true
-              localizable: false
+              localizable: true
               validate:
                 - required
           -
@@ -44,7 +44,7 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: Content
-              localizable: false
+              localizable: true
   sidebar:
     display: Sidebar
     sections:
@@ -64,7 +64,7 @@ tabs:
               validate:
                 - required
                 - 'max:200'
-              localizable: false
+              localizable: true
           -
             handle: websites_feld
             field:

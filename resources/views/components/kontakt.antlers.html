@@ -30,6 +30,9 @@
 					{{ fields }}
 
 						{{ if ( current_uri | substr(0,3) ) == '/en' }}
+							{{ if handle == 'firma' }}
+								{{ display = 'Company name' }}
+							{{ /if }}
 							{{ if handle == 'vorname' }}
 								{{ display = 'First name' }}
 							{{ /if }}
@@ -41,6 +44,18 @@
 							{{ /if }}
 							{{ if handle == 'telefon' }}
 								{{ display = 'Phone' }}
+							{{ /if }}
+							{{ if handle == 'mobil' }}
+								{{ display = 'Mobile' }}
+							{{ /if }}
+							{{ if handle == 'strasse_hausnummer' }}
+								{{ display = 'Street / Number' }}
+							{{ /if }}
+							{{ if handle == 'zip' }}
+								{{ display = 'ZIP' }}
+							{{ /if }}
+							{{ if handle == 'place' }}
+								{{ display = 'Place' }}
 							{{ /if }}
 							{{ if handle == 'betreff' }}
 								{{ display = 'Subject' }}

@@ -1,10 +1,10 @@
 {{ if parallax_bg }}
-<section {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} x-data="parallax" class="spaltenLayout parallax-container" style="background-color:{{ content_bg_color }};">
+<section {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} x-data="parallax" class="spaltenLayout parallax-container{{ if textblock_hidden }} textblockHidden{{ /if }}" style="background-color:{{ content_bg_color }};">
 	<div class="parallax-background"
         :style="'transform: translateY(' + offset + 'px); background-image: url({{ background_image }});'">
     </div>
 {{ else }}
-<section {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="spaltenLayout" style="background-image: url({{ background_image }}); background-color:{{ content_bg_color }};">
+<section {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="spaltenLayout{{ if textblock_hidden }} textblockHidden{{ /if }}" style="background-image: url({{ background_image }}); background-color:{{ content_bg_color }};">
 {{ /if }}
 	{{ if lines_top_logo }}
 		{{ partial:elements/lines_logo_top }}

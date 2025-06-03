@@ -1,1 +1,9 @@
-{  }
+tree:
+  -
+    id: a641df98-50d3-42b2-9b79-7a7f31e8a071
+    title: Imprint
+    url: /en/imprint
+  -
+    id: 0c6a8dc4-47db-4174-b301-0132b9bf3e84
+    title: 'Privacy Policy'
+    url: /en/privacy_policy

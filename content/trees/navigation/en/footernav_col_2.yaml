@@ -1,1 +1,18 @@
-{  }
+tree:
+  -
+    id: 32385725-83f2-468a-b287-6fbddeed3f48
+    title: Service
+    url: /en/service
+    children:
+      -
+        id: 7beb2c60-5051-412d-a26c-912ba7788063
+        title: Maintenance
+        url: '/en/service#maintenance'
+      -
+        id: 1f9f098c-1372-4615-ab90-e8e05ff74509
+        title: Training
+        url: '/en/service#training'
+      -
+        id: 619cfd14-6fc9-4faf-84bb-5e8342b72748
+        title: 'Report Issue / Support'
+        url: '/en/service#report_issue'

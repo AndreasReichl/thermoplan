@@ -26,21 +26,21 @@ fields:
       remove_empty_nodes: false
       type: bard
       display: Firma
-      localizable: false
+      localizable: true
   -
     handle: hrb
     field:
       type: text
       width: 50
       display: HRB
-      localizable: false
+      localizable: true
   -
     handle: ustid
     field:
       type: text
       width: 50
       display: USt-IdNr
-      localizable: false
+      localizable: true
   -
     handle: anrede
     field:
@@ -51,27 +51,27 @@ fields:
       type: select
       display: Anrede
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: vorname
     field:
       type: text
       width: 33
       display: Vorname
-      localizable: false
+      localizable: true
   -
     handle: nachname
     field:
       type: text
       width: 33
       display: Nachname
-      localizable: false
+      localizable: true
   -
     handle: position
     field:
       type: text
       display: Position
-      localizable: false
+      localizable: true
   -
     handle: icon_strasse
     field:
@@ -79,14 +79,14 @@ fields:
       type: icon
       display: 'Icon Strasse'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: strasse_hausnummer
     field:
       type: text
       display: 'Strasse / Hausnummer'
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: icon_place
     field:
@@ -94,21 +94,21 @@ fields:
       type: icon
       display: 'Icon Ort'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: plz
     field:
       type: text
       width: 33
       display: PLZ
-      localizable: false
+      localizable: true
   -
     handle: ort
     field:
       type: text
       width: 33
       display: Ort
-      localizable: false
+      localizable: true
   -
     handle: icon_phone
     field:
@@ -116,14 +116,14 @@ fields:
       type: icon
       display: 'Icon Telefon'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: phone
     field:
       type: text
       display: Phone
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: icon_fax
     field:
@@ -131,14 +131,14 @@ fields:
       type: icon
       display: 'Icon Fax'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: fax
     field:
       type: text
       display: Fax
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: icon_mobile
     field:
@@ -146,14 +146,14 @@ fields:
       type: icon
       display: 'Icon Mobil'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: mobile
     field:
       type: text
       display: Mobil
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: icon_email
     field:
@@ -161,14 +161,14 @@ fields:
       type: icon
       display: 'Icon Email'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: email
     field:
       type: text
       display: Email
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: icon_website
     field:
@@ -176,14 +176,14 @@ fields:
       type: icon
       display: 'Icon Website'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: website
     field:
       type: text
       display: Website
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: opening_hours
     field:
@@ -213,4 +213,4 @@ fields:
       remove_empty_nodes: false
       type: bard
       display: Öffnungszeiten
-      localizable: false
+      localizable: true

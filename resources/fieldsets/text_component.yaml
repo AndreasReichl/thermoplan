@@ -19,7 +19,7 @@ fields:
       type: bard
       display: Headline
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: headline_type
     field:
@@ -52,7 +52,7 @@ fields:
       type: select
       display: 'Headline Typ'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: subtitle
     field:
@@ -71,7 +71,7 @@ fields:
       type: bard
       display: Subtitle
       width: 66
-      localizable: false
+      localizable: true
   -
     handle: subtitle_type
     field:
@@ -104,7 +104,7 @@ fields:
       type: select
       display: 'Subtitle Typ'
       width: 33
-      localizable: false
+      localizable: true
   -
     handle: content
     field:
@@ -136,14 +136,14 @@ fields:
       type: bard
       display: Inhalt
       instructions: 'Freies Feld für Texte, Links und Informationen.'
-      localizable: false
+      localizable: true
   -
     handle: links
     field:
       mode: stacked
       type: grid
       display: Links
-      localizable: false
+      localizable: true
       fields:
         -
           import: buttonstyles
@@ -153,4 +153,4 @@ fields:
     field:
       type: text
       display: 'Absatz Klasse'
-      localizable: false
+      localizable: true

@@ -1,3 +1,12 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ addressPhone = 'Phone:' }}
+	{{ addressFax = 'Fax:' }}
+	{{ addressMobile = 'Mobile:' }}
+{{ else }}
+	{{ addressPhone = 'Tel.:' }}
+	{{ addressFax = 'Fax:' }}
+	{{ addressMobile = 'Mobil:' }}
+{{ /if }}
 <address>
 	{{ if firma }}
 	<div class="addressEntry firma">
@@ -18,19 +27,19 @@
 	{{ /if }}
 	{{ if phone }}
 	<div class="addressEntry phone">
-		{{ if icon_phone }}<span class="icon">{{ icon_phone }}</span>{{ else }}<span class="labelText">Tel.:</span>{{ /if }}
+		{{ if icon_phone }}<span class="icon">{{ icon_phone }}</span>{{ else }}<span class="labelText">{{ addressPhone }}</span>{{ /if }}
 		<span class="label">{{ phone }}</span>
 	</div>
 	{{ /if }}
 	{{ if fax }}
 	<div class="addressEntry fax">
-		{{ if icon_fax }}<span class="icon">{{ icon_fax }}</span>{{ else }}<span class="labelText">Fax:</span>{{ /if }}
+		{{ if icon_fax }}<span class="icon">{{ icon_fax }}</span>{{ else }}<span class="labelText">{{ addressFax }}</span>{{ /if }}
 		<span class="label">{{ fax }}</span>
 	</div>
 	{{ /if }}
 	{{ if mobile }}
 	<div class="addressEntry mobile">
-		{{ if icon_mobile }}<span class="icon">{{ icon_mobile }}</span>{{ else }}<span class="labelText">Mobil:</span>{{ /if }}
+		{{ if icon_mobile }}<span class="icon">{{ icon_mobile }}</span>{{ else }}<span class="labelText">{{ addressMobile }}</span>{{ /if }}
 		<span class="label">{{ mobile }}</span>
 	</div>
 	{{ /if }}

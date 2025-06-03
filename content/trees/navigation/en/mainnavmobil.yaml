@@ -1,1 +1,77 @@
-{  }
+tree:
+  -
+    id: d5b0a6fa-cbbe-4b8c-aafa-2ad62aed90ba
+    title: News
+    url: /en/news
+    children:
+      -
+        id: 5d3f0866-434f-46e5-b3e6-e111548d0903
+        title: 'Factory Control Technology'
+        url: '/en/products#factory_control_technology'
+  -
+    id: 46f3852d-3084-489b-8d3c-062633273c91
+    title: Products
+    url: /en/products
+    children:
+      -
+        id: 71959bd0-a808-4ad7-8c64-6213b6de4d34
+        title: 'Plant engineering'
+        url: '/en/products#product_plant_engineering'
+      -
+        id: 4ba1711d-0a75-453b-9be5-f25afa496474
+        title: 'Industrial Solutions'
+        url: '/en/products#product_industrial_solutions'
+      -
+        id: c6e72c26-5c14-4a63-b1d0-22585c2a46e2
+        title: 'Quality Inspection Systems'
+        url: '/en/products#product_quality_inspection_systems'
+      -
+        id: e6b15275-23b2-4ab0-837d-7656fa1e7226
+        title: 'Warehouse Technology'
+        url: '/en/products#product_warehouse_technology'
+      -
+        id: 9ae0c13a-135c-407f-95ff-843b86cfdd34
+        title: 'Electrical Engineering'
+        url: '/en/products#product_electrical_engineering'
+      -
+        id: 1e5bde05-ac3c-4c9d-8031-7ab1bb9ee0b3
+        title: 'Factory Control Technology'
+        url: '/en/products#product_factory_control_technology'
+  -
+    id: 2ed1b95a-7311-4a03-8236-a3137ed43847
+    title: Service
+    url: /en/service
+    children:
+      -
+        id: a17a32b7-4efc-4dfe-84c1-42f13bb86c8f
+        title: Maintenance
+        url: '/en/service#maintenance'
+      -
+        id: cad7770a-8ffb-4110-a8e6-a0ff977e5a33
+        title: Training
+        url: '/en/service#training'
+      -
+        id: 111cf3bd-c615-45c4-88a8-fed7d18e172b
+        title: 'Report Issue / Support'
+        url: '/en/service#report_issue'
+  -
+    id: 13f191a7-8eae-419e-a28b-8df2be7db4e8
+    title: Careers
+    url: /en/careers
+  -
+    id: eea5ba0b-bc6e-4def-9e6a-9fc9b5ca7b31
+    title: Company
+    url: /en/company
+    children:
+      -
+        id: 95333fef-8d96-4a2e-9080-2d4af6f22552
+        title: Thermoplan
+        url: /en/company
+      -
+        id: d6f663fc-b66d-4ebd-82cc-bc1b96917307
+        title: 'Contact Person'
+        url: '/en/company#contact_person'
+  -
+    id: c523cd56-9f59-4ca1-9334-1a75e75ec84e
+    title: Contact
+    url: /en/contact

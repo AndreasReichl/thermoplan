@@ -1,3 +1,10 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ labelPhone = 'Phone:' }}
+	{{ labelEmail = 'E-Mail:' }}
+{{ else }}
+	{{ labelPhone = 'Tel.:' }}
+	{{ labelEmail = 'E-Mail:' }}
+{{ /if }}
 <section class="teamWrapper{{ inverted ? ' inverted' : '' }}" style="background-image:url({{ mainbgimage }});">
 	<div {{ if hashtag_name }}id="{{ hashtag_name }}"{{ /if }} class="container">
 		{{ partial:elements/textblock }}
@@ -12,13 +19,13 @@
 					<address>
 						{{ if phone }}
 						<div class="addressEntry contactPhone">
-							<span class="labelText">Tel.:</span>
+							<span class="labelText">{{ labelPhone }}</span>
 							<span class="label">{{ phone }}</span>
 						</div>
 						{{ /if }}
 						{{ if email }}
 						<div class="addressEntry contactEmail">
-							<span class="labelText">E-Mail:</span>
+							<span class="labelText">{{ labelEmail }}</span>
 							<span class="label">{{ email }}</span>
 						</div>
 						{{ /if }}

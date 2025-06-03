@@ -1,1 +1,22 @@
-{  }
+tree:
+  -
+    id: 5d15fed8-a76e-4cc1-b475-c2407f8171da
+    title: Careers
+    url: /en/careers
+  -
+    id: 672389e8-1d8f-49b6-8049-1c1935c526b0
+    title: Company
+    url: /en/company
+    children:
+      -
+        id: 14ff4c21-ed78-4c9c-b5c0-019dc71e9c29
+        title: Thermoplan
+        url: /en/company
+      -
+        id: 313be70d-723b-4db7-96f0-841d46e7940a
+        title: 'Contact Person'
+        url: '/en/company#contact_person'
+  -
+    id: dd2aec4d-a123-420f-bcfd-965aeeda41bf
+    title: Contact
+    url: /en/contact

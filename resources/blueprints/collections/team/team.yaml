@@ -21,7 +21,7 @@ tabs:
               type: text
               display: Tätigkeit
               width: 50
-              localizable: false
+              localizable: true
           -
             handle: image
             field:

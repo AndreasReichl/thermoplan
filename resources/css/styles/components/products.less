@@ -92,6 +92,8 @@
 
 	.footerLinks 			{ margin:60px 0 0 0; }
 
+
+
 	@media (min-width: @screen-md-min) 	{ margin:9vw 0 70px 0;
 		.inner 				{
 			.contentTop 			{ width:100%;
@@ -124,4 +126,10 @@
 		.specificationContent 	{ .flex-size(2); }
 
 	}
+}
+
+.moreContent {
+.spaltenLayout {
+	&.textblockHidden { >.container >.inner >.textblockWrapper { display:none;} }
+}
 }

@@ -15,6 +15,7 @@ tabs:
               display: Logo
               folder: sitebasics
               width: 50
+              localizable: true
           -
             handle: logo_negative
             field:
@@ -25,6 +26,7 @@ tabs:
               display: 'Logo Negativ'
               folder: sitebasics
               width: 50
+              localizable: true
           -
             handle: logo_icon
             field:
@@ -35,6 +37,7 @@ tabs:
               display: 'Logo Icon'
               folder: sitebasics
               width: 50
+              localizable: true
           -
             handle: logo_footer
             field:
@@ -45,6 +48,7 @@ tabs:
               display: 'Logo Footer'
               folder: sitebasics
               width: 50
+              localizable: true
           -
             handle: favicon
             field:
@@ -55,6 +59,7 @@ tabs:
               display: favicon
               folder: sitebasics
               width: 50
+              localizable: true
           -
             handle: apple_touch_icon
             field:
@@ -65,12 +70,24 @@ tabs:
               display: 'Apple touch icon'
               folder: sitebasics
               width: 50
+              localizable: true
       -
         display: Firmenadresse
         instructions: 'Unternehmensadresse für Kontakt, Impressum etc.'
         fields:
           -
             import: firmenadresse
+      -
+        display: 'Footer Inhalte'
+        fields:
+          -
+            handle: siegel
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Siegel
+              localizable: true
   socialmedia:
     display: 'Social Media'
     sections:
@@ -84,60 +101,70 @@ tabs:
               type: link
               display: Instagram
               width: 50
+              localizable: true
           -
             handle: instagram_name
             field:
               type: text
               display: 'Instagram Name'
               width: 50
+              localizable: true
           -
             handle: facebook
             field:
               type: link
               display: Facebook
               width: 50
+              localizable: true
           -
             handle: facebook_name
             field:
               type: text
               display: 'Facebook Name'
               width: 50
+              localizable: true
           -
             handle: youtube
             field:
               type: link
               display: Youtube
               width: 50
+              localizable: true
           -
             handle: youtube_name
             field:
               type: text
               display: 'Youtube Name'
               width: 50
+              localizable: true
           -
             handle: x
             field:
               type: link
               display: X
               width: 50
+              localizable: true
           -
             handle: x_name
             field:
               type: text
               display: 'X Name'
               width: 50
+              localizable: true
           -
             handle: tiktok
             field:
               type: link
               display: TikTok
               width: 50
+              localizable: true
           -
             handle: tiktok_name
             field:
               type: text
               display: 'TikTok Name'
               width: 50
+              localizable: true
   locations:
     display: Filialen
     sections:
@@ -150,6 +177,7 @@ tabs:
               type: replicator
               display: Filialen
               collapse: true
+              localizable: true
               sets:
                 locations:
                   display: Filialen

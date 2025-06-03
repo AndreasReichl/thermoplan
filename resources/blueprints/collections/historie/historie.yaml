@@ -13,6 +13,7 @@ tabs:
               validate:
                 - required
               display: Jahreszahl
+              localizable: true
           -
             handle: content
             field:
@@ -45,12 +46,14 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: Inhalt
+              localizable: true
           -
             handle: image
             field:
               container: assets
               type: assets
               display: Bild
+              localizable: true
   sidebar:
     display: Sidebar
     sections:
@@ -75,4 +78,13 @@ tabs:
             field:
               type: template
               display: Template
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - historie
+              max_items: 1
+              listable: false
               localizable: true

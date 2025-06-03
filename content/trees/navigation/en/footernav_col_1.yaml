@@ -1,1 +1,30 @@
-{  }
+tree:
+  -
+    id: 43f3e56f-c0f4-43b6-b481-6d243ca25d82
+    title: Products
+    url: /en/products
+    children:
+      -
+        id: b69f1cdc-271a-42ea-b283-3a35ba3fac53
+        title: 'Plant Engineering'
+        url: '/en/products#product_plant_engineering'
+      -
+        id: 311af8d1-2202-45bd-a700-c270695d7fdc
+        title: 'Industrial Solutions'
+        url: '/en/products#product_industrial_solutions'
+      -
+        id: 0afb962a-1d5b-4ea0-b3d8-d73b9e3c7386
+        title: 'Quality Inspection Systems'
+        url: '/en/products#product_quality_inspection_systems'
+      -
+        id: 36d9705b-1a79-4606-8e12-c4e49812e5fd
+        title: 'Warehouse Technology'
+        url: '/en/products#product_warehouse_technology'
+      -
+        id: 3c79b47b-8586-48d6-94e9-38e4a0ca12c4
+        title: 'Electrical Engineering'
+        url: '/en/products#product_electrical_engineering'
+      -
+        id: b4732c6f-ecef-4bba-b39a-ad1592ab133e
+        title: 'Factory Control Technology'
+        url: '/en/products#product_factory_control_technology'
