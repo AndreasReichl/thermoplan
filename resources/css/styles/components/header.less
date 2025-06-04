@@ -43,6 +43,11 @@
 		}
 	}
 	.languageSelect.dropdown 	{ position: fixed !important; right: 2vw; top: 1vw; }
+	.languageSelect 	{ position: fixed !important; right: 2vw; top: 1vw;
+		>.lang { .flex-display(flex); gap:15px; color:var(--grey);
+			>.active { color:var(--primary-color); font-weight:bold; }
+		}
+	}
 
 	@media (max-width: @screen-sm-max)	{ height:100%; background-color: var(--white);
 		.mainmenu 						{ font-size: clamp(20px, 2.5vw, 36px); text-align: center;

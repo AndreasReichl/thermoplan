@@ -1,3 +1,8 @@
+{{ if ( current_uri | substr(0,3) ) == '/en' }}
+	{{ readBtn = 'read' }}
+{{ else }}
+	{{ readBtn = 'lesen' }}
+{{ /if }}
 <div class="blogListing{{ if !image }} noImage{{ /if }}">
 	<div class="inner">
 		<div onclick="window.location.href='{{ url }}'" class="textboxMediabox">
@@ -55,7 +60,7 @@
 					</div>
 					<div class="links">
 						<a href="{{ url }}" class="btn btn-default has-icon has-text">
-							<span class="btnText">Lesen</span>
+							<span class="btnText">{{ readBtn }}</span>
 							<span class="btnIcon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="11.013" height="8.26" viewBox="0 0 11.013 8.26">
 								<path id="arrow_right_alt" d="M5.919,7.261,8.363,4.818H0V3.441H8.363L5.919,1l.964-1,4.13,4.13L6.883,8.26Z" fill="currentColor" style="isolation: isolate"/>

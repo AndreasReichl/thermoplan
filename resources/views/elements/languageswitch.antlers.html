@@ -8,19 +8,19 @@
 	{{ if ( current_uri | substr(0,3) ) == '/en' }}
 		<div class="lang en">
 			{{ if related_page_de.url }}
-				<a href="{{related_page_de.url}}">Deutsch</a>
+				<a href="{{related_page_de.url}}">DE</a>
 			{{ else }}
-				<a href="/">Deutsch</a>
+				<a href="/">DE</a>
 			{{ /if }}
-			<div class="active">English</div>
+			<div class="active">EN</div>
 		</div>
 	{{ else }}
 		<div class="lang de">
-			<div class="a active" inactive>Deutsch</div>
+			<div class="a active" inactive>DE</div>
 			{{ if related_page_en.url }}
-				<a href="{{related_page_en.url}}">Englisch</a>
+				<a href="{{related_page_en.url}}">EN</a>
 			{{ else }}
-				<a href="/en">Englisch</a>
+				<a href="/en">EN</a>
 			{{ /if }}
 		</div>
 	{{ /if }}
