@@ -122,6 +122,12 @@ input[type="file"]::file-selector-button:active {
 
 
 // kontaktformular
+
+.formFieldSet 		{
+	&.datenschutz_gelesen {
+		>.label { display:none; }
+	}
+}
 @media (min-width: @screen-md-min) 	{
 	.formFieldsWrapper 	{ .flex-display(flex); .flex-wrap(wrap); }
 	.formFieldSet 		{ width:100%;

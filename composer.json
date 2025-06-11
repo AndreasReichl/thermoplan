@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "anakadote/statamic-recaptcha": "^1.0",
         "aryehraber/statamic-logbook": "^3.3",
         "laravel/framework": "^11",
         "laravel/tinker": "^2.9",

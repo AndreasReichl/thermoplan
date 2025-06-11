@@ -63,6 +63,7 @@
 						{{ /if }}
 
 
+
 						<div class="formFieldSet {{ handle }}">
 							{{ if handle == 'text' }}
 								{{ if ( current_uri | substr(0,3) ) == '/en' }}
@@ -96,7 +97,24 @@
 					<p>{{ error:captcha }}</p>
 					{{ /if }}
 
+					{{ recaptcha }}
+
 					<input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+					<!-- Hier dein manueller Datenschutz-Schalter -->
+					<div class="formFieldSet datenschutz_gelesen">
+						<div class="field">
+							<label for="datenschutz_gelesen">
+								<input type="hidden" name="datenschutz_gelesen" value="0">
+								<input type="checkbox" id="datenschutz_gelesen" name="datenschutz_gelesen" value="1" required>
+								{{ if ( current_uri | substr(0,3) ) == '/en' }}
+									I have read and accept the <a href="/en/privacy-policy" target="_blank">Privacy Policy</a>.
+								{{ else }}
+									Ich habe die <a href="/datenschutz" target="_blank">Datenschutzbestimmungen</a> gelesen und akzeptiere sie.
+								{{ /if }}
+							</label>
+						</div>
+					</div>
 
 					{{ if ( current_uri | substr(0,3) ) == '/en' }}
 						{{ btnText = 'Send' }}
@@ -104,7 +122,7 @@
 						{{ btnText = 'Absenden' }}
 					{{ /if }}
 
-					<button type="submit" class="btn btn-primary has-icon has-text">
+					<button type="submit" class="btn btn-primary has-icon has-text" id="submit-button" disabled>
 						<span class="btnText"><span>{{ btnText }}</span></span>
 						<span class="btnIcon"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></span>
 					</button>
@@ -115,3 +133,20 @@
 		</div>
 	</div>
 </article>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	const checkbox = document.getElementById('datenschutz_gelesen');
+	const submitButton = document.getElementById('submit-button');
+
+	if (checkbox) {
+		// Initial prüfen
+		submitButton.disabled = !checkbox.checked;
+
+		// Bei Änderung prüfen
+		checkbox.addEventListener('change', function() {
+			submitButton.disabled = !this.checked;
+		});
+	}
+});
+</script>
+

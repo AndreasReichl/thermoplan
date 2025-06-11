@@ -3,3 +3,8 @@ email:
   -
     id: m5zizvil
     to: info@thermoplan.de
+    mailer: smtp
+    subject: Websiteanfrage
+    html: mail
+    from: info@thermoplan.de
+    reply_to: info@thermoplan.de
