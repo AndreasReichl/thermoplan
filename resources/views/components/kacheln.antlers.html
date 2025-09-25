@@ -1,0 +1,45 @@
+<div class="kachelWrapper {{ if moveup }} moveUp{{ /if }}">
+	<div class="container">
+		<div class="kachelWrapperInner">
+			{{ if kacheltitel | trim != "" && kacheltitel | strip_tags != "" }}
+			<div class="kachelMainTitle">
+				{{ kacheltitel | replace("<p>", "") | replace("</p>", "") }}
+			</div>
+			{{ /if}}
+
+			{{ if kacheln }}
+			<div class="kacheln">
+				{{ kacheln }}
+				<div class="kachel">
+					<a href="{{ link }}">
+						<div class="kachelInner">
+							{{ if bild }}
+							<div class="kachelBild">
+								<img src="{{ bild:url }}" alt="{{ bild:alt }}" />
+							</div>
+							{{ /if }}
+							<div class="kachelContentWrapper">
+								<div class="overlayHorizontal">
+									<svg xmlns="http://www.w3.org/2000/svg" width="464" height="48.633" viewBox="0 0 464 48.633">
+									<g transform="translate(-239.049 -1782.436)">
+										<path d="M-15.207,3018.728l464,.021v-43.384H210.558l-25.325,25.324-200.441-.021Z" transform="translate(254.256 -1192.928)" fill="#01215c"/>
+										<path d="M-15.207,3018.728l464,.021v-43.384H212.658l-25.325,25.324-202.54-.021Z" transform="translate(254.256 -1187.679)" fill="#fff"/>
+									</g>
+									</svg>
+								</div>
+								<div class="kachelContent">
+									<div class="kachelTitle">{{ titel }}</div>
+									<div class="kachelLink">
+										<i class="icofont-long-arrow-right"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				{{ /kacheln }}
+			</div>
+			{{ /if }}
+		</div>
+	</div>
+</div>
