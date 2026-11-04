@@ -15,6 +15,10 @@
 	}
 }
 
+// Weiches Anfahren und Auslaufen für Aktuelles- und Logo-Slider (Tempo: site.js)
+.blogSlider,
+.logoslideshow 							{ --swiper-wrapper-transition-timing-function: cubic-bezier(0.45, 0, 0.15, 1); }
+
 .swiper 									{ overflow:hidden !important;
 	&.inverted 								{ background-color: var(--black); color:var(--white); }
 	@media (min-width: @screen-md-min) 		{

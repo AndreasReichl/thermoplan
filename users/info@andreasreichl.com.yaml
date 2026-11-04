@@ -7,8 +7,10 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+      view: tree
     products:
       after_save: continue_editing
+      view: tree
     referenzen:
       columns:
         - title
@@ -16,6 +18,17 @@ preferences:
         - slug
         - site
         - status
+      view: list
+    contacts:
+      view: list
+    historie:
+      view: tree
+    team:
+      view: tree
+    karriere:
+      view: tree
+    blog:
+      view: list
   taxonomies:
     product_categories:
       after_save: continue_editing

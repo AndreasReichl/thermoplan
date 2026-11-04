@@ -236,13 +236,54 @@ const swiper3 = new Swiper(".imageSlider", {
     },
 });
 
-const swiper4 = new Swiper(".blogSlider", {
-	slidesPerView: "auto",
-    spaceBetween: 40,
-    navigation: {
-        nextEl: ".buttonNext",
-        prevEl: ".buttonPrev",
-	},
+// Aktuelles-Slider: Die Pfeile blättern seitenweise statt Kärtchen für Kärtchen.
+// Pro Klick wird so weit geschoben wie möglich, ohne ein Kärtchen zu überspringen,
+// das noch nicht vollständig zu sehen war. Liefert den Index für swiper.slideTo().
+function blogSliderPageIndex(swiper, direction) {
+	const starts = swiper.slidesGrid;
+	const sizes = swiper.slidesSizesGrid;
+	const lastSnap = swiper.snapGrid.length - 1;
+	const viewStart = -swiper.translate;
+	const viewEnd = viewStart + swiper.size;
+	// Fehlen nur wenige Pixel, gilt ein Kärtchen als gesehen (vermeidet Mini-Sprünge am Ende).
+	const barelyHidden = (i, hiddenPx) => hiddenPx <= sizes[i] * 0.1;
+
+	if (direction > 0) {
+		// Das erste rechts angeschnittene Kärtchen wird zum ersten sichtbaren.
+		const next = starts.findIndex((start, i) => start + sizes[i] > viewEnd + 1);
+		if (next === -1) return lastSnap;
+		return barelyHidden(next, swiper.snapGrid[lastSnap] - starts[next]) ? lastSnap : next;
+	}
+
+	// Das letzte links verdeckte Kärtchen soll danach rechts vollständig zu sehen sein.
+	let prev = -1;
+	starts.forEach((start, i) => { if (start < viewStart - 1) prev = i; });
+	if (prev >= 0 && barelyHidden(prev, viewStart - starts[prev])) prev -= 1;
+	if (prev < 0) return 0;
+	const newStart = starts[prev] + sizes[prev] - swiper.size;
+	return starts.findIndex((start) => start >= newStart - 1);
+}
+
+// Wer im System "Bewegung reduzieren" eingestellt hat, bekommt keine Gleitanimation.
+// Die gemeinsame Easing-Kurve der Slider steht in slider.less.
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+document.querySelectorAll('.blogSlider').forEach((el) => {
+	// Pfeil-Klicks gleiten ruhig, nach einem Wisch rastet es etwas zügiger ein.
+	const clickSpeed = prefersReducedMotion ? 0 : 1100;
+	const swiper = new Swiper(el, {
+		slidesPerView: "auto",
+		spaceBetween: 40,
+		speed: prefersReducedMotion ? 0 : 600,
+		navigation: {
+			nextEl: el.querySelector('.buttonNext'),
+			prevEl: el.querySelector('.buttonPrev'),
+		},
+	});
+
+	// Pfeile und Tastatur (Enter auf den Pfeilen) rufen slideNext/slidePrev auf.
+	swiper.slideNext = (speed = clickSpeed, runCallbacks) => swiper.slideTo(blogSliderPageIndex(swiper, 1), speed, runCallbacks);
+	swiper.slidePrev = (speed = clickSpeed, runCallbacks) => swiper.slideTo(blogSliderPageIndex(swiper, -1), speed, runCallbacks);
 });
 
 
@@ -250,12 +291,13 @@ const swiper5 = new Swiper(".logoslideshow", {
 	slidesPerView: 3,
     spaceBetween: 40,
 	loop: true,
+	// Langsames, weiches Gleiten statt kurzem Ruck (Kurve: slider.less)
+	speed: prefersReducedMotion ? 0 : 1500,
 	autoplay: {
 		delay: 5000,
 		disableOnInteraction: false,
 	},
 	grabCursor: true,
-	duration:5000,
     breakpoints: {
         768: {
           slidesPerView: 5,

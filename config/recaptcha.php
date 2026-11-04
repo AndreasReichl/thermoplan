@@ -7,10 +7,44 @@ return [
     | reCAPTCHA Version
     |--------------------------------------------------------------------------
     |
-    | Set your version of reCAPTCHA here, either `3` or `2`.
+    | Set your version of reCAPTCHA here, either `enterprise`, `v3`, or `v2`.
     |
     */
-    'recaptcha_version' => 3,
+    // thermoplan nutzt reCAPTCHA v3 Classic (Keys RECAPTCHA_V3_* in .env).
+    'recaptcha_version' => 'v3',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enterprise / Fraud Defense configuration
+    |
+    | You must also have a "GOOGLE_APPLICATION_CREDENTIALS" variable in .env
+    | that points to the service account JSON key file within your file system.
+    |
+    | Prerequisite: create your SITE KEY at Security > Fraud Defense > Create key.
+    | That is the public key for your frontend JavaScript — a different thing
+    | from the service account JSON key created below.
+    |
+    | Steps to create the JSON key file from your Google Cloud console at
+    | https://console.cloud.google.com:
+    |
+    | 1. Select the project that owns the site key. Copy its project ID
+    |    (lowercase string, not the display name or numeric project number).
+    | 2. APIs & Services > Library > "reCAPTCHA Enterprise API" > Enable.
+    | 3. IAM & Admin > Service Accounts > Create service account. This opens a
+    |    three-pane wizard.
+    | 4. On the wizard's second pane, grant the role "reCAPTCHA Enterprise
+    |    Agent" (roles/recaptchaenterprise.agent). Nothing broader. Leave the
+    |    third pane blank and click Done.
+    | 5. Open the account > Keys tab > Add key > Create new key > JSON.
+    |    Downloads once; Google keeps no copy. Check its project_id matches.
+    | 6. Store outside the webroot, chmod 600, gitignore.
+    */
+    'recaptcha_enterprise' => [
+        'project_id' => env('RECAPTCHA_ENTERPRISE_PROJECT_ID'),
+        'site_key' => env('RECAPTCHA_ENTERPRISE_SITE_KEY'),
+        'threshold' => env('RECAPTCHA_ENTERPRISE_THRESHOLD', .5),
+        'credentials' => env('GOOGLE_APPLICATION_CREDENTIALS'),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -21,14 +55,13 @@ return [
         'site_key' => env('RECAPTCHA_V3_SITE_KEY'),
         'secret_key' => env('RECAPTCHA_V3_SECRET_KEY'),
         'threshold' => env('RECAPTCHA_V3_THRESHOLD', .5),
-        'error_message' => 'Sorry, but you look like a robot.',
-        'terms' => 'This website has implemented reCAPTCHA v3 and your use of reCAPTCHA v3 is subject to the <a href="https://www.google.com/policies/privacy/" target="_blank">Google Privacy Policy</a> and <a href="https://www.google.com/policies/terms/" target="_blank">Terms of Use</a>.',
 
         // In addition to performing the captcha verification when a form is submitted,
-        // Statamic reCAPTCHA for v3 also runs on page load, and if it is determined
+        // Statamic reCAPTCHA for v3 can also run on page load, and if it is determined
         // that the user is likely a bot, all forms on the page will be removed.
-        // You can disable that behavior here by setting the below value to `false`.
-        'verify_on_page_load' => true,
+        // Aus (Addon-Standard): Geprüft wird beim Absenden. Beim Seitenaufruf würde ein niedriger
+        // Score das Formular sofort entfernen, z. B. bei VPN oder Privacy-Browsern.
+        'verify_on_page_load' => false,
     ],
 
     /*
@@ -47,9 +80,7 @@ return [
         'size' => 'normal', // "normal", "compact", or "invisible"
         'theme' => 'light', // "light" or "dark"
         'tabindex' => 0,
-        'lang' => null, // Optional language code from https://developers.google.com/recaptcha/docs/language
-        'error_message' => 'You did not prove that you are not a robot.',
-        'terms' => 'This website has implemented reCAPTCHA v2 and your use of reCAPTCHA v2 is subject to the <a href="https://www.google.com/policies/privacy/" target="_blank">Google Privacy Policy</a> and <a href="https://www.google.com/policies/terms/" target="_blank">Terms of Use</a>.',
+        'lang' => env('APP_LOCALE', 'en'), // Optional language code from https://developers.google.com/recaptcha/docs/language
     ],
 
     /*
