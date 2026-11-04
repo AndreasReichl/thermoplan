@@ -1,0 +1,35 @@
+name: 'Andreas Reichl'
+avatar: logo_ar_avatar.png
+super: true
+id: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+password_hash: $2y$12$tNqJMmeLxwFi0/T4W9dWneNW5PqoorS38q.gHfge.JaybfYYf2C6a
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
+    products:
+      after_save: continue_editing
+    referenzen:
+      columns:
+        - title
+        - logo
+        - slug
+        - site
+        - status
+  taxonomies:
+    product_categories:
+      after_save: continue_editing
+  assets:
+    assets:
+      per_page: 500
+      mode: grid
+  nav:
+    top_level:
+      'content::collections::pages': '@move'
+      'content::collections::aktuelles': '@move'
+      'content::collections::karriere': '@move'
+      'content::collections::produkte': '@move'
+      'content::collections::team': '@move'
+      'content::collections::referenzen': '@move'
+      'content::collections::historie': '@move'
+      'content::collections::kontakte': '@move'

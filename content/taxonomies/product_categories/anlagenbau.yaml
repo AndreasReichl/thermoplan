@@ -14,3 +14,18 @@ updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_at: 1734186227
 blueprint: product_category
 order: '1'
+localizations:
+  en:
+    title: 'Plant Engineering'
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Our focus is on reducing operating costs, ensuring the highest product quality, and providing user-friendly operation of our systems.'
+    slug: plant_engineering
+    updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+    updated_at: 1748938111

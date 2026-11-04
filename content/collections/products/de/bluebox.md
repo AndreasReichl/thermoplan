@@ -9,7 +9,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734450926
+updated_at: 1746536059
 headline:
   -
     type: paragraph
@@ -123,6 +123,7 @@ weitere_inhalte:
     lines_bottom: true
     type: paragraph2
     enabled: true
+    bildschatten: false
 show_references: true
 bildschatten: true
 footer_line_top: false
@@ -151,7 +152,7 @@ content:
     content:
       -
         type: text
-        text: 'Unsere Bluebox verfügt über drei separate Messsys-teme, die je nach Kundenanforderung integriert wer-den können: 3D-Lasermessung, Klangprüfung und Ober- flächenprüfung.'
+        text: 'Unsere Bluebox verfügt über drei separate Messsysteme, die je nach Kundenanforderung integriert werden können: 3D-Lasermessung, Klangprüfung und Oberflächenprüfung.'
   -
     type: paragraph
     attrs:
@@ -167,7 +168,7 @@ content:
     content:
       -
         type: text
-        text: 'Durch die Klangprüfung können Risse identifiziert werden, indem die Schwingungen im Ziegel analysiert werden. Dabei wird von oben angeschlagen, um einen Ton zu erzeugen. Die Position des Anschlags zum jeweiligen Prüfobjekt wird über eine Linearverfahr-einheit immer konstant gehalten.'
+        text: 'Durch die Klangprüfung können Risse identifiziert werden, indem die Schwingungen im Ziegel analysiert werden. Dabei wird von oben angeschlagen, um einen Ton zu erzeugen. Die Position des Anschlags zum jeweiligen Prüfobjekt wird über eine Linearverfahreinheit immer konstant gehalten.'
   -
     type: paragraph
     attrs:
@@ -175,5 +176,5 @@ content:
     content:
       -
         type: text
-        text: 'Die Oberflächenprüfung dient der Erkennung ab-soluter und relativer optischer Fehler, wie beispiels-weise Engobe-/Glasurveränderungen oder Flecken und Abplatzer.'
+        text: 'Die Oberflächenprüfung dient der Erkennung absoluter und relativer optischer Fehler, wie beispielsweise Engobe-/Glasurveränderungen oder Flecken und Abplatzer.'
 ---

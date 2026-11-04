@@ -1,5 +1,6 @@
 ---
 id: 30a05375-3190-459b-9e10-de80a8376422
+published: false
 blueprint: product
 title: Schleifen
 product_categories: industrielle-loesungen
@@ -9,7 +10,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734450755
+updated_at: 1770289031
 headline:
   -
     type: paragraph
@@ -130,6 +131,7 @@ weitere_inhalte:
     lines_bottom: true
     type: paragraph1
     enabled: true
+    bildschatten: false
 seo_title: 'Schleifanlagen Präzise & Effizient für höchste Anforderungen'
 seo_description: 'Maßgeschneiderte Schleifanlagen: Präzision, Flexibilität & Effizienz für moderne Produktion und steigende Marktanforderungen in der Geschirrindustrie.'
 seo_keywords: 'Schleifanlagen, Schleifmaschinen, Geschirrindustrie Schleifen, präzise Schleiftechnologien, flexible Automatisierung, modulare Schleiflösungen'

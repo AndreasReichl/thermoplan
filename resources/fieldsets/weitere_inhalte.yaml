@@ -122,21 +122,28 @@ fields:
                     type: toggle
                     display: 'Linien Beginn oben'
                     localizable: false
-                    width: 33
+                    width: 25
                 -
                   handle: lines_bottom
                   field:
                     type: toggle
                     display: 'Linien unten anzeigen'
                     localizable: false
-                    width: 33
+                    width: 25
                 -
                   handle: card_background
                   field:
                     type: toggle
                     display: 'Spalten mit Hintegrund und Schatten'
                     localizable: false
-                    width: 33
+                    width: 25
+                -
+                  handle: textblock_hidden
+                  field:
+                    type: toggle
+                    display: 'Textblock ausgeblenden'
+                    localizable: false
+                    width: 25
                 -
                   handle: spaltenlayout
                   field:

@@ -5,11 +5,11 @@ title: Elektrotechnik
 product_categories: elektrotechnik
 product_icon: icon_elektrotechnik.svg
 headline_above_type: h4
-headline_type: h2
+headline_type: h1
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734451134
+updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+updated_at: 1748935999
 headline:
   -
     type: paragraph
@@ -163,6 +163,7 @@ weitere_inhalte:
     lines_bottom: true
     type: paragraph1
     enabled: true
+    bildschatten: false
 bildschatten: false
 footer_line_top: false
 seo_title: 'Steuerungs(um)bau: 30 Jahre Erfahrung in der Elektrotechnik'
@@ -176,7 +177,7 @@ content:
     content:
       -
         type: text
-        text: 'Thermoplan überzeugt im Bereich Steuerungsbau mit um-fangreichen technischem Know-how und einer breiten Palette an Komponenten und stellt damit sicher, die Arbeitsprozess- und Anlagensteuerung gemäß den Kundenanforderungen zu realisieren.'
+        text: 'Thermoplan überzeugt im Bereich Steuerungsbau mit umfangreichen technischem Know-how und einer breiten Palette an Komponenten und stellt damit sicher, die Arbeitsprozess- und Anlagensteuerung gemäß den Kundenanforderungen zu realisieren.'
   -
     type: paragraph
     attrs:

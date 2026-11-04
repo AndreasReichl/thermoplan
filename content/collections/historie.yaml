@@ -1,6 +1,7 @@
 title: Historie
 sites:
   - de
+  - en
 propagate: false
 template: default
 layout: layout

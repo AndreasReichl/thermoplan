@@ -5,6 +5,6 @@ title: Wienerberger
 logo: wienerberger_logo_horizontal.svg
 link: 'https://www.wienerberger.de/'
 author: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1732112774
+updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+updated_at: 1758782754
 ---

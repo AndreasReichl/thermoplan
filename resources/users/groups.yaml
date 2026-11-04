@@ -1,4 +1,2 @@
-# admin:
-#   title: Administrators
-#   roles:
-#     - admin
+mitarbeiter:
+  title: Mitarbeiter

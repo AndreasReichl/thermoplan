@@ -12,3 +12,18 @@ updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_at: 1734186260
 blueprint: product_category
 order: '4'
+localizations:
+  en:
+    title: 'Warehouse Technology'
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'We offer reliable solutions from the planning of new systems to retrofitting and maintenance. Thanks to modern frequency controllers, we also optimise older systems for fast and precise positioning.'
+    slug: warehouse_technology
+    updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+    updated_at: 1748938155

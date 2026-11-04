@@ -1,5 +1,6 @@
 ---
 id: 010c7e02-8d3f-40a9-95fe-34656cc9c314
+published: false
 blueprint: product
 title: Gießen
 product_categories: industrielle-loesungen
@@ -9,7 +10,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734450762
+updated_at: 1770289044
 headline:
   -
     type: paragraph
@@ -155,6 +156,7 @@ weitere_inhalte:
     lines_bottom: true
     type: paragraph1
     enabled: true
+    bildschatten: false
   -
     id: m4slpkar
     textspalten: two

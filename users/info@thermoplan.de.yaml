@@ -49,3 +49,10 @@ preferences:
   assets:
     assets:
       per_page: 100
+      mode: grid
+  forms:
+    kontakt:
+      columns:
+        - datestamp
+        - name
+        - email

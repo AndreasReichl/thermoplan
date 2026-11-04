@@ -12,3 +12,18 @@ updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_at: 1734186267
 blueprint: product_category
 order: '5'
+localizations:
+  en:
+    title: 'Electrical Engineering'
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Thermoplan offers customised control solutions with comprehensive expertise and relies on high-quality components from Siemens and leading suppliers such as Omron, Mitsubishi and Allen Bradley.'
+    slug: electrical_engineering
+    updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+    updated_at: 1748938058

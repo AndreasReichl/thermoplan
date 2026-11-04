@@ -58,8 +58,11 @@ opening_hours:
       -
         type: text
         text: 'Fr: 8:00 bis 14:00 Uhr'
+siegel: bsfz_siegel_rgb_1x.png
 instagram: 'https://www.instagram.com/thermoplan.gmbh?igsh=dDV0ajRmM21xYzUw'
 instagram_name: thermoplan.gmbh
+facebook: 'https://www.facebook.com/profile.php?id=61574615292422'
+facebook_name: thermoplan
 locations:
   -
     id: m3olt2zu
@@ -102,7 +105,7 @@ locations:
           -
             type: text
             text: 'Betriebsstätte Pressath'
-    strasse_hausnummer: 'Bahnhofstraße 17'
+    strasse_hausnummer: 'Eschenbacher Str. 8'
     plz: '92690'
     ort: Pressath
     opening_hours:
@@ -121,3 +124,4 @@ locations:
             text: 'Fr: 8:00 bis 14:00 Uhr'
     type: location
     enabled: true
+    phone: '+49 9644 68 98 14 - 0'

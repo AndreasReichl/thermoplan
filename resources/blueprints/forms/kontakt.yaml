@@ -33,8 +33,6 @@ tabs:
             field:
               type: text
               display: 'Strasse Hausnummer'
-              validate:
-                - required
               localizable: false
           -
             handle: zip
@@ -42,8 +40,6 @@ tabs:
               type: text
               display: PLZ
               width: 33
-              validate:
-                - required
               localizable: false
           -
             handle: place
@@ -51,8 +47,6 @@ tabs:
               type: text
               display: Ort
               width: 66
-              validate:
-                - required
               localizable: false
           -
             handle: telefon

@@ -12,3 +12,18 @@ updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_at: 1734186241
 blueprint: product_category
 order: '2'
+localizations:
+  en:
+    title: 'Industrial Solutions'
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Efficient solutions for the ceramics industry: from grinding, casting and glazing to shaping and drying - we optimise your processes for maximum quality and efficiency.'
+    slug: industrial_solutions
+    updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+    updated_at: 1748938092

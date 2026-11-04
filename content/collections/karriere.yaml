@@ -1,13 +1,16 @@
 title: Karriere
 sites:
   - de
+  - en
 propagate: false
 template: karriere/show
 layout: layout
+taxonomies:
+  - karrierecategories
 revisions: false
 route: '/karriere/{slug}'
 date: true
-sort_dir: asc
+sort_dir: desc
 date_behavior:
   past: public
   future: private
@@ -16,3 +19,5 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
+structure:
+  root: false

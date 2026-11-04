@@ -1,1 +1,105 @@
+logo: sitebasics/logo_positiv_en.svg
+logo_negative: sitebasics/logo_negativ_en.svg
+logo_footer: sitebasics/logo_positiv_en.svg
+firma:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Thermoplan Plant engineering'
+      -
+        type: hardBreak
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Electrical engineering Process engineering GmbH'
+      -
+        type: hardBreak
+position: 'Management / Executive Board'
+opening_hours:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Mon–Thu: 8:00 a.m. to 5:00 p.m.'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'Fri: 8:00 a.m. to 2:00 p.m.'
+locations:
+  -
+    id: m3olt2zu
+    firma:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Place of business Brilon'
+    strasse_hausnummer: 'Gernandstraße 19'
+    plz: '59929'
+    ort: Brilon
+    opening_hours:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Mon–Thu: 7:30 a.m. to 4:30 p.m.'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Fri: 7:30 a.m. to 1:00 p.m.'
+    type: location
+    enabled: true
+  -
+    id: m3olubgr
+    firma:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Place of business Pressath'
+    strasse_hausnummer: 'Eschenbacher Str. 8'
+    plz: '92690'
+    ort: Pressath
+    opening_hours:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'Mon–Thu: 8:00 a.m. to 4:00 p.m.'
+          -
+            type: hardBreak
+          -
+            type: text
+            text: 'Fri: 8:00 a.m. to 2:00 p.m.'
+    type: location
+    enabled: true
 origin: de

@@ -32,7 +32,7 @@ image: 02_anlagenbau.jpg
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 product_categories: anlagenbau
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734359116
+updated_at: 1740475339
 product_icon: icon_anlagenbau.svg
 weitere_inhalte:
   -
@@ -77,7 +77,7 @@ weitere_inhalte:
         id: m4msd3uk
         button_text: 'Kontaktieren Sie uns'
         button_style: primary
-        button_link_feld: '#'
+        button_link_feld: 'entry::6df5d363-47b0-411f-a30d-48121528dede'
         button_zielseite: _self
     image: roboter_links.png
     background_image: weisszugrauverlauf.svg
@@ -89,6 +89,7 @@ weitere_inhalte:
     lines_bottom: true
     lines_top: false
     lines_top_logo: true
+    bildschatten: false
   -
     id: m4mtuxv1
     headline_above_type: h4
@@ -135,6 +136,7 @@ weitere_inhalte:
     lines_bottom: false
     type: paragraph2
     enabled: true
+    bildschatten: false
   -
     id: m4mufh79
     headline_above_type: h4
@@ -191,6 +193,7 @@ weitere_inhalte:
     type: paragraph0
     enabled: true
     content_bg_color: '#F0F0F0'
+    bildschatten: false
 seo_title: 'Anlagenbau von Thermoplan'
 seo_description: 'Individuelle Anlagenbau-Lösungen: Maßgeschneiderte Planung, Retrofit, Inbetriebnahme und Wartung für höchste Effizienz und Qualität. Jetzt entdecken!'
 seo_keywords: 'Anlagenbau, Retrofit, Individuelle Lösungen, Wartungsservice, Effizienzsteigerung'

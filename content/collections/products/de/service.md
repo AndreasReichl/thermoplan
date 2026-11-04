@@ -1,15 +1,16 @@
 ---
 id: be136103-b757-464c-9c14-eddade3cf5a0
+published: false
 blueprint: product
 title: Service
 product_categories: anlagenbau
 product_icon: icon_service.svg
 headline_above_type: h4
-headline_type: h2
+headline_type: h1
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734450737
+updated_at: 1777023012
 headline:
   -
     type: paragraph
@@ -70,6 +71,10 @@ weitere_inhalte:
     lines_bottom: true
     type: paragraph1
     enabled: true
+    bildschatten: false
+seo_title: 'FANUC - Roboter Service von Thermoplan'
+seo_description: 'Zuverlässiger Thermoplan-Service: Wartung, Reparatur & Ersatzteile für maximale Laufzeit, minimale Ausfälle und höchste Produktivität.'
+seo_keywords: 'Thermoplan Service, Wartungsservice Maschinen, Roboter Instandhaltung, Ersatzteile Thermoplan, vorbeugende Wartung, Reparatur Industrieanlagen, Anlagenverfügbarkeit erhöhen, Stillstand reduzieren, Instandhaltung Robotertechnik, Maschinenlaufzeit optimieren'
 content:
   -
     type: paragraph

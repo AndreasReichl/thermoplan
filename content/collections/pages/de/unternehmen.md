@@ -77,7 +77,6 @@ page_builder:
     subtitle_type: h3
     team:
       - 138cfb03-3d08-4341-99e2-ea36efed6439
-      - 5213a38a-5619-4f5d-9196-f00edde49d7d
       - 6c373565-0ae3-40d5-8bec-ccb1a884a589
     inverted: false
     type: team
@@ -112,5 +111,9 @@ author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: false
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1737043484
+updated_at: 1773240019
+robots: 'index,follow'
+seo_title: 'Unternehmen Thermoplan'
+seo_description: 'Wir sind für Sie da. Unsere Geschäftsführung und unsere Ansprechpartner.'
+seo_keywords: 'Unternehmen, Geschäftsführung, Ansprechpartner'
 ---

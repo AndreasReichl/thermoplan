@@ -12,7 +12,7 @@ headline:
       -
         type: text
         text: RETROFIT
-headline_type: h2
+headline_type: h1
 subtitle:
   -
     type: paragraph
@@ -29,8 +29,8 @@ subtitle:
         text: 'als zeitgemäße Lösung'
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734428967
+updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+updated_at: 1748867654
 product_categories: anlagenbau
 product_icon: icon_retrofit.svg
 show_references: true
@@ -177,7 +177,7 @@ weitere_inhalte:
                 content:
                   -
                     type: text
-                    text: 'Durch den Einsatz neuer Regler-Generationen verbesserte Präzision und Anlagengeschwindigkei'
+                    text: 'Durch den Einsatz neuer Regler-Generationen verbesserte Präzision und Anlagengeschwindigkeit'
     image: simatic-collage.png
     background_image: weisszugrauverlauf.svg
     full_width: false
@@ -188,6 +188,7 @@ weitere_inhalte:
     lines_bottom: true
     type: paragraph1
     enabled: true
+    bildschatten: false
 content:
   -
     type: paragraph

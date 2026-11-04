@@ -5,11 +5,11 @@ title: Brenntechnik
 product_categories: werksleittechnik
 product_icon: icon_brenntechnik.svg
 headline_above_type: h4
-headline_type: h2
+headline_type: h1
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734452484
+updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+updated_at: 1748936795
 headline:
   -
     type: paragraph
@@ -252,6 +252,7 @@ weitere_inhalte:
                 attrs:
                   color: '#919191'
             text: 'Brenner zur Beheizung von Industrieöfen'
+    bildschatten: false
   -
     id: m4snongb
     image: 02_typ33-sic_sic-g.jpeg
@@ -406,6 +407,7 @@ weitere_inhalte:
             text: 'Richtlinien nach EN 746-2'
     type: product
     enabled: true
+    bildschatten: false
   -
     id: m4snus7y
     image: 03_typ33-st_sic-g_02.jpeg
@@ -571,6 +573,7 @@ weitere_inhalte:
             text: 'Richtlinien nach EN 746-2'
     type: product
     enabled: true
+    bildschatten: false
   -
     id: m4so0nf9
     image: 04_typ33-st_sic-g.jpeg
@@ -738,6 +741,7 @@ weitere_inhalte:
             text: 'Richtlinien nach EN 746-2'
     type: product
     enabled: true
+    bildschatten: false
 seo_title: 'Brenntechnik: Brennerlösungen von G+M Feuerungsanlagen'
 seo_description: 'Profitieren Sie von hoch effizienten Brennerlösungen für Ihre Produktion. G+M Feuerungsanlagen bieten Brenner für optimale Energie- & Qualitätssteigerung.'
 seo_keywords: 'Brenntechnik, Brennerlösungen, G+M Feuerungsanlagen, Energieeffizienz, Produktionssteigerung, maßgeschneiderte Brenner, zuverlässige Brenner'

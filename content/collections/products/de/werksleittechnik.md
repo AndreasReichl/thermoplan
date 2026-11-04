@@ -5,11 +5,11 @@ title: Werksleittechnik
 product_categories: werksleittechnik
 product_icon: icon_werksleittechnik.svg
 headline_above_type: h4
-headline_type: h2
+headline_type: h1
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734517667
+updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+updated_at: 1748936413
 headline:
   -
     type: paragraph
@@ -35,7 +35,7 @@ subtitle:
         text: 'Betriebsdatenerfassung, Energiemonitoring, Produktverfolgung, Benchmarking, ERP-Schnittstelle'
 show_references: true
 bildschatten: false
-seo_title: 'Werksleittechnik: Betriebsdatenerfassung, Energiemonitoring und mehr'
+seo_title: 'Werksleittechnik: Betriebsdatenerfassung, Energiemonitoring'
 seo_description: 'Optimieren Sie Ihre Produktionsprozesse mit unserem Werksleitsystem für Betriebsdatenerfassung, Produktverfolgung und Energiemonitoring in einer Lösung.'
 seo_keywords: 'Werksleittechnik, Betriebsdatenerfassung, Energiemonitoring, Produktverfolgung, ERP-Schnittstelle, Industrie 4.0, Prozesssteuerung, Datenmanagement, Mehrarbeitsplatzfähig, Planys integral'
 footer_line_top: true
@@ -163,7 +163,7 @@ content:
     content:
       -
         type: text
-        text: 'Der Bestandteil Betriebsdatenerfassung erfasst alle relevanten Daten wie Betriebszustände, Mengen und Stückzahlen. Qualitätssicherungs-daten können von Hand hinzugefügt und in Berichten aufbereitet werden. Durch die brow-serbasierte Oberfläche ist es möglich Daten von jedem Arbeitsplatz im Werk aus einzugeben und abzurufen.'
+        text: 'Der Bestandteil Betriebsdatenerfassung erfasst alle relevanten Daten wie Betriebszustände, Mengen und Stückzahlen. Qualitätssicherungsdaten können von Hand hinzugefügt und in Berichten aufbereitet werden. Durch die browserbasierte Oberfläche ist es möglich Daten von jedem Arbeitsplatz im Werk aus einzugeben und abzurufen.'
   -
     type: paragraph
     attrs:

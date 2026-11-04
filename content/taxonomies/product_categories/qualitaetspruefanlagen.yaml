@@ -12,3 +12,18 @@ updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_at: 1734186249
 blueprint: product_category
 order: '3'
+localizations:
+  en:
+    title: 'Quality Inspection Systems'
+    content:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+        content:
+          -
+            type: text
+            text: 'With our web-based and intuitive quality inspection solution, operation is made easy for every employee. Whether shiny or dark surfaces - thanks to high-energy lasers, we guarantee precise results, regardless of the size or speed of the inspection.'
+    slug: quality_inspection_systems
+    updated_by: d15dd6f9-582f-44bd-bbdc-5127f8dbc497
+    updated_at: 1748938140

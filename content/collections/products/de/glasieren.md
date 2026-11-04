@@ -1,5 +1,6 @@
 ---
 id: e85a354f-1671-476c-9101-886acca95c27
+published: false
 blueprint: product
 title: Glasieren
 product_categories: industrielle-loesungen
@@ -9,7 +10,7 @@ headline_type: h2
 subtitle_type: h3
 author: 273e00a1-d447-4899-b66e-01da895d5a76
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1734514291
+updated_at: 1776168109
 headline:
   -
     type: paragraph
@@ -85,6 +86,7 @@ weitere_inhalte:
     lines_bottom: false
     type: paragraph1
     enabled: true
+    bildschatten: false
   -
     id: m4tozsrs
     spaltenanzahl: '2'
@@ -114,6 +116,7 @@ weitere_inhalte:
                 text: 'Aufgrund dieses Verfahrens wird gleichzeitig sowohl der Boden, durch die in den Glasurtöpfen befindliche Glasurmenge, als auch die Oberfläche glasiert. Danach wird die Glasureinheit in ihre Ausgangsposition zurückgeschwenkt und nach kurzem Antrocknen der Glasur kann das fertige Geschirr'
         type: spalten
         enabled: true
+        bildschatten: false
       -
         id: m4tp02f1
         headline_type: h2
@@ -201,8 +204,12 @@ weitere_inhalte:
                         text: 'Zweifarbenglasieren (außen tauchen, innen spritzen)'
         type: spalten
         enabled: true
+        bildschatten: false
     type: spalten
     enabled: true
+    lines_top_logo: false
+    lines_top: false
+    textblock_hidden: false
   -
     id: m4smmb16
     headline:
@@ -234,6 +241,7 @@ weitere_inhalte:
     lines_bottom: false
     type: paragraph2
     enabled: true
+    bildschatten: false
   -
     id: m4tn6sal
     replikator_feld:
@@ -512,6 +520,7 @@ weitere_inhalte:
                         text: 'Geringer Verschleiß und Wartungsbedarf'
         type: spalten
         enabled: true
+        bildschatten: false
       -
         id: m4tnditn
         headline_type: h2
@@ -632,9 +641,13 @@ weitere_inhalte:
                         text: 'Durchfluss- und Viskositätsmessung'
         type: spalten
         enabled: true
+        bildschatten: false
     spaltenanzahl: '2'
     lines_bottom: false
     card_background: false
+    lines_top_logo: false
+    lines_top: false
+    textblock_hidden: false
 content:
   -
     type: paragraph
@@ -643,5 +656,48 @@ content:
     content:
       -
         type: text
-        text: 'Unsere innovativen Glasieranlagen bieten maßgeschneiderte Lösungen für die Geschirr- und Sanitärindustrie. Mit modernen Tauch- und Spritzglasierverfahren, automatisierten Techniken und kompakter Bauweise gewährleisten wir erstklassige Oberflächenqualität, effiziente Produktionsabläufe und maximale Flexibilität. Ob Linear- oder Rundtisch-Glasieranlagen, Zweifarbenglasieren oder fortschrittliche Robotersysteme für Sanitärprodukte – unsere Technologien erfüllen höchste Anforderungen und sorgen für langlebige Ergebnisse. Vertrauen Sie auf unsere langjährige Erfahrung und technologische Spitzenkompetenz.'
+        text: 'Um allen Produktionsanforderungen ge-recht zu werden, bieten wir sowohl '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Tauch- als auch Spritzglasieranlagen'
+      -
+        type: text
+        text: ' an.'
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Komplettiert wird unser Angebot durch die flexible Integration der Thermoplan '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Glasieranlagen '
+      -
+        type: text
+        text: 'in automatische Material-flusssysteme. So können wir nach dem Glasieren ein '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'automatisches Be- und Entladen'
+      -
+        type: text
+        text: ' der Ofenwägen realisieren, auch in Verbindung mit einem Produktionspuffer.'
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Damit sichern wir effiziente, prozessstabile und flexible Glasierprozesse für Ihre Produktion.'
 ---

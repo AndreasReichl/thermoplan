@@ -1,6 +1,7 @@
 title: Team
 sites:
   - de
+  - en
 propagate: false
 template: default
 layout: layout

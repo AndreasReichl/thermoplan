@@ -160,6 +160,77 @@ fields:
                     display: 'Linien Abschluss unten'
                     localizable: false
                     width: 33
+            kacheln:
+              display: Kacheln
+              icon: layout-display-split-quarters
+              fields:
+                -
+                  handle: kacheltitel
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - underline
+                      - strikethrough
+                      - superscript
+                      - subscript
+                      - alignleft
+                      - aligncenter
+                      - alignright
+                      - alignjustify
+                    toolbar_mode: floating
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Titel
+                    localizable: false
+                    width: 66
+                -
+                  handle: moveup
+                  field:
+                    type: toggle
+                    display: 'Nach oben schieben'
+                    localizable: false
+                    width: 33
+                -
+                  handle: kacheln
+                  field:
+                    type: grid
+                    display: Einträge
+                    localizable: false
+                    fields:
+                      -
+                        handle: bild
+                        field:
+                          max_files: 1
+                          container: assets
+                          type: assets
+                          display: Bild
+                          localizable: false
+                      -
+                        handle: titel
+                        field:
+                          type: text
+                          display: Titel
+                          localizable: false
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                          localizable: false
         hero:
           display: Hero
           icon: text-formatting-image-top

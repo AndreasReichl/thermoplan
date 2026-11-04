@@ -5,22 +5,28 @@ title: Home
 page_builder:
   -
     id: m3refi8m
-    top_logo: sitebasics/logo_positiv.svg
     headline_above_type: h4
     headline:
       -
         type: paragraph
         attrs:
           textAlign: left
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: textColor
-                attrs:
-                  color: '#ffffff'
-            text: 'Wir sind in vielen Branchen weltweit zuhause'
+    headline_type: h2
+    subtitle_type: h3
+    full_width: false
+    seitenverhaeltnis: fourtySixty
+    inverted: false
+    type: hero0
+    enabled: false
+    background_video: hintergrundvideos/03_thermoplan_landingpage_video_1080p_hd_4.mp4
+  -
+    id: mnyk2ny0
+    headline_above_type: h4
+    headline:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
     headline_type: h2
     subtitle_type: h3
     full_width: false
@@ -28,7 +34,79 @@ page_builder:
     inverted: false
     type: hero0
     enabled: true
-    background_video: closeup-of-a-new-red-ceramic-brick-2023-11-27-05-09-03-utc.mp4
+    background_video: hintergrundvideos/3(1).mp4
+  -
+    id: mfzd9hpn
+    kacheltitel:
+      -
+        type: heading
+        attrs:
+          textAlign: left
+          level: 3
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textColor
+                attrs:
+                  color: '#919191'
+            text: THERMOPLAN
+      -
+        type: heading
+        attrs:
+          textAlign: left
+          level: 1
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'WIR SIND '
+          -
+            type: hardBreak
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'IN VIELEN BRANCHEN'
+          -
+            type: hardBreak
+            marks:
+              -
+                type: bold
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'WELTWEIT ZUHAUSE'
+    moveup: true
+    kacheln:
+      -
+        id: mfzd9o6h
+        bild: 02_anlagenbau.jpg
+        titel: Anlagenbau
+        link: '/produkte#product_anlagenbau'
+      -
+        id: mfzd9ouv
+        bild: geschirr.jpg
+        titel: Industrielösungen
+        link: '/produkte#product_industrielle-loesungen'
+      -
+        id: mfzd9pkq
+        bild: 01_lagertechnik.jpg
+        titel: Lagertechnik
+        link: '/produkte#product_lagertechnik'
+      -
+        id: mfzd9q78
+        bild: 01_elektrotechnik.jpg
+        titel: Elektrotechnik
+        link: '/produkte#product_elektrotechnik'
+    type: kacheln
+    enabled: true
   -
     id: m48lxqqz
     headline: Aktuelles
@@ -76,7 +154,7 @@ page_builder:
         id: m5y015kt
         button_text: 'KONTAKTIEREN SIE UNS'
         button_style: primary
-        button_link_feld: '#'
+        button_link_feld: 'entry::6df5d363-47b0-411f-a30d-48121528dede'
         button_zielseite: _self
     image: 01_thermoplan_grafik.png
     bildschatten: false
@@ -92,8 +170,10 @@ author: 273e00a1-d447-4899-b66e-01da895d5a76
 header_spacer: false
 show_references: true
 updated_by: 273e00a1-d447-4899-b66e-01da895d5a76
-updated_at: 1737036766
+updated_at: 1776167323
 template: home
+robots: 'index,follow'
+seo_title: 'Willkommen bei Thermoplan'
 ---
 ## Welcome to your brand new Statamic site!
 
