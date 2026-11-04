@@ -90,15 +90,6 @@ tabs:
                 - required
               localizable: true
           -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - karriere
-              max_items: 1
-              listable: false
-              localizable: true
-          -
             handle: karrierecategories
             field:
               type: terms

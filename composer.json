@@ -9,34 +9,35 @@
         "laravel"
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "anakadote/statamic-recaptcha": "^1.0",
-        "aryehraber/statamic-logbook": "^3.3",
-        "laravel/framework": "^11",
-        "laravel/tinker": "^2.9",
-        "ndx/statamic-bard-color-picker": "^2.0",
-        "pecotamic/sitemap": "^1.4",
-        "statamic/cms": "^5.0",
-        "stoffelio/statamic-404-logger": "^1.1",
+        "aryehraber/statamic-logbook": "^4.0",
+        "laravel/framework": "^13.0",
+        "laravel/tinker": "^3.0",
+        "ndx/statamic-bard-color-picker": "^3.0",
+        "pecotamic/sitemap": "^2.0",
+        "statamic/cms": "^6.40",
+        "stoffelio/statamic-404-logger": "^2.0",
         "takepart-media/statamic-oreos": "^1.3",
-        "teamnovu/statamic-images-missing-alt": "^1.0",
-        "webographen/statamic-admin-log": "^1.1"
+        "teamnovu/statamic-images-missing-alt": "^2.0",
+        "webographen/statamic-admin-log": "^2.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.8.1",
+        "barryvdh/laravel-debugbar": "^4.0",
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.1",
-        "phpunit/phpunit": "^11.0.1",
+        "phpunit/phpunit": "^12.0",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Takepart\\Oreos\\Compat\\": "overrides/oreos/"
         }
     },
     "autoload-dev": {
@@ -66,7 +67,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "takepart-media/statamic-oreos"
+            ]
         }
     },
     "config": {
@@ -77,6 +80,9 @@
             "pestphp/pest-plugin": true,
             "php-http/discovery": true,
             "pixelfear/composer-dist-plugin": true
+        },
+        "platform": {
+            "php": "8.3.0"
         }
     },
     "minimum-stability": "dev",

@@ -79,12 +79,3 @@ tabs:
               type: template
               display: Template
               localizable: true
-          -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - historie
-              max_items: 1
-              listable: false
-              localizable: true

@@ -75,7 +75,7 @@ fields:
   -
     handle: icon_strasse
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Strasse'
       width: 33
@@ -90,7 +90,7 @@ fields:
   -
     handle: icon_place
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Ort'
       width: 33
@@ -112,7 +112,7 @@ fields:
   -
     handle: icon_phone
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Telefon'
       width: 33
@@ -127,7 +127,7 @@ fields:
   -
     handle: icon_fax
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Fax'
       width: 33
@@ -142,7 +142,7 @@ fields:
   -
     handle: icon_mobile
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Mobil'
       width: 33
@@ -157,7 +157,7 @@ fields:
   -
     handle: icon_email
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Email'
       width: 33
@@ -172,7 +172,7 @@ fields:
   -
     handle: icon_website
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: 'Icon Website'
       width: 33

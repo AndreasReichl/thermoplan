@@ -73,15 +73,6 @@ tabs:
               display: Template
               localizable: true
           -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - pages
-              max_items: 1
-              listable: false
-              localizable: true
-          -
             handle: header_spacer
             field:
               default: true

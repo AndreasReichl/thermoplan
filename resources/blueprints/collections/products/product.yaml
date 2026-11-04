@@ -76,15 +76,6 @@ tabs:
               localizable: true
               max_items: 1
           -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - products
-              max_items: 1
-              listable: false
-              localizable: true
-          -
             handle: template
             field:
               type: template

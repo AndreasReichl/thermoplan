@@ -3,7 +3,7 @@ fields:
   -
     handle: icon
     field:
-      directory: resources/assets/icons
+      set: thermoplan
       type: icon
       display: Icon
       width: 25

@@ -5,8 +5,7 @@ fields:
     field:
       type: icon
       display: 'Top Icon'
-      icon_set: default
-      directory: resources/assets/icons
+      set: thermoplan
       width: 66
   -
     import: colors

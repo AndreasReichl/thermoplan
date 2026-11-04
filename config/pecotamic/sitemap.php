@@ -2,7 +2,12 @@
 
 return [
     'url' => 'sitemap.xml',
-    'expire' => 60,
+
+    /**
+     * Cache lifetime of the generated sitemap in seconds (sitemap 2.x).
+     * The cache is flushed automatically whenever an entry or term is saved.
+     */
+    'expire' => 86400,
     'include_entries' => true,
     'include_terms' => true,
     'include_collection_terms' => true,
