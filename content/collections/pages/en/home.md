@@ -157,4 +157,5 @@ page_builder:
     enabled: true
 robots: 'index,follow'
 seo_title: 'Welcome to Thermoplan'
+seo_description: 'Thermoplan GmbH: plant engineering, retrofit, electrical and process engineering for the ceramic industry – from casting and glazing to drying and firing.'
 ---

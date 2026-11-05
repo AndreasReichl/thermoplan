@@ -174,6 +174,7 @@ updated_at: 1776167323
 template: home
 robots: 'index,follow'
 seo_title: 'Willkommen bei Thermoplan'
+seo_description: 'Thermoplan GmbH: Anlagenbau, Retrofit, Elektro- und Verfahrenstechnik für die Keramikindustrie – von Gießen und Glasieren bis Trocknung und Brenntechnik.'
 ---
 ## Welcome to your brand new Statamic site!
 
