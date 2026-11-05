@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'strategy' => env('STATAMIC_STATIC_CACHING_STRATEGY', null),
+    'strategy' => env('STATAMIC_STATIC_CACHING_STRATEGY', env('APP_ENV') === 'production' ? 'half' : null),
 
     /*
     |--------------------------------------------------------------------------
@@ -61,7 +61,11 @@ return [
         'class' => null,
 
         'urls' => [
-            //
+            // Seiten mit Kontaktformular (Erfolgs-/Fehlermeldungen kommen aus der Session)
+            '/kontakt',
+            '/kontakt/*',
+            '/en/contact',
+            '/en/contact/*',
         ],
 
     ],
@@ -83,9 +87,7 @@ return [
 
         'class' => null,
 
-        'rules' => [
-            //
-        ],
+        'rules' => 'all',
 
     ],
 
